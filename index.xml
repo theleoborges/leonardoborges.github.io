@@ -6,10 +6,21 @@
     <description>Recent content on Leonardo Borges</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Mar 2020 13:34:28 +1100</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2020 17:58:15 +1100</lastBuildDate>
     
 	<atom:link href="http://leonardoborges.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Talks &amp; Code</title>
+      <link>http://leonardoborges.com/talks/</link>
+      <pubDate>Thu, 19 Mar 2020 17:58:15 +1100</pubDate>
+      
+      <guid>http://leonardoborges.com/talks/</guid>
+      <description>Here&amp;rsquo;s a few of my favourite talks:
+ EuroClojure 2014 - Taming Asynchronous Workflows with Functional Reactive Programming EuroClojure 2015 - Realtime Collaboration with Clojure YOW! Lambda Jam 2014 - High Performance Web UI&amp;rsquo;s with Om and React  Not all talks I&amp;rsquo;ve given have video but you can access the slides for all my talks on SlideShare.
+Open Source projects Here I keep a list of the open-source projects that I&amp;rsquo;ve either started or contributed to.</description>
+    </item>
     
     <item>
       <title>Projects</title>

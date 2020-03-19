@@ -33,7 +33,7 @@ Well, we all know how hard, or at least cumbersome, it can be to set up a produc
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://leonardoborges.com/writings/2007/12/01/rubyworks-production-stack-for-rails/" />
 <meta property="article:published_time" content="2007-12-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2007-12-01T00:00:00+00:00" /><meta property="og:site_name" content="Code. AI. Leadership." />
+<meta property="article:modified_time" content="2007-12-01T00:00:00+00:00" /><meta property="og:site_name" content="Code. Leadership. AI." />
 <meta itemprop="name" content="rubyworks production stack for rails">
 <meta itemprop="description" content="
 Well, we all know how hard, or at least cumbersome, it can be to set up a production environment to deploy your applications. Besides all the hardware stuff like storages, links, routers you are still left with a huge amount of software configuration to handle. This often includes configuring things like clusters, load balancing and services monitoring - Including notification of interested parts in case of any failure. Pieces of software you have to tie up and make them work together.But hey, ruby lovers, you may have a better way to get this going! Released by ThoughtWorks, RubyWorks is, as quoted from their website, a production application stack for Ruby On Rails applications. I decided to give it a try and I really enjoyed it.First of all I didn&#39;t want to mess with my actual configuration so I installed a new vm with Virtual Box. It has Ubuntu 7.10 on it, with 256MB of memory.After installing RubyWorks - instructions on their website -, you get a new skeleton rails app up and running, being served by 4 mongrels that defaults to production environment! Impressed? There is more. A HAProxy is also set up in front of your mongrel servers acting as a load balancer.Well, you probably want to monitor all that stuff huh? A monit web interface is waiting for your call on port 2812! It monitors all your mongrel servers - four by default - and your HAProxy, allowing you to measure CPU and Memory usage, among other things.The coolest thing here is that all these softwares you would have to setup by hand are already working together, ready for production! Well, is it?Going a little deeper, I deployed a database backed application to test this stack&#39;s performance.I used Siege to stress the app and I am very happy with the results! I compared it with a single mongrel running on production env and no proxy at all.It is worth mentioning that having 4 mongrels running took my vm to 77% of memory usage, while a single mongrel took it to 38%.">
@@ -88,8 +88,8 @@ Well, we all know how hard, or at least cumbersome, it can be to set up a produc
           </li>
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/projects/" title="Projects page">
-              Projects
+            <a class="hover-white no-underline white-90" href="/talks/" title="Projects &amp; Talks page">
+              Projects &amp; Talks
             </a>
           </li>
           

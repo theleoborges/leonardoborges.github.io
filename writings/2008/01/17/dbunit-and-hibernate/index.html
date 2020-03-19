@@ -33,7 +33,7 @@ I never paid too much attention on testing database stuff. While working with ja
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://leonardoborges.com/writings/2008/01/17/dbunit-and-hibernate/" />
 <meta property="article:published_time" content="2008-01-17T00:00:00+00:00" />
-<meta property="article:modified_time" content="2008-01-17T00:00:00+00:00" /><meta property="og:site_name" content="Code. AI. Leadership." />
+<meta property="article:modified_time" content="2008-01-17T00:00:00+00:00" /><meta property="og:site_name" content="Code. Leadership. AI." />
 <meta itemprop="name" content="dbunit and hibernate">
 <meta itemprop="description" content="
 I never paid too much attention on testing database stuff. While working with java, the closest I got to something workable was using the test case abstractions provided by the Spring framework. It ensures that each test method runs in its own transaction that is rolled back after the test&#39;s execution.Fair enough. I used the setUp() method on my TestCase to configure some records so I could work with them, removing all of them in the tearDown() method. It was quite simple and worked.But I always felt something strange with this solution. First of all, I had to add another framework just for that. - Actually I was using spring for dependency injection, but if I wasn&#39;t, it wouldn&#39;t be a nice option. And another thing that bothered me, is that you cannot guarantee that your database is in a known state.After I started to work with Ruby - and Rails - I discovered the testing fixtures. It is a really nice way to set up your testing data without having to worry about your database state. - If you don&#39;t know what I&#39;m talking about, follow the above link first.Then I received a message from a co-worker saying he was having some trouble in using DBUnit with Hibernate, and asked for some help. I&#39;ve heard of DBUnit before but never tried it myself. It was a very good opportunity to take a better look into it.The basic idea after all is very similar to that of the Rails Fixtures: You have some sort of external file - XML in this case - where you set up the testing data. So the framework takes care of erasing the database, inserting your test data and returning it to its original state.So far so good, DBUnit&#39;s default Classes works with JDBC, DataSources and JNDIDatasources, but not with Hibernate.  The effort to put them working together is minimal and is documented in their web site.I decided to share how this can be done with hibernate and in the end, you would have a test case similar to this one:">
@@ -88,8 +88,8 @@ I never paid too much attention on testing database stuff. While working with ja
           </li>
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/projects/" title="Projects page">
-              Projects
+            <a class="hover-white no-underline white-90" href="/talks/" title="Projects &amp; Talks page">
+              Projects &amp; Talks
             </a>
           </li>
           
