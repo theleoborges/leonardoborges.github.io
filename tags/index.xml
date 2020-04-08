@@ -6,10 +6,46 @@
     <description>Recent content in Tags on Leonardo Borges</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2020 07:26:02 +1000</lastBuildDate>
     
 	<atom:link href="http://leonardoborges.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ai</title>
+      <link>http://leonardoborges.com/tags/ai/</link>
+      <pubDate>Thu, 09 Apr 2020 07:26:02 +1000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mac</title>
+      <link>http://leonardoborges.com/tags/mac/</link>
+      <pubDate>Thu, 09 Apr 2020 07:26:02 +1000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/mac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machine-learning</title>
+      <link>http://leonardoborges.com/tags/machine-learning/</link>
+      <pubDate>Thu, 09 Apr 2020 07:26:02 +1000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ml</title>
+      <link>http://leonardoborges.com/tags/ml/</link>
+      <pubDate>Thu, 09 Apr 2020 07:26:02 +1000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/ml/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>blockchain</title>
@@ -494,15 +530,6 @@
       <pubDate>Tue, 09 Sep 2008 00:00:00 +0000</pubDate>
       
       <guid>http://leonardoborges.com/tags/railsconf2008/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mac</title>
-      <link>http://leonardoborges.com/tags/mac/</link>
-      <pubDate>Thu, 28 Aug 2008 00:00:00 +0000</pubDate>
-      
-      <guid>http://leonardoborges.com/tags/mac/</guid>
       <description></description>
     </item>
     

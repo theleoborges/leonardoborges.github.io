@@ -3,13 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://leonardoborges.com/</loc>
-    <lastmod>2020-03-19T17:58:15+11:00</lastmod>
+    <loc>http://leonardoborges.com/tags/ai/</loc>
+    <lastmod>2020-04-09T07:26:02+10:00</lastmod>
   </url>
   
   <url>
-    <loc>http://leonardoborges.com/talks/</loc>
-    <lastmod>2020-03-19T17:58:15+11:00</lastmod>
+    <loc>http://leonardoborges.com/writings/2020/04/09/classifier-evaluation/</loc>
+    <lastmod>2020-04-09T07:26:02+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://leonardoborges.com/tags/mac/</loc>
+    <lastmod>2020-04-09T07:26:02+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://leonardoborges.com/tags/machine-learning/</loc>
+    <lastmod>2020-04-09T07:26:02+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://leonardoborges.com/tags/ml/</loc>
+    <lastmod>2020-04-09T07:26:02+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://leonardoborges.com/tags/</loc>
+    <lastmod>2020-04-09T07:26:02+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://leonardoborges.com/writings/</loc>
+    <lastmod>2020-04-09T07:26:02+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://leonardoborges.com/</loc>
+    <lastmod>2020-03-19T13:34:28+11:00</lastmod>
   </url>
   
   <url>
@@ -44,16 +74,6 @@
   
   <url>
     <loc>http://leonardoborges.com/writings/2018/02/19/highlights-of-the-symposium-on-blockchain-and-distributed-ledger-technology-day-2/</loc>
-    <lastmod>2018-02-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://leonardoborges.com/tags/</loc>
-    <lastmod>2018-02-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://leonardoborges.com/writings/</loc>
     <lastmod>2018-02-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -768,11 +788,6 @@
   </url>
   
   <url>
-    <loc>http://leonardoborges.com/tags/mac/</loc>
-    <lastmod>2008-08-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://leonardoborges.com/writings/2008/08/28/mac-os-x-getting-mysql-and-rails-to-work/</loc>
     <lastmod>2008-08-28T00:00:00+00:00</lastmod>
   </url>
@@ -974,6 +989,10 @@
   
   <url>
     <loc>http://leonardoborges.com/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://leonardoborges.com/talks/</loc>
   </url>
   
 </urlset>

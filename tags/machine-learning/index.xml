@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>machine-learning on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/machine-learning/</link>
+    <description>Recent content in machine-learning on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 09 Apr 2020 07:26:02 +1000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Classifier Evaluation</title>
+      <link>http://leonardoborges.com/writings/2020/04/09/classifier-evaluation/</link>
+      <pubDate>Thu, 09 Apr 2020 07:26:02 +1000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2020/04/09/classifier-evaluation/</guid>
+      <description>I recently wrote an article on our company blog where I explained how we evaluate Machine Learning models at RecordPoint &amp;ndash; if you haven&amp;rsquo;t read it yet, I&amp;rsquo;d recommend you do so before proceeding.
+Since its publishing, I received a number of comments asking me to clarify the concepts presented with concrete examples.
+The original article is light on code by design as the audience for the company blog isn&amp;rsquo;t always that technical.</description>
+    </item>
+    
+  </channel>
+</rss>

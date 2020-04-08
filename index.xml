@@ -6,20 +6,20 @@
     <description>Recent content on Leonardo Borges</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Mar 2020 17:58:15 +1100</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2020 13:34:28 +1100</lastBuildDate>
     
 	<atom:link href="http://leonardoborges.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Talks &amp; Code</title>
-      <link>http://leonardoborges.com/talks/</link>
-      <pubDate>Thu, 19 Mar 2020 17:58:15 +1100</pubDate>
+      <title>Classifier Evaluation</title>
+      <link>http://leonardoborges.com/writings/2020/04/09/classifier-evaluation/</link>
+      <pubDate>Thu, 09 Apr 2020 07:26:02 +1000</pubDate>
       
-      <guid>http://leonardoborges.com/talks/</guid>
-      <description>Here&amp;rsquo;s a few of my favourite talks:
- EuroClojure 2014 - Taming Asynchronous Workflows with Functional Reactive Programming EuroClojure 2015 - Realtime Collaboration with Clojure YOW! Lambda Jam 2014 - High Performance Web UI&amp;rsquo;s with Om and React  Not all talks I&amp;rsquo;ve given have video but you can access the slides for all my talks on SlideShare.
-Open Source projects Here I keep a list of the open-source projects that I&amp;rsquo;ve either started or contributed to.</description>
+      <guid>http://leonardoborges.com/writings/2020/04/09/classifier-evaluation/</guid>
+      <description>I recently wrote an article on our company blog where I explained how we evaluate Machine Learning models at RecordPoint &amp;ndash; if you haven&amp;rsquo;t read it yet, I&amp;rsquo;d recommend you do so before proceeding.
+Since its publishing, I received a number of comments asking me to clarify the concepts presented with concrete examples.
+The original article is light on code by design as the audience for the company blog isn&amp;rsquo;t always that technical.</description>
     </item>
     
     <item>
@@ -1448,6 +1448,17 @@ Hoje fiz a versÃ£o beta da nova prova de arquiteto da Sun e eis algumas impres
       <guid>http://leonardoborges.com/writings/2007/10/13/como-o-spring-me-ajudou-a-manter-o-active-record/</guid>
       <description>&lt;p&gt;
 Nesse primeiro post vou falar um pouco sobre meu novo trabalho. Na verdade, sobre um problema que encontramos lÃ¡.&lt;br&gt;&lt;br&gt;Dentre diversas coisas que estamos fazendo, como migraÃ§Ãµes por exemplo, estou ajudando na elaboraÃ§Ã£o da arquitetura que irÃ¡ abrigar as novas aplicaÃ§Ãµes desenvolvidas na empresa.</description>
+    </item>
+    
+    <item>
+      <title>Talks &amp; Code</title>
+      <link>http://leonardoborges.com/talks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/talks/</guid>
+      <description>Here&amp;rsquo;s a few of my favourite talks:
+ EuroClojure 2014 - Taming Asynchronous Workflows with Functional Reactive Programming EuroClojure 2015 - Realtime Collaboration with Clojure YOW! Lambda Jam 2014 - High Performance Web UI&amp;rsquo;s with Om and React  Not all talks I&amp;rsquo;ve given have video but you can access the slides for all my talks on SlideShare.
+Open Source projects Here I keep a list of the open-source projects that I&amp;rsquo;ve either started or contributed to.</description>
     </item>
     
   </channel>
