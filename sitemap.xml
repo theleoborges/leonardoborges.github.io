@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://leonardoborges.com/writings/2020/05/12/be-bored/</loc>
+    <lastmod>2020-05-12T08:31:15+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://leonardoborges.com/tags/creativity/</loc>
+    <lastmod>2020-05-12T08:31:15+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://leonardoborges.com/tags/deepwork/</loc>
+    <lastmod>2020-05-12T08:31:15+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://leonardoborges.com/tags/productivity/</loc>
+    <lastmod>2020-05-12T08:31:15+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://leonardoborges.com/tags/</loc>
+    <lastmod>2020-05-12T08:31:15+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://leonardoborges.com/writings/</loc>
+    <lastmod>2020-05-12T08:31:15+10:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://leonardoborges.com/tags/ai/</loc>
     <lastmod>2020-04-09T07:26:02+10:00</lastmod>
   </url>
@@ -24,16 +54,6 @@
   
   <url>
     <loc>http://leonardoborges.com/tags/ml/</loc>
-    <lastmod>2020-04-09T07:26:02+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://leonardoborges.com/tags/</loc>
-    <lastmod>2020-04-09T07:26:02+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://leonardoborges.com/writings/</loc>
     <lastmod>2020-04-09T07:26:02+10:00</lastmod>
   </url>
   
@@ -644,11 +664,6 @@
   
   <url>
     <loc>http://leonardoborges.com/writings/2009/06/08/how-do-you-keep-yourself-focused/</loc>
-    <lastmod>2009-06-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://leonardoborges.com/tags/productivity/</loc>
     <lastmod>2009-06-08T00:00:00+00:00</lastmod>
   </url>
   

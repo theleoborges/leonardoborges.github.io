@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Leonardo Borges</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Apr 2020 07:26:02 +1000</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2020 08:31:15 +1000</lastBuildDate>
     
 	<atom:link href="http://leonardoborges.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>creativity</title>
+      <link>http://leonardoborges.com/tags/creativity/</link>
+      <pubDate>Tue, 12 May 2020 08:31:15 +1000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/creativity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>deepwork</title>
+      <link>http://leonardoborges.com/tags/deepwork/</link>
+      <pubDate>Tue, 12 May 2020 08:31:15 +1000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/deepwork/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>productivity</title>
+      <link>http://leonardoborges.com/tags/productivity/</link>
+      <pubDate>Tue, 12 May 2020 08:31:15 +1000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/productivity/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>ai</title>
@@ -449,15 +476,6 @@
       <pubDate>Fri, 31 Jul 2009 00:00:00 +0000</pubDate>
       
       <guid>http://leonardoborges.com/tags/jvm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Productivity</title>
-      <link>http://leonardoborges.com/tags/productivity/</link>
-      <pubDate>Mon, 08 Jun 2009 00:00:00 +0000</pubDate>
-      
-      <guid>http://leonardoborges.com/tags/productivity/</guid>
       <description></description>
     </item>
     
