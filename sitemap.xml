@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://leonardoborges.com/writings/a-newsletter/</loc>
+    <lastmod>2021-01-21T09:05:02+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://leonardoborges.com/writings/</loc>
+    <lastmod>2021-01-21T09:05:02+11:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://leonardoborges.com/writings/2020/05/12/be-bored/</loc>
     <lastmod>2020-05-12T08:31:15+10:00</lastmod>
   </url>
@@ -24,11 +34,6 @@
   
   <url>
     <loc>http://leonardoborges.com/tags/</loc>
-    <lastmod>2020-05-12T08:31:15+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://leonardoborges.com/writings/</loc>
     <lastmod>2020-05-12T08:31:15+10:00</lastmod>
   </url>
   

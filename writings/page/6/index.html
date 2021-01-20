@@ -36,7 +36,7 @@
 <meta property="og:description" content="Code. Leadership. AI." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://leonardoborges.com/writings/" />
-<meta property="og:updated_time" content="2020-05-12T08:31:15+10:00" /><meta property="og:site_name" content="Code. Leadership. AI." />
+<meta property="og:updated_time" content="2021-01-21T09:05:02+11:00" /><meta property="og:site_name" content="Code. Leadership. AI." />
 <meta itemprop="name" content="Writings">
 <meta itemprop="description" content="Code. Leadership. AI."><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Writings"/>
@@ -189,6 +189,25 @@ if (!doNotTrack) {
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Writings</span>
     <h1 class="f3 near-black">
+      <a href="http://leonardoborges.com/writings/2011/02/02/update-to-appconstants-it-can-now-be-used-as-a-gem/" class="link black dim">
+        update to appconstants it can now be used as a gem
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      This is just a quick post to let you know that AppConstants can now be used as gem!
+Just add it to your Gemfile and 'bundle install' it:
+#in your Gemfile gem &quot;app_constants&quot; #in the console $ bundle install $ rails generate app_constants #then follow the instructions on-screen instructions 
+It can also be used without Rails. Check out full instructions on the GitHub repository.
+Feedback welcome :)
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Writings</span>
+    <h1 class="f3 near-black">
       <a href="http://leonardoborges.com/writings/2011/01/16/clouds-against-the-floods/" class="link black dim">
         clouds against the floods
       </a>
@@ -331,24 +350,6 @@ In Ruby you have basically two ways of defining private methods:
 
 I see a small problem with both approaches. In the first one, and the most obvious, is that you need to duplicate the method name as well as add an extra method call - private - just to change its visibility.
 The second approach avoids this but adds the risk of accidentally putting a method that is intended to be public under the private section of the source file, which can render an annoying debugging session.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Writings</span>
-    <h1 class="f3 near-black">
-      <a href="http://leonardoborges.com/writings/2010/01/23/my-take-on-rails-environment-specific-constants/" class="link black dim">
-        my take on rails environment specific constants
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      It’s funny how every Rails application I - and possibly you - work on ends up needing some sort of per-environment global constants.
-Examples may include the application url - It might be used in account activation emails and thus should be different between the development and production environments.
-Or perhaps your application depends on external services that, depending on the environment, are available in different URIs.
-There are a couple solutions out there but my needs were simple and straightforward, thus I developed a small rails plugin that is the simplest thing that could possibly work: AppConstants.
     </div>
   </div>
 </div>
@@ -519,7 +520,7 @@ There are a couple solutions out there but my needs were simple and straightforw
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://leonardoborges.com/" >
-    &copy;  Leonardo Borges 2020 
+    &copy;  Leonardo Borges 2021 
   </a>
     <div>
 

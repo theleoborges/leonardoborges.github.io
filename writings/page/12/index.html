@@ -36,7 +36,7 @@
 <meta property="og:description" content="Code. Leadership. AI." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://leonardoborges.com/writings/" />
-<meta property="og:updated_time" content="2020-05-12T08:31:15+10:00" /><meta property="og:site_name" content="Code. Leadership. AI." />
+<meta property="og:updated_time" content="2021-01-21T09:05:02+11:00" /><meta property="og:site_name" content="Code. Leadership. AI." />
 <meta itemprop="name" content="Writings">
 <meta itemprop="description" content="Code. Leadership. AI."><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Writings"/>
@@ -189,6 +189,23 @@ if (!doNotTrack) {
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Writings</span>
     <h1 class="f3 near-black">
+      <a href="http://leonardoborges.com/writings/2008/04/01/why-i-like-ruby-or-ruby-the-language-of-the-lazy-programmer/" class="link black dim">
+        why i like ruby or ruby the language of the lazy programmer
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      This is quite funny. A friend, Perl addicted, is now learning Ruby. He really enjoys the language but made a interesting observation: Ruby is a language for lazy programmers!
+Well, I have to agree... You know, I love saving keystrokes and achieving more by writing less. And this is so true with Ruby.
+Let me give a really simple example, comparing with java - don't get me wrong... I love java, specially the platform, but it fits well here since I've always been a Java guy.
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Writings</span>
+    <h1 class="f3 near-black">
       <a href="http://leonardoborges.com/writings/2008/03/25/euruko-2008-european-rubyconf-prague/" class="link black dim">
         euruko 2008 european rubyconf prague
       </a>
@@ -331,23 +348,6 @@ How can I tell? Well, as a good developer I thought: "I'll just create a scaffol
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       <p>
 Well, we all know how hard, or at least cumbersome, it can be to set up a production environment to deploy your applications. Besides all the hardware stuff like storages, links, routers you are still left with a huge amount of software configuration to handle. This often includes configuring things like clusters, load balancing and services monitoring - Including notification of interested parts in case of any failure. Pieces of software you have to tie up and make them work together.<br><br>But hey, ruby lovers, you may have a better way to get this going! Released by <a href="http://www.thoughtworks.com/" title="TW's web site">ThoughtWorks</a>, <a href="http://studios.thoughtworks.com/rubyworks" title="RubyWorks">RubyWorks</a> is, as quoted from their website, a production application stack for <a href="http://www.rubyonrails.org/" title="Ruby On Rails">Ruby On Rails</a> applications. I decided to give it a try and I really enjoyed it.<br><br>First of all I didn't want to mess with my actual configuration so I installed a new vm with <a href="http://www.virtualbox.org/" title="Virtual Box">Virtual Box</a>. It has Ubuntu 7.10 on it, with 256MB of memory.<br><br>After installing RubyWorks - instructions on their website -, you get a new skeleton rails app up and running, being served by 4 <a href="http://mongrel.rubyforge.org/" title="Mongrel">mongrels</a> that defaults to production environment! Impressed? There is more. A <a href="http://haproxy.1wt.eu/" title="HAProxy">HAProxy</a> is also set up in front of your mongrel servers acting as a load balancer.<br><br>Well, you probably want to monitor all that stuff huh? A <a href="http://www.tildeslash.com/monit/" title="Monit">monit</a> web interface is waiting for your call on port 2812! It monitors all your mongrel servers - four by default - and your HAProxy, allowing you to measure CPU and Memory usage, among other things.<br><br>The coolest thing here is that all these softwares you would have to setup by hand are already working together, ready for production! Well, is it?<br><br>Going a little deeper, I deployed a database backed application to test this stack's performance.<br><br>I used <a href="http://www.joedog.org/JoeDog/Siege" title="Siege">Siege</a> to stress the app and I am very happy with the results! I compared it with a single mongrel running on production env and no proxy at all.<br><br>It is worth mentioning that having 4 mongrels running took my vm to 77% of memory usage, while a single mongrel took it to 38%.<br><br>
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Writings</span>
-    <h1 class="f3 near-black">
-      <a href="http://leonardoborges.com/writings/2007/11/23/why-every-programmer-have-to-be-dumb/" class="link black dim">
-        why every programmer have to be dumb
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      At least, dumb for the companies hiring them. The old dream is still for sale out there: Build a "I do everything framework" and hire a bunch of dumb programmers - monkeys? - and you shall make money easily!
-Just put some button pressers and a full featured enterprise system will be waiting on the other side of this "machine"!
-C'mon, I thought this dream was over! We've had enough proofs that this doesn't work!
     </div>
   </div>
 </div>
@@ -514,7 +514,7 @@ C'mon, I thought this dream was over! We've had enough proofs that this doesn't 
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://leonardoborges.com/" >
-    &copy;  Leonardo Borges 2020 
+    &copy;  Leonardo Borges 2021 
   </a>
     <div>
 
