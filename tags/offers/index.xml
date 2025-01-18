@@ -4,24 +4,16 @@
     <title>Offers on Leonardo Borges</title>
     <link>http://leonardoborges.com/tags/offers/</link>
     <description>Recent content in Offers on Leonardo Borges</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Sep 2008 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://leonardoborges.com/tags/offers/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://leonardoborges.com/tags/offers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>were hiring</title>
       <link>http://leonardoborges.com/writings/2008/09/26/were-hiring/</link>
       <pubDate>Fri, 26 Sep 2008 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2008/09/26/were-hiring/</guid>
-      <description>Here at Mirai we&#39;re looking for passionate software engineers.
-And if it&#39;s not clear, by passionate I mean people who actually enjoy their job, aren&#39;t afraid of trying new things, likes to research/study, is up to date to what&#39;s happening around them and is a true team player.
-Interested? Hold on, click here to find out more about the offer, as well as instructions on how to apply.
-Doubts? Send them to jobs@hotelsearch.</description>
+      <description>&lt;p&gt;&#xA;Here at &lt;a href=&#34;http://miraiespana.com/&#34;&gt;Mirai&lt;/a&gt; we&#39;re looking for passionate software engineers.&lt;br&gt;&lt;br&gt;And if it&#39;s not clear, by passionate I mean people who actually enjoy their job, aren&#39;t afraid of trying new things, likes to research/study, is up to date to what&#39;s happening around them and is a true team player.&lt;br&gt;&lt;br&gt;Interested? Hold on, click &lt;a href=&#34;http://jobs.hotelsearch.com/&#34;&gt;here&lt;/a&gt; to find out more about the offer, as well as instructions on how to apply.&lt;br&gt;&lt;br&gt;Doubts?  Send them to jobs@hotelsearch.com&lt;br&gt;&lt;br&gt;ps. If you&#39;ve been following my blog, you probably have already got a feeling of the sort of stuff that we do here...&#xA;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

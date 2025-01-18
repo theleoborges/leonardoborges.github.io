@@ -4,26 +4,16 @@
     <title>Security on Leonardo Borges</title>
     <link>http://leonardoborges.com/tags/security/</link>
     <description>Recent content in Security on Leonardo Borges</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Aug 2008 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://leonardoborges.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://leonardoborges.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>rails vulnerability on rexml</title>
       <link>http://leonardoborges.com/writings/2008/08/24/rails-vulnerability-on-rexml/</link>
       <pubDate>Sun, 24 Aug 2008 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2008/08/24/rails-vulnerability-on-rexml/</guid>
-      <description> REXML, the XML library uses by many ruby apps, including rails, has a vulnerability that requires an immediate patch on whatever rails version you&#39;re using.
-Details and instructions on the official rails weblog, here.
-But basically, this is what you need to do:
-gem install rexml-expansion-fix
-
-Then, require rexml-expansion-fix in your rails&#39;s app environment.rb file. </description>
+      <description>&lt;p&gt;&#xA;REXML, the XML library uses by many ruby apps, including rails, has a vulnerability that requires an immediate patch on whatever rails version you&#39;re using.&lt;br&gt;&lt;br&gt;Details and instructions on the official rails weblog, &lt;a href=&#34;http://weblog.rubyonrails.org/2008/8/23/dos-vulnerabilities-in-rexml&#34;&gt;here&lt;/a&gt;.&lt;br&gt;&lt;br&gt;But basically, this is what you need to do:&lt;br&gt;&lt;br&gt;&lt;pre lang=&#34;bash&#34;&gt;&lt;br&gt;gem install rexml-expansion-fix&lt;br&gt;&lt;/pre&gt;&lt;br&gt;&lt;br&gt;Then, require rexml-expansion-fix in your rails&#39;s app environment.rb file.&#xA;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

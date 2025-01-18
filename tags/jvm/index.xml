@@ -4,27 +4,16 @@
     <title>JVM on Leonardo Borges</title>
     <link>http://leonardoborges.com/tags/jvm/</link>
     <description>Recent content in JVM on Leonardo Borges</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 31 Jul 2009 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://leonardoborges.com/tags/jvm/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://leonardoborges.com/tags/jvm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>jvm language preferences poll results</title>
       <link>http://leonardoborges.com/writings/2009/07/31/jvm-language-preferences-poll-results/</link>
       <pubDate>Fri, 31 Jul 2009 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2009/07/31/jvm-language-preferences-poll-results/</guid>
-      <description>- Overall results
-First off, I&#39;d like to thank everyone who voted on this poll.
-With a total of 236 votes, here is the summary of the first two questions:
-- Are you currently working with or researching about language alternatives for the JVM? - e.g. JRuby, Scala, Groovy
-{% img /assets/images/scala_improvements.png %}
-Tooling. The majority of comment urge for better tooling and IDE support. That simple.
-- Others</description>
+      <description>&lt;p&gt;&#xA;&lt;strong&gt;- Overall results&lt;/strong&gt;&lt;br&gt;&lt;br&gt;First off, I&#39;d like to thank everyone who voted on this poll.&lt;br&gt;With a total of 236 votes, here is the summary of the first two questions:&lt;br&gt;&lt;br&gt;&lt;strong&gt;- Are you currently working with or researching about language alternatives for the JVM? - e.g. JRuby, Scala, Groovy&lt;/strong&gt;&lt;br&gt;&lt;br&gt;&lt;a href=&#39;http://leonardoborges.com/assets/images/scala_improvements.png&#39;&gt;{% img /assets/images/scala_improvements.png %}&lt;/a&gt;&lt;/em&gt;&lt;br&gt;&lt;br&gt;Tooling. The majority of comment urge for better tooling and IDE support. That simple.&lt;br&gt;&lt;br&gt;&lt;strong&gt;- Others&lt;/strong&gt;&lt;br&gt;&lt;br&gt;People who chose others mentioned &lt;a href=&#34;http://clojure.org/&#34; target=&#34;_blank&#34;&gt;Clojure&lt;/a&gt;, &lt;a href=&#34;http://www.fandev.org/&#34; target=&#34;_blank&#34;&gt;Fan&lt;/a&gt; and &lt;a href=&#34;http://www.jython.org/&#34;&gt;Jython&lt;/a&gt;, with a clear advantage for Clojure.&lt;br&gt;&lt;br&gt;&lt;strong&gt;- Disclaimer&lt;/strong&gt;&lt;br&gt;&lt;br&gt;&lt;strong&gt;This poll has no scientific foundations whatsoever and its sole purpose is to summarize the feelings and personal choices of the people who answered it. If you would like the original spreadsheet with the answers, you can find it &lt;a href=&#34;http://spreadsheets.google.com/ccc?key=0AuABB6DyTXV2dHEtZnNwSDhCb2RVOThFcUNaSUhpbEE&amp;amp;hl=en&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; and do your own analyzis.&lt;br&gt;&lt;/strong&gt;&#xA;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

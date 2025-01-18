@@ -4,23 +4,16 @@
     <title>Performance on Leonardo Borges</title>
     <link>http://leonardoborges.com/tags/performance/</link>
     <description>Recent content in Performance on Leonardo Borges</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 20 Nov 2008 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://leonardoborges.com/tags/performance/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://leonardoborges.com/tags/performance/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>rails performance scripts profiler benchmarker</title>
       <link>http://leonardoborges.com/writings/2008/11/20/rails-performance-scripts-profiler-benchmarker/</link>
       <pubDate>Thu, 20 Nov 2008 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2008/11/20/rails-performance-scripts-profiler-benchmarker/</guid>
-      <description>There are several ways you can measure your rails application&#39;s performance. The techniques range from filling your code with &#34;puts&#34; statements - :p - to fancy ones like NewRelic - which is quite nice, I must say.
-But what many people don&#39;t know is that rails ships with a handful of scripts to help you out. One of which is called profiler, located under your application&#39;s scripts/performance directory.
-By default it uses the standard ruby profiler but if you want more speed - and additional reporting options - , consider installing the ruby-prof gem.</description>
+      <description>&lt;p&gt;&#xA;There are several ways you can measure your rails application&#39;s performance. The techniques range from filling your code with &#34;puts&#34; statements - :p - to fancy ones like &lt;a href=&#34;http://www.newrelic.com/&#34;&gt;NewRelic&lt;/a&gt; - which is quite nice, I must say.&lt;br&gt;&lt;br&gt;But what many people don&#39;t know is that rails ships with a handful of scripts to help you out. One of which is called &lt;strong&gt;profiler&lt;/strong&gt;, located under your application&#39;s &lt;strong&gt;scripts/performance&lt;/strong&gt; directory.&lt;br&gt;&lt;br&gt;By default it uses the standard ruby profiler but if you want more speed - and additional reporting options - , consider installing the &lt;a href=&#34;http://ruby-prof.rubyforge.org/&#34;&gt;ruby-prof&lt;/a&gt; gem.&lt;br&gt;&lt;br&gt;So if you execute it without params, you&#39;ll get a clue of how it works:&lt;br&gt;&lt;br&gt;&lt;pre lang=&#34;bash&#34;&gt;&lt;br&gt;$ script/performance/profiler&lt;br&gt;Usage: ./script/performance/profiler &#39;Person.expensive_method(10)&#39; [times] [flat|graph|graph_html]&lt;br&gt;&lt;/pre&gt;&lt;br&gt;&lt;br&gt;Pretty self explanatory, right?&lt;br&gt;&lt;br&gt;As a sample code, I have in my rails app a dumb model with a really dumb method I wanna profile:&lt;br&gt;&lt;br&gt;&#xA;&lt;div class=&#34;code&#34;&gt;&#xA;  &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;&#xA;  class Article&#xA;    def self.find_all_with_delay&#xA;      sleep 10&#xA;      self.find(:all)&#xA;    end&#xA;  end&#xA;  &lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&lt;br&gt;&lt;br&gt;Clearly this method doesn&#39;t perform well and is a bottle neck in our super application! But let&#39;s see what rails&#39; profiler tells us:&lt;br&gt;&lt;br&gt;&lt;pre lang=&#34;bash&#34; line=&#34;1&#34;&gt;&lt;br&gt;$ script/performance/profiler &#39;Article.find_all_with_delay&#39; 1 graph &gt; text_graph.perf&lt;br&gt;Loading Rails...&lt;br&gt;Using the ruby-prof extension.&lt;br&gt;Thread ID: 109440&lt;br&gt;Total Time: 10.147995&lt;br&gt;&lt;br&gt;  %total   %self     total      self      wait     child            calls   Name&lt;br&gt;--------------------------------------------------------------------------------&lt;br&gt; 100.00%   0.00%     10.15      0.00      0.00     10.15                1     Global#[No method] (/Users/leo/projects/test/vendor/rails/railties/lib/commands/performance/profiler.rb:24}  /Users/leo/projects/test/vendor/rails/railties/lib/commands/performance/profiler.rb:24&lt;br&gt;                     10.15      0.00      0.00     10.15              1/1     Object#profile_me&lt;br&gt;--------------------------------------------------------------------------------&lt;br&gt;                     10.15      0.00      0.00     10.15              1/1     Global#[No method]&lt;br&gt; 100.00%   0.00%     10.15      0.00      0.00     10.15                1     Object#profile_me ((eval):1}  (eval):1&lt;br&gt;                      0.00      0.00      0.00      0.00              1/1     Class#const_missing&lt;br&gt;                     10.15      0.00      0.00     10.15              1/1     &lt;Class::Article(id: integer, name: string, content: string, created_at: datetime, &lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

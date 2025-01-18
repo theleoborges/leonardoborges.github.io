@@ -4,29 +4,16 @@
     <title>Merb on Leonardo Borges</title>
     <link>http://leonardoborges.com/tags/merb/</link>
     <description>Recent content in Merb on Leonardo Borges</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 18 Nov 2008 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://leonardoborges.com/tags/merb/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://leonardoborges.com/tags/merb/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>merb turns 10 and started driving me crazy</title>
       <link>http://leonardoborges.com/writings/2008/11/18/merb-turns-10-and-started-driving-me-crazy/</link>
       <pubDate>Tue, 18 Nov 2008 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2008/11/18/merb-turns-10-and-started-driving-me-crazy/</guid>
-      <description>As you may already know, Merb turned 1.0 a while ago and I decided to resume my studies to learn the framework.
-So I just built a new app with a few resources and fired the migration scripts:
-$ rake db:automigrate
-
-And this is what I got:
-Loading init file from /Users/leo/projects/merb/my-first-app/config/init.rb
-Loading /Users/leo/projects/merb/my-first-app/config/environments/development.rb
-~ Connecting to database...
-/opt/local/lib/ruby/gems/1.8/gems/dm-core-0.9.6/lib/dm-core/adapters/data_objects_adapter.rb:137:in `initialize&#39;: wrong number of arguments (8 for 1) (ArgumentError)</description>
+      <description>&lt;p&gt;&#xA;As you may already know, &lt;a href=&#34;http://www.merbivore.com/&#34;&gt;Merb&lt;/a&gt; turned 1.0 a while ago and I decided to resume my studies to learn the framework.&lt;br&gt;&lt;br&gt;So I just built a new app with a few resources and fired the migration scripts:&lt;br&gt;&lt;pre lang=&#34;bash&#34;&gt;&lt;br&gt;$ rake db:automigrate&lt;br&gt;&lt;/pre&gt;&lt;br&gt;&lt;br&gt;And this is what I got:&lt;br&gt;&lt;pre lang=&#34;bash&#34;&gt;&lt;br&gt;Loading init file from /Users/leo/projects/merb/my-first-app/config/init.rb&lt;br&gt;Loading /Users/leo/projects/merb/my-first-app/config/environments/development.rb&lt;br&gt; ~ Connecting to database...&lt;br&gt;/opt/local/lib/ruby/gems/1.8/gems/dm-core-0.9.6/lib/dm-core/adapters/data_objects_adapter.rb:137:in `initialize&#39;: wrong number of arguments (8 for 1) (ArgumentError)&lt;br&gt;&#x9;from /opt/local/lib/ruby/gems/1.8/gems/dm-core-0.9.6/lib/dm-core/adapters/data_objects_adapter.rb:137:in `new&#39;&lt;br&gt;&#x9;from /opt/local/lib/ruby/gems/1.8/gems/dm-core-0.9.6/lib/dm-core/adapters/data_objects_adapter.rb:137:in `normalize_uri&#39;&lt;br&gt;&#x9;from /opt/local/lib/ruby/gems/1.8/gems/dm-core-0.9.6/lib/dm-core/adapters/abstract_adapter.rb:44:in `initialize&#39;&lt;br&gt;&#x9;from /opt/local/lib/ruby/gems/1.8/gems/dm-core-0.9.6/lib/dm-core/adapters/data_objects_adapter.rb:159:in `initialize&#39;&lt;br&gt;&#x9;from /opt/local/lib/ruby/gems/1.8/gems/dm-core-0.9.6/lib/dm-core.rb:157:in `new&#39;&lt;br&gt;&#x9;from /opt/local/lib/ruby/gems/1.8/gems/dm-core-0.9.6/lib/dm-core.rb:157:in `setup&#39;&lt;br&gt;&#x9;from /opt/local/lib/ruby/gems/1.8/gems/merb_datamapper-1.0/lib/merb/orms/data_mapper/connection.rb:44:in `setup_connections&#39;&lt;br&gt;&#x9;from /opt/local/lib/ruby/gems/1.8/gems/merb_datamapper-1.0/lib/merb/orms/data_mapper/connection.rb:27:in `connect&#39;&lt;br&gt;&#x9;from /opt/local/lib/ruby/gems/1.8/gems/merb_datamapper-1.0/lib/merb_datamapper.rb:17:in `run&#39;&lt;br&gt;&#x9;from /opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0/lib/merb-core/bootloader.rb:99:in `run&#39;&lt;br&gt;&#x9;from /opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0/lib/merb-core/server.rb:172:in `bootup&#39;&lt;br&gt;&#x9;from /opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0/lib/merb-core/server.rb:42:in `start&#39;&lt;br&gt;&#x9;from /opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0/lib/merb-core.rb:169:in `start&#39;&lt;br&gt;&#x9;from /opt/local/lib/ruby/gems/1.8/gems/merb-core-1.0/bin/merb:11&lt;br&gt;&#x9;from /opt/local/bin/merb:19:in `load&#39;&lt;br&gt;&#x9;from /opt/local/bin/merb:19&lt;br&gt;&lt;/pre&gt;&lt;br&gt;&lt;br&gt;Lovely, isn&#39;t it?  &lt;br&gt;After a fair amount of googling around it turns out that there seems to be a problem with the URI parser &lt;a href=&#34;http://www.merbivore.com/&#34;&gt;Merb&lt;/a&gt; uses underneath, called &lt;a href=&#34;http://addressable.rubyforge.org/&#34;&gt;Addressable&lt;/a&gt;.&lt;br&gt;&lt;br&gt;As of the installation of Merb 1.0, the installed version of this library was 2.0.0.&lt;br&gt;The solution? Install a older Addressable version:&lt;br&gt;&lt;br&gt;&lt;pre lang=&#34;bash&#34;&gt;&lt;br&gt;$ sudo gem uninstall addressable&lt;br&gt;&lt;br&gt;You have requested to uninstall the gem:&lt;br&gt;&#x9;addressable-2.0.0&lt;br&gt;dm-core-0.9.6 depends on [addressable (&gt;= 1.0.4)]&lt;br&gt;data_objects-0.9.6 depends on [addressable (&gt;= 1.0.3)]&lt;br&gt;If you remove this gems, one or more dependencies will not be met.&lt;br&gt;Continue with Uninstall? [Yn]  Y&lt;br&gt;Successfully uninstalled addressable-2.0.0&lt;br&gt;&lt;br&gt;$ sudo gem install addressable -v 1.0.4&lt;br&gt;Successfully installed addressable-1.0.4&lt;br&gt;1 gem installed&lt;br&gt;Installing ri documentation for addressable-1.0.4...&lt;br&gt;Installing RDoc documentation for addressable-1.0.4...&lt;br&gt;&lt;/pre&gt;&lt;br&gt;&lt;br&gt;I haven&#39;t figured out the reason for this issue, so please do share if you know. I&#39;ll be glad to update the post. :)&#xA;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -4,22 +4,16 @@
     <title>Uncategorized on Leonardo Borges</title>
     <link>http://leonardoborges.com/tags/uncategorized/</link>
     <description>Recent content in Uncategorized on Leonardo Borges</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 28 Sep 2010 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://leonardoborges.com/tags/uncategorized/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://leonardoborges.com/tags/uncategorized/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>help stop the ie money drain</title>
       <link>http://leonardoborges.com/writings/2010/09/28/help-stop-the-ie-money-drain/</link>
       <pubDate>Tue, 28 Sep 2010 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2010/09/28/help-stop-the-ie-money-drain/</guid>
-      <description>I&#39;m a big heavy metal fan. And so are most of my friends. As a result I launched RottingNames, a band name generator that will generate the most hilarious, nastiest and nonsense names the metal world is yet to discover - ok, that&#39;s probably a bit of an overstatement but the idea is good.
-However, a friend pointed out the code had a bug when running under - gasp - Internet Explorer.</description>
+      <description>&lt;p&gt;&#xA;I&#39;m a big heavy metal fan. And so are most of my friends. As a result I launched &lt;a title=&#34;RottingNames&#34; href=&#34;http://rottingnames.heroku.com/&#34; target=&#34;_blank&#34;&gt;RottingNames&lt;/a&gt;, a band name generator that will generate the most hilarious, nastiest and nonsense names the metal world is yet to discover - ok, that&#39;s probably a bit of an overstatement but the idea is good.&lt;br&gt;&lt;br&gt;However, a friend pointed out the code had a bug when running under - gasp - Internet Explorer. That didn&#39;t surprise me at all and I didn&#39;t bother to fix it. It&#39;s a small app, it&#39;s for my own - a few other&#39;s - amusement but it did give me the idea about my next micro app.&lt;br&gt;&lt;br&gt;Ever wondered how much time people all around the world are wasting trying to fix nasty IE bugs? How about putting that in numbers and actually seeing how much money is going down the hole? We can&#39;t just drop support - yet. But we can help those poor souls to upgrade to something better.&lt;br&gt;&lt;br&gt;Enter &lt;a title=&#34;The IE Money Drain&#34; href=&#34;http://iemoneydrain.heroku.com/&#34;&gt;The IE Money Drain&lt;/a&gt;. Whenever you waste time working on trying to make IE behave the way it should, go there and log your hours. Share it with your clients and managers. Show them how much time and money could be saved if we were proactively helping users make the move.&lt;br&gt;&lt;br&gt;And don&#39;t forget to tell colleagues, friends, even your grandma! Share the love ;)&#xA;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

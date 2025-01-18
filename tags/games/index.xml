@@ -4,21 +4,16 @@
     <title>Games on Leonardo Borges</title>
     <link>http://leonardoborges.com/tags/games/</link>
     <description>Recent content in Games on Leonardo Borges</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 09 Apr 2010 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://leonardoborges.com/tags/games/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://leonardoborges.com/tags/games/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>fallingdreams my very own tetris clone</title>
       <link>http://leonardoborges.com/writings/2010/04/09/fallingdreams-my-very-own-tetris-clone/</link>
       <pubDate>Fri, 09 Apr 2010 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2010/04/09/fallingdreams-my-very-own-tetris-clone/</guid>
-      <description>This will come as no surprise to my closest friends, but I am a long time game development admirer. Although I&#39;ve never done anything professionally I did spend some time in the past studying this amazingly interesting field - it&#39;s my dark hobby. As hardware evolves and gamers demand more and more reality from their consoles, the game development industry is one of the few that basically didn&#39;t suffer with the latest economic crisis.</description>
+      <description>&lt;p&gt;&#xA;This will come as no surprise to my closest friends, but I am a long time game development admirer.  Although I&#39;ve never done anything professionally I did spend some time in the past studying this amazingly interesting field - it&#39;s my dark hobby. As hardware evolves and gamers demand more and more reality from their consoles, the game development industry is one of the few that basically didn&#39;t suffer with the latest economic crisis.&lt;br&gt;&lt;br&gt;3D games are getting more and more sophisticated to the point that it&#39;s very hard for a single person, or even a small team, to develop something worthwhile - think of all the people you need to develop a game such as &lt;a title=&#34;God of War III on Wikipedia&#34; href=&#34;http://en.wikipedia.org/wiki/God_of_War_III&#34; target=&#34;_blank&#34;&gt;God of War III&lt;/a&gt;: screenwriters, artists, musicians, sound engineers, 3D artists, animators, programmers, level designers, combat designers, actors, voiceovers...&lt;br&gt;&lt;br&gt;So I just wanted to have the experience of writing a full game, end-to-end, and that&#39;s where FallingDreams comes in. To be able to do that in a short amount of time, it had to be something simple and that&#39;s why I chose &lt;a title=&#34;Tetris on Wikipedia&#34; href=&#34;http://en.wikipedia.org/wiki/Tetris&#34;&gt;Tetris&lt;/a&gt;. Although simple, it does share most of the steps common to modern games development. It was a very interesting project to work at and you can grab the result &lt;a title=&#34;FallingDreams binary&#34; href=&#34;http://www.leonardoborges.com/writings/wp-content/uploads/2010/04/fallingdreams.jar&#34;&gt;here&lt;/a&gt;. The source code is also available on my github account, &lt;a title=&#34;FallingDreams on GitHub&#34; href=&#34;http://github.com/leonardoborges/FallingDreams&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;br&gt;&lt;br&gt;&lt;a title=&#34;FallingDreams on GitHub&#34; href=&#34;http://github.com/leonardoborges/FallingDreams&#34; target=&#34;_blank&#34;&gt;FallingDreams&lt;/a&gt; is written in Java (JDK 6) and as such it should work fine on Windows, Linux and Mac OS. I tried to be as loyal as possible to the original Tetris rules, but you might find one thing or two that don&#39;t work as one&#39;d exepct.&lt;br&gt;&lt;br&gt;Enjoy! ;)&lt;br&gt;&lt;br&gt;&lt;strong&gt;&lt;br&gt;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;&lt;em&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; This was my first &#39;full game&#39; and is not intended to be production ready. The code has definitely got room for improvement and it served as my playground where I experimented different design techniques, both game and general software related. And it doesn&#39;t have a single line of tests - crucify me :P &lt;/em&gt;&lt;br&gt;&lt;br&gt;&lt;em&gt;As I said, it&#39;s not supposed to be considered bug free but I&#39;m sure people interested in games development can benefit from the source files. Feel free to fork it as well! It would be cool to see what people would do with it :)&lt;/em&gt;&#xA;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

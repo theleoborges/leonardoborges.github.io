@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>lambdajam on Leonardo Borges</title>
+    <title>Lambdajam on Leonardo Borges</title>
     <link>http://leonardoborges.com/tags/lambdajam/</link>
-    <description>Recent content in lambdajam on Leonardo Borges</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Lambdajam on Leonardo Borges</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 11 Apr 2013 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://leonardoborges.com/tags/lambdajam/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://leonardoborges.com/tags/lambdajam/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Functional Programmers Unite! LambdaJam down under</title>
       <link>http://leonardoborges.com/writings/2013/04/11/functional-programmers-unite-lambdajam-down-under/</link>
       <pubDate>Thu, 11 Apr 2013 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2013/04/11/functional-programmers-unite-lambdajam-down-under/</guid>
-      <description>I hinted at LambdaJam Australia back in my 2012 Highlights post and the dates are fast approaching so I thought appropriate to blog about it once more.
-YOW! LambdaJam is a conference targeted at intermediate and advanced functional programmers and is organised in talks, jams and workshops.
- Talks are the traditional format and are 30 minutes long; Workshops aim to introduce a specific subjects to attendees in great detail and are up to two hours long; Jams are hands-on sessions.</description>
+      <description>&lt;p&gt;I hinted at &lt;a href=&#34;http://www.yowconference.com.au/lambdajam/&#34;&gt;LambdaJam Australia&lt;/a&gt; back in my &lt;a href=&#34;http://www.leonardoborges.com/writings/2013/01/02/so-long-2012-year-highlights/&#34;&gt;2012 Highlights post&lt;/a&gt; and the dates are fast approaching so I thought appropriate to blog about it once more.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.yowconference.com.au/lambdajam/&#34;&gt;YOW! LambdaJam&lt;/a&gt; is a conference targeted at intermediate and advanced functional programmers and is organised in talks, jams and workshops.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Talks&lt;/strong&gt; are the traditional format and are 30 minutes long;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Workshops&lt;/strong&gt; aim to introduce a specific subjects to attendees in great detail and are up to two hours long;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Jams&lt;/strong&gt; are hands-on sessions. Participants will be guided through pre-defined problems around a given subject/technology and encouraged to work through the solutions either by themselves or ideally as small groups. Jams are also 2 hours long;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Sounds pretty amazing, doesn&amp;rsquo;t it?&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

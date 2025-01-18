@@ -1,90 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>haskell on Leonardo Borges</title>
+    <title>Haskell on Leonardo Borges</title>
     <link>http://leonardoborges.com/tags/haskell/</link>
-    <description>Recent content in haskell on Leonardo Borges</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Haskell on Leonardo Borges</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 25 Sep 2013 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://leonardoborges.com/tags/haskell/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://leonardoborges.com/tags/haskell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CUFP/ICFP 2013</title>
       <link>http://leonardoborges.com/writings/2013/09/25/cufp-slash-icfp-2013/</link>
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2013/09/25/cufp-slash-icfp-2013/</guid>
-      <description>I&amp;rsquo;m sitting in the Lobby of the Hilton in Boston and since my flight back to Australia isn&amp;rsquo;t for a few hours I thought I&amp;rsquo;d write my experience report while everything is still fresh in my mind.
-  CUFP - Commercial Users of Functional Programming - is a Workshop-like conference targeting the practically-minded functional programming community.
-As it&amp;rsquo;s stated on their website, &amp;ldquo;The CUFP workshop is a place where people can see how others are using functional programming to solve real world problems […]&amp;quot;.</description>
+      <description>&lt;p&gt;I&amp;rsquo;m sitting in the Lobby of the Hilton in Boston and since my flight back to Australia isn&amp;rsquo;t for a few hours I thought I&amp;rsquo;d write my experience report while everything is still fresh in my mind.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://leonardoborges.com/images/cufp2013-badge.jpg&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;&lt;a href=&#34;http://cufp.org/&#34;&gt;CUFP - Commercial Users of Functional Programming -&lt;/a&gt; is a Workshop-like conference targeting the practically-minded functional programming community.&lt;/p&gt;&#xA;&lt;p&gt;As it&amp;rsquo;s stated on their website, &lt;em&gt;&amp;ldquo;The CUFP workshop is a place where people can see how others are using functional programming to solve real world problems […]&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>clojure and why calculating is better than scheming</title>
       <link>http://leonardoborges.com/writings/2013/03/25/clojure-and-why-calculating-is-better-than-scheming/</link>
       <pubDate>Mon, 25 Mar 2013 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2013/03/25/clojure-and-why-calculating-is-better-than-scheming/</guid>
-      <description>Last week while attending Clojure/West in Portland I came across a paper called Why calculating is better than scheming. In a nutshell, this paper is a critique to Abelson and Sussman&amp;lsquo;s classic textbook SICP - Structure and Interpretation of Computer Programs, used by MIT for many years to teach their introductory programming course.
-If you haven&amp;rsquo;t read SICP, you should. It&amp;rsquo;s an amazing book. It uses Scheme, a dialect of Lisp, as the vehicle to present fundamental programming concepts.</description>
+      <description>&lt;p&gt;Last week while attending &lt;a href=&#34;http://clojurewest.org&#34;&gt;Clojure/West&lt;/a&gt; in Portland I came across a paper called &lt;a href=&#34;http://www.cs.kent.ac.uk/people/staff/dat/miranda/wadler87.pdf&#34;&gt;Why calculating is better than scheming&lt;/a&gt;. In a nutshell, this paper is a critique to &lt;a href=&#34;http://en.wikipedia.org/wiki/Hal_Abelson&#34;&gt;Abelson&lt;/a&gt; and &lt;a href=&#34;http://en.wikipedia.org/wiki/Gerald_Jay_Sussman&#34;&gt;Sussman&lt;/a&gt;&amp;rsquo;s classic textbook &lt;a href=&#34;http://mitpress.mit.edu/sicp/&#34;&gt;SICP - Structure and Interpretation of Computer Programs&lt;/a&gt;,&#xA;used by MIT for many years to teach their introductory programming course.&lt;/p&gt;&#xA;&lt;p&gt;If you haven&amp;rsquo;t read &lt;a href=&#34;http://mitpress.mit.edu/sicp/&#34;&gt;SICP&lt;/a&gt;, you should. It&amp;rsquo;s an amazing book. It uses &lt;a href=&#34;http://en.wikipedia.org/wiki/Scheme_(programming_language)&#34;&gt;Scheme&lt;/a&gt;, a dialect of Lisp, as the vehicle to present fundamental programming concepts.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Monads in small bites - Part IV - Monads</title>
       <link>http://leonardoborges.com/writings/2012/12/08/monads-in-small-bites-part-iv-monads/</link>
       <pubDate>Sat, 08 Dec 2012 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2012/12/08/monads-in-small-bites-part-iv-monads/</guid>
-      <description>This is Part IV of my Monads tutorial. Make sure you read the previous parts:
-  Part I - Functors
-  Part II - Applicative Functors
-  Part III - Monoids
-  Part IV - Monads (this post)
-  A quick recap In Part I we learned about Functors, which are things that can be mapped over using a normal function - fmap is used for that.</description>
+      <description>&lt;p&gt;This is Part IV of my Monads tutorial. Make sure you read the previous parts:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://leonardoborges.com/2012/11/30/monads-in-small-bites-part-i-functors/&#34;&gt;Part I   - Functors&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://leonardoborges.com/2012/12/02/monads-in-small-bites-part-ii-applicative-functors/&#34;&gt;Part II  - Applicative Functors&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://leonardoborges.com/2012/12/05/monads-in-small-bites-part-iii-monoids/&#34;&gt;Part III - Monoids&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Part IV  - Monads (this post)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;a-quick-recap&#34;&gt;A quick recap&lt;/h3&gt;&#xA;&lt;p&gt;In &lt;a href=&#34;http://leonardoborges.com/2012/11/30/monads-in-small-bites-part-i-functors/&#34;&gt;Part I&lt;/a&gt; we learned about &lt;em&gt;Functors&lt;/em&gt;, which are things that can be mapped over using a normal function - &lt;code&gt;fmap&lt;/code&gt; is used for that.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://leonardoborges.com/2012/12/02/monads-in-small-bites-part-ii-applicative-functors/&#34;&gt;Part II&lt;/a&gt; tought us that when our Functors themselves contain functions and we want them applied to the values contained in other Functors, &lt;em&gt;Applicatives&lt;/em&gt; come to the rescue - and bring theirs friends &lt;code&gt;pure&lt;/code&gt; and &lt;code&gt;&amp;lt;*&amp;gt;&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Monads in small bites - Part III - Monoids</title>
       <link>http://leonardoborges.com/writings/2012/12/05/monads-in-small-bites-part-iii-monoids/</link>
       <pubDate>Wed, 05 Dec 2012 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2012/12/05/monads-in-small-bites-part-iii-monoids/</guid>
-      <description>This is Part III of my Monads tutorial. Make sure you read the previous parts:
-  Part I - Functors
-  Part II - Applicative Functors
-  Part III - Monoids (this post)
-  Part IV - Monads
-  Monoids Simply put, Monoids describe types containing a binary function and an identity value.
-When applied to the identity value and a random value x, said function leaves its argument x untouched, returning it as a result.</description>
+      <description>&lt;p&gt;This is Part III of my Monads tutorial. Make sure you read the previous parts:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://leonardoborges.com/2012/11/30/monads-in-small-bites-part-i-functors/&#34;&gt;Part I   - Functors&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://leonardoborges.com/2012/12/02/monads-in-small-bites-part-ii-applicative-functors/&#34;&gt;Part II  - Applicative Functors&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Part III - Monoids (this post)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://leonardoborges.com/2012/12/08/monads-in-small-bites-part-iv-monads/&#34;&gt;Part IV  - Monads&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;monoids&#34;&gt;Monoids&lt;/h3&gt;&#xA;&lt;p&gt;Simply put, Monoids describe types containing a &lt;a href=&#34;http://en.wikipedia.org/wiki/Binary_function&#34;&gt;binary function&lt;/a&gt; and an identity value.&lt;/p&gt;&#xA;&lt;p&gt;When applied to the identity value and a random value &lt;code&gt;x&lt;/code&gt;, said function leaves its argument &lt;code&gt;x&lt;/code&gt; &lt;em&gt;untouched&lt;/em&gt;, returning it as a result.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Monads in small bites - Part II - Applicative Functors</title>
       <link>http://leonardoborges.com/writings/2012/12/02/monads-in-small-bites-part-ii-applicative-functors/</link>
       <pubDate>Sun, 02 Dec 2012 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2012/12/02/monads-in-small-bites-part-ii-applicative-functors/</guid>
-      <description>This is Part II of my Monads tutorial. Make sure you read the previous parts:
-  Part I - Functors
-  Part II - Applicative Functors (this post)
-  Part III - Monoids
-  Part IV - Monads
-  Applicative Functors In Part I I talked a little about Haskell type signatures and introduced Functors, which provide a way to map standard functions over values which are wrapped inside a Functor - we used fmap for that.</description>
+      <description>&lt;p&gt;This is Part II of my Monads tutorial. Make sure you read the previous parts:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://leonardoborges.com/2012/11/30/monads-in-small-bites-part-i-functors/&#34;&gt;Part I   - Functors&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Part II  - Applicative Functors (this post)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://leonardoborges.com/2012/12/05/monads-in-small-bites-part-iii-monoids/&#34;&gt;Part III - Monoids&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://leonardoborges.com/2012/12/08/monads-in-small-bites-part-iv-monads/&#34;&gt;Part IV  - Monads&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;applicative-functors&#34;&gt;Applicative Functors&lt;/h3&gt;&#xA;&lt;p&gt;In &lt;a href=&#34;http://leonardoborges.com/2012/11/30/monads-in-small-bites-part-i-functors/&#34;&gt;Part I&lt;/a&gt; I talked a little about Haskell type signatures and introduced Functors, which provide a way to map standard functions over values which are &lt;em&gt;wrapped&lt;/em&gt; inside a Functor - we used &lt;code&gt;fmap&lt;/code&gt; for that. You might want to &lt;a href=&#34;http://leonardoborges.com/2012/11/30/monads-in-small-bites-part-i-functors/&#34;&gt;skim through it&lt;/a&gt; again as a refresher.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Monads in small bites - Part I - Functors</title>
       <link>http://leonardoborges.com/writings/2012/11/30/monads-in-small-bites-part-i-functors/</link>
       <pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2012/11/30/monads-in-small-bites-part-i-functors/</guid>
-      <description>Today I join the already bloated group of people who wrote monad tutorials. It&amp;rsquo;s a bit of a ritual, really.
-Different than most tutorials though I aim to take a different approach. The good news is that I won&amp;rsquo;t be comparing monads to burritos :)
-People say one needs to have his/her own epiphany in order to understand Monads and reading explanations from others is of little help. My goal is to disprove that.</description>
+      <description>&lt;p&gt;Today I join the already bloated group of people who wrote monad tutorials. It&amp;rsquo;s a bit of a ritual, really.&lt;/p&gt;&#xA;&lt;p&gt;Different than most tutorials though I aim to take a different approach. The good news is that I won&amp;rsquo;t be comparing monads to burritos :)&lt;/p&gt;&#xA;&lt;p&gt;People say one needs to have his/her own epiphany in order to understand Monads and reading explanations from others is of little help. My goal is to disprove that.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

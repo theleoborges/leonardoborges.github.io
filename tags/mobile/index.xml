@@ -1,27 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>mobile on Leonardo Borges</title>
+    <title>Mobile on Leonardo Borges</title>
     <link>http://leonardoborges.com/tags/mobile/</link>
-    <description>Recent content in mobile on Leonardo Borges</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Mobile on Leonardo Borges</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 05 Nov 2012 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://leonardoborges.com/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://leonardoborges.com/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>This is what we built in 24 hours</title>
       <link>http://leonardoborges.com/writings/2012/11/05/this-is-was-we-built-in-24-hours/</link>
       <pubDate>Mon, 05 Nov 2012 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2012/11/05/this-is-was-we-built-in-24-hours/</guid>
-      <description>Last week our current client - ninemsn - ran the 3rd edition of their HackDay.
-It&amp;rsquo;s akin to Atlassian&amp;rsquo;s ShipIt days so if you&amp;rsquo;re not familiar with the concept, you should check their page but here&amp;rsquo;s the gist:
-  We&amp;rsquo;re given 24 hours to work on whatever we like as long as it&amp;rsquo;s related somehow to the business
-  We&amp;rsquo;re also free to use any technology we want</description>
+      <description>&lt;p&gt;Last week our current client - &lt;a href=&#34;http://ninemsn.com.au/&#34;&gt;ninemsn&lt;/a&gt; - ran the 3rd edition of their HackDay.&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s akin to Atlassian&amp;rsquo;s &lt;a href=&#34;http://www.atlassian.com/shipit-day&#34;&gt;ShipIt&lt;/a&gt; days so if you&amp;rsquo;re not familiar with the concept, you should check their page but here&amp;rsquo;s the gist:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;We&amp;rsquo;re given 24 hours to work on whatever we like as long as it&amp;rsquo;s related somehow to the business&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;We&amp;rsquo;re also free to use any technology we want&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The team consisted of &lt;a href=&#34;https://twitter.com/romainprieto&#34;&gt;@romainprieto&lt;/a&gt;, Pranav Raja, &lt;a href=&#34;https://twitter.com/thepaddedcell&#34;&gt;@thepaddedcell&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/stewgleadow&#34;&gt;@stewgleadow&lt;/a&gt; and myself (&lt;a href=&#34;https://twitter.com/leonardo_borges&#34;&gt;@leonardo_borges&lt;/a&gt;).&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

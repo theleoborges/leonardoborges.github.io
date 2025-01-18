@@ -4,24 +4,16 @@
     <title>CodingDojo on Leonardo Borges</title>
     <link>http://leonardoborges.com/tags/codingdojo/</link>
     <description>Recent content in CodingDojo on Leonardo Borges</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Jun 2009 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://leonardoborges.com/tags/codingdojo/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://leonardoborges.com/tags/codingdojo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>coding dojo 1 the fun begins</title>
       <link>http://leonardoborges.com/writings/2009/06/06/coding-dojo-1-the-fun-begins/</link>
       <pubDate>Sat, 06 Jun 2009 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2009/06/06/coding-dojo-1-the-fun-begins/</guid>
-      <description>Yesterday I organized our first CodingDojo here at the company and I&#39;m glad to say it was a great success!
-The problem chosen was the Karate Chop, from Dave Thomas&#39; Code Kata.
-As it was also my first time organizing a Dojo, we took some time to get things straight, explain everyone the rules and start coding. Nothing that would compromise the experience, though.
-The rules were basically the ones of a RandoriKata and as a mechanism for switching pairs we chose the TimeBox with a limit of 5 minutes.</description>
+      <description>&lt;p&gt;&#xA;Yesterday I organized our first &lt;a href=&#34;http://codingdojo.org&#34; target=&#34;_blank&#34;&gt;CodingDojo&lt;/a&gt; here at the company and I&#39;m glad to say it was a great success!&lt;br&gt;The problem chosen was the &lt;a href=&#34;http://codekata.pragprog.com/2007/01/kata_two_karate.html&#34; target=&#34;_blank&#34;&gt;Karate Chop&lt;/a&gt;, from Dave Thomas&#39; &lt;a href=&#34;http://codekata.pragprog.com/&#34; target=&#34;_blank&#34;&gt;Code Kata&lt;/a&gt;.&lt;br&gt;&lt;br&gt;As it was also my first time organizing a Dojo, we took some time to get things straight, explain everyone the rules and start coding. Nothing that would compromise the experience, though.&lt;br&gt;&lt;br&gt;The rules were basically the ones of a &lt;a href=&#34;http://codingdojo.org/cgi-bin/wiki.pl?back=RandoriKata&#34; target=&#34;_blank&#34;&gt;RandoriKata&lt;/a&gt; and as a mechanism for switching pairs we chose the &lt;a href=&#34;http://codingdojo.org/cgi-bin/wiki.pl?back=TimeBox&#34; target=&#34;_blank&#34;&gt;TimeBox&lt;/a&gt; with a limit of 5 minutes.&lt;br&gt;&lt;br&gt;We came up with 3 different solutions in about 1h 30min. The 1st one looking like crap! :)&lt;br&gt;&lt;br&gt;Which was actually interesting because the general feeling before we started was that it would be boring, or too easy since &#34;everyone&#34; knows what a binary chop/search is.&lt;br&gt;Wrong!!! It all changes when you have a time limit and a bunch of people behind you doing funny noises! It&#39;s a pressure different from your day to day job. A healthy one in my opinion.&lt;br&gt;&lt;br&gt;Hearing the feedback afterwards was rewarding. Everyone seemed to have had a lot of fun and can&#39;t wait for the next one.&lt;br&gt;&lt;br&gt;I guess the most important lesson we got from it was to be quiet and not bother the current pair when we do not agree with their idea - not even if we do. This one is very important as it both shows respect and allows you to learn from how your colleagues think.&lt;br&gt;&lt;br&gt;Next thursday we&#39;ll keep going with this one and hopefully finish and pick up the next problem! :)&#xA;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

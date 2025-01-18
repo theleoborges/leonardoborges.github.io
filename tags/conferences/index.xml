@@ -1,207 +1,131 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>conferences on Leonardo Borges</title>
+    <title>Conferences on Leonardo Borges</title>
     <link>http://leonardoborges.com/tags/conferences/</link>
-    <description>Recent content in conferences on Leonardo Borges</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Conferences on Leonardo Borges</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Feb 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://leonardoborges.com/tags/conferences/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://leonardoborges.com/tags/conferences/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Highlights of the Symposium on Blockchain and Distributed Ledger Technology - Day 1</title>
       <link>http://leonardoborges.com/writings/2018/02/19/highlights-of-the-symposium-on-blockchain-and-distributed-ledger-technology-day-1/</link>
       <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2018/02/19/highlights-of-the-symposium-on-blockchain-and-distributed-ledger-technology-day-1/</guid>
-      <description>Early last week I had the chance to attend the Symposium on Blockchain and Distributed Ledger Technology organised by UNSW. I wasn&amp;rsquo;t aware that UNSW was so heavily involved in the community until this event and have since learned about their interest group which has been going on for a while.
-The talks had a healthy mix of research and industry case studies with subjects ranging from the technical challenges of current blockchain implementations to the legal implications of distributed ledger technology.</description>
+      <description>&lt;p&gt;Early last week I had the chance to attend the &lt;a href=&#34;http://blockchain.unsw.edu.au/symposium18/HTML/index.html&#34;&gt;Symposium on Blockchain and Distributed Ledger Technology&lt;/a&gt; organised by UNSW. I wasn&amp;rsquo;t aware that UNSW was so heavily involved in the community until this event and have since learned about their &lt;a href=&#34;http://blockchain.unsw.edu.au/&#34;&gt;interest group&lt;/a&gt; which has been going on for a while.&lt;/p&gt;&#xA;&lt;p&gt;The talks had a healthy mix of research and industry case studies with subjects ranging from the technical challenges of current blockchain implementations to the legal implications of distributed ledger technology.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Highlights of the Symposium on Blockchain and Distributed Ledger Technology - Day 2</title>
       <link>http://leonardoborges.com/writings/2018/02/19/highlights-of-the-symposium-on-blockchain-and-distributed-ledger-technology-day-2/</link>
       <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2018/02/19/highlights-of-the-symposium-on-blockchain-and-distributed-ledger-technology-day-2/</guid>
-      <description>If you haven&amp;rsquo;t yet, make sure you read my summary of Day 1 first.
-Morning Panel Day 2 started with a morning panel with:
- Paul Fox from Blockchain.capital Leon Gerard Vandenberg from RightsFusion Pty Ltd &amp;amp; Solara Oliver Harvey from ASIC Ross Buckley from UNSW Law  The panelists took turns in giving their views around blockchain, investments and regulation, leading into a Q&amp;amp;A at the end. I was running late to this session and believe I may have missed Ross&amp;rsquo; individual slot.</description>
+      <description>&lt;p&gt;If you haven&amp;rsquo;t yet, make sure you read my &lt;a href=&#34;http://leonardoborges.com/2018/02/19/highlights-of-the-symposium-on-blockchain-and-distributed-ledger-technology-day-1/&#34;&gt;summary of Day 1&lt;/a&gt; first.&lt;/p&gt;&#xA;&lt;h2 id=&#34;morning-panel&#34;&gt;Morning Panel&lt;/h2&gt;&#xA;&lt;p&gt;Day 2 started with a morning panel with:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Paul Fox from &lt;a href=&#34;http://www.blockchainpacific.capital/team/&#34;&gt;Blockchain.capital&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Leon Gerard Vandenberg from RightsFusion Pty Ltd &amp;amp; &lt;a href=&#34;http://www.solara.io/&#34;&gt;Solara&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Oliver Harvey from &lt;a href=&#34;http://asic.gov.au/about-asic/what-we-do/our-structure/asic-senior-executives/asic-senior-executives-biographies/&#34;&gt;ASIC&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Ross Buckley from &lt;a href=&#34;http://www.law.unsw.edu.au/profile/ross-buckley&#34;&gt;UNSW Law&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The panelists took turns in giving their views around blockchain, investments and regulation, leading into a Q&amp;amp;A at the end. I was running late to this session and believe I may have missed Ross&amp;rsquo; individual slot.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>EuroClojure 2014 and announcing my book</title>
       <link>http://leonardoborges.com/writings/2014/07/20/euroclojure-2014-and-clojure-reactive-programming/</link>
       <pubDate>Sun, 20 Jul 2014 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2014/07/20/euroclojure-2014-and-clojure-reactive-programming/</guid>
-      <description>A bit late for a EuroClojure 2014 post but I suppose &amp;ldquo;better late than never&amp;rdquo; applies here.
-The best part of every conference is the networking. Meeting new and interesting people is priceless and I did plenty of that - mostly over Polish beer and food. Polish beer isn&amp;rsquo;t the greatest but if you must have it, better stick to Żywiec. It&amp;rsquo;s widely available and was the one which didn&amp;rsquo;t give me a headache :) - I&amp;rsquo;ve been told there are amazing microbreweries though I didn&amp;rsquo;t get a chance to try any while in Krákow.</description>
+      <description>&lt;p&gt;A bit late for a EuroClojure 2014 post but I suppose &amp;ldquo;better late than never&amp;rdquo; applies here.&lt;/p&gt;&#xA;&lt;p&gt;The best part of every conference is the networking. Meeting new and interesting people is priceless and I did plenty of that - mostly over Polish beer and food. Polish beer isn&amp;rsquo;t the greatest but if you must have it, better stick to Żywiec. It&amp;rsquo;s widely available and was the one which didn&amp;rsquo;t give me a headache :) - I&amp;rsquo;ve been told there are amazing microbreweries though I didn&amp;rsquo;t get a chance to try any while in Krákow.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Functional Programmers Unite! LambdaJam down under</title>
       <link>http://leonardoborges.com/writings/2013/04/11/functional-programmers-unite-lambdajam-down-under/</link>
       <pubDate>Thu, 11 Apr 2013 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2013/04/11/functional-programmers-unite-lambdajam-down-under/</guid>
-      <description>I hinted at LambdaJam Australia back in my 2012 Highlights post and the dates are fast approaching so I thought appropriate to blog about it once more.
-YOW! LambdaJam is a conference targeted at intermediate and advanced functional programmers and is organised in talks, jams and workshops.
- Talks are the traditional format and are 30 minutes long; Workshops aim to introduce a specific subjects to attendees in great detail and are up to two hours long; Jams are hands-on sessions.</description>
+      <description>&lt;p&gt;I hinted at &lt;a href=&#34;http://www.yowconference.com.au/lambdajam/&#34;&gt;LambdaJam Australia&lt;/a&gt; back in my &lt;a href=&#34;http://www.leonardoborges.com/writings/2013/01/02/so-long-2012-year-highlights/&#34;&gt;2012 Highlights post&lt;/a&gt; and the dates are fast approaching so I thought appropriate to blog about it once more.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.yowconference.com.au/lambdajam/&#34;&gt;YOW! LambdaJam&lt;/a&gt; is a conference targeted at intermediate and advanced functional programmers and is organised in talks, jams and workshops.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Talks&lt;/strong&gt; are the traditional format and are 30 minutes long;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Workshops&lt;/strong&gt; aim to introduce a specific subjects to attendees in great detail and are up to two hours long;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Jams&lt;/strong&gt; are hands-on sessions. Participants will be guided through pre-defined problems around a given subject/technology and encouraged to work through the solutions either by themselves or ideally as small groups. Jams are also 2 hours long;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Sounds pretty amazing, doesn&amp;rsquo;t it?&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>RubyConf Brazil 2011</title>
       <link>http://leonardoborges.com/writings/2011/11/10/rubyconf-brazil-2011/</link>
       <pubDate>Thu, 10 Nov 2011 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2011/11/10/rubyconf-brazil-2011/</guid>
-      <description>I was in São Paulo last week - the 3rd and 4th of November - for RubyConf Brazil. For those who don&amp;rsquo;t know, RubyConf Brazil is the evolution of Rails Summit Latin America, where I had the privilege to speak in 2009.
-This year though, all bets were off. Fabio Akita and Locaweb put together a great event, with over 700 attendees and about 30 speakers split in two streams and two awesome days.</description>
+      <description>&lt;figure&gt;&lt;img src=&#34;http://leonardoborges.com/images/rubyconfBR2011-speakers.jpg&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;I was in São Paulo last week - the 3rd and 4th of November - for &lt;a href=&#34;http://rubyconf.com.br&#34;&gt;RubyConf Brazil&lt;/a&gt;. For those who don&amp;rsquo;t know, RubyConf Brazil is the evolution of Rails Summit Latin America, where &lt;a href=&#34;http://www.leonardoborges.com/writings/2009/10/18/my-slides-from-rails-summit-09/&#34;&gt;I had the privilege to speak in 2009&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;This year though, all bets were off. &lt;a href=&#34;http://akitaonrails.com&#34;&gt;Fabio Akita&lt;/a&gt; and &lt;a href=&#34;http://www.locaweb.com/&#34;&gt;Locaweb&lt;/a&gt; put together a great event, with over 700 attendees and about 30 speakers split in two streams and two awesome days.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>my slides from rails summit 09</title>
       <link>http://leonardoborges.com/writings/2009/10/18/my-slides-from-rails-summit-09/</link>
       <pubDate>Sun, 18 Oct 2009 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2009/10/18/my-slides-from-rails-summit-09/</guid>
-      <description>{% img /assets/images/rs2009.jpg %}
-Rails Summit finished a few days ago and I have only one word to describe it: Awesome!
-I met some really cool people, discussed a whole bunch of technical subjects and managed not to get so nervous in my first presentation ever - I&#39;m not counting internal presentations I&#39;ve done for my team...
-My slides and source files can be found here. Feel free to contact me with questions if you got any.</description>
+      <description>&lt;p&gt;&#xA;&lt;a href=&#39;http://leonardoborges.com/assets/images/rs2009.jpg&#39;&gt;{% img /assets/images/rs2009.jpg %}&lt;/a&gt;&lt;br&gt;Rails Summit finished a few days ago and I have only one word to describe it: &lt;strong&gt;Awesome&lt;/strong&gt;!&lt;br&gt;&lt;br&gt;I met some really cool people, discussed a whole bunch of technical subjects and managed not to get so nervous in my first presentation ever - I&#39;m not counting internal presentations I&#39;ve done for my team...&lt;br&gt;&lt;br&gt;My slides and source files can be found &lt;a href=&#34;http://github.com/leonardoborges/railssummit09&#34;&gt;here&lt;/a&gt;. Feel free to contact me with questions if you got any.&#xA;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>rails summit 2009 im speaking</title>
       <link>http://leonardoborges.com/writings/2009/09/03/rails-summit-2009-im-speaking/</link>
       <pubDate>Thu, 03 Sep 2009 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2009/09/03/rails-summit-2009-im-speaking/</guid>
-      <description>I&#39;ll be speaking at this year&#39;s Rails Summit Latin America in Sao Paulo, Brazil. It will be a good opportunity to meet some amazing people and visit friends back home! :)
-Overall I&#39;ll be spending 12 days in Brazil, with 2 of them dedicated to the conference. The other 10 I&#39;ll be in Rio de Janeiro visiting my family and friends. I strongly advise you to spend some time in Rio too, if at all possible.</description>
+      <description>&lt;p&gt;&#xA;&lt;a href=&#34;http://www.railssummit.com.br?utm_campaign=Railssummit&amp;amp;utm_source=banner_parceiros&amp;amp;utm_medium=banner&amp;amp;utm_content=en_souPalestrante_210x60&#34;&gt;&lt;img src=&#34;http://railssummit.com.br/images/banners/en_souPalestrante_210x60.jpg&#34; alt=&#34;Rails Summit 2009&#34; /&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;I&#39;ll be speaking at this year&#39;s &lt;a href=&#34;http://railssummit.com.br/en/pages/home&#34; target=&#34;_blank&#34;&gt;Rails Summit Latin America&lt;/a&gt; in Sao Paulo, Brazil. It will be a good opportunity to meet some &lt;a href=&#34;http://railssummit.com.br/en/speakers&#34;&gt;amazing people&lt;/a&gt; and visit friends back home! :)&lt;br&gt;&lt;br&gt;Overall I&#39;ll be spending 12 days in Brazil, with 2 of them dedicated to the conference. The other 10 I&#39;ll be in Rio de Janeiro visiting my family and friends. I strongly advise you to spend some time in Rio too, if at all possible. It&#39;s an amazing city and you can contact me if you have any questions.&lt;br&gt;&lt;br&gt;Back to the conference, my session is called &lt;strong&gt;JRuby in the enterprise world: Using Rails with legacy code&lt;/strong&gt;, and will be given in the form of a tutorial. I will walk you through some problems we had while making this kind of integration at my company, focusing mostly on dependency management.&lt;br&gt;&lt;br&gt;At the end I hope you&#39;ll have a good understanding of what JRuby is capable of in a legacy environment.&lt;br&gt;&lt;br&gt;If you&#39;re planning to attend and would like to hear anything specific about JRuby, please let me know, I can try and squeeze in.&lt;br&gt;&lt;br&gt;C u there!&#xA;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>railswaycon jruby internals by ola bini</title>
       <link>http://leonardoborges.com/writings/2009/05/29/railswaycon-jruby-internals-by-ola-bini/</link>
       <pubDate>Fri, 29 May 2009 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2009/05/29/railswaycon-jruby-internals-by-ola-bini/</guid>
-      <description>As always I expected a good talk from Ola and once more he delivered it. But this one was different. It might have been even boring to some ruby developers since we saw a fair amount of java code in this presentation. Ola gave us a tour through the main classes that make JRuby possible with a single purpose: so we can check out the code and hack ourselves. You can download his slides here.</description>
+      <description>&lt;p&gt;&#xA;As always I expected a good talk from Ola and once more he delivered it. But this one was different. It might have been even boring to some ruby developers since we saw a fair amount of java code in this presentation. Ola gave us a tour through the main classes that make JRuby possible with a single purpose: so we can check out the code and hack ourselves. You can download his slides &lt;a href=&#34;http://olabini.com/presentations/JRubyInternals.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;br&gt;&lt;br&gt;If you&#39;ve been following both JRuby and Ola Bini for the past year or so, you&#39;ve noticed the trend and evolution of this alternative - and so far the most complete one - implementation of the ruby language. Specially at conferences.&lt;br&gt;&lt;br&gt;Last year at QCon London, Ola was also talking about JRuby. At Euruko &#39;08, in Prague, &lt;a href=&#34;http://blog.headius.com/&#34; target=&#34;_blank&#34;&gt;Charles Nutter&lt;/a&gt; also talked about it. RailsConf in Berlin also had its share. What all these talks had in common is that they talked about JRuby from a user/developer point of view. They were selling the solution. Convincing people to use it and presenting successful use cases.&lt;br&gt;&lt;br&gt;And as the trend goes on, JRuby is now faced as a true alternative - one that we, btw, believe here at the company as we&#39;re &lt;strong&gt;actively using it&lt;/strong&gt; - and it seems that now the call is for help. Help to make JRuby an even more complete and overall better ruby implementation. Charles&#39; &lt;a href=&#34;http://blog.headius.com/2009/05/help-jruby-by-fixing-rubyspecs.html&#34;&gt;call for help&lt;/a&gt; was a great step. As he states, it&#39;s a good way to get your feet wet. I answered the call and am hacking JRuby myself, having already submitted a couple of patches. Perhaps this was the reason for which I enjoyed the talk the  most. I was already familiar with some of the structure and classes in JRuby.&lt;br&gt;&lt;br&gt;There were 2 more talks about JRuby: &lt;strong&gt;The Pleasure and Pain of Migrating to jRuby&lt;/strong&gt;, by &lt;a href=&#34;http://twitter.com/stevenbristol&#34; target=&#34;_blank&#34;&gt;Steven Bristol&lt;/a&gt; and &lt;strong&gt;Integrating Enterprise Java with JRuby and Rails&lt;/strong&gt;, &lt;a href=&#34;http://twitter.com/malagant&#34; target=&#34;_blank&#34;&gt;Michael Johann&lt;/a&gt;. Unfortunately only the first one was a real case experience, where Steven walked through the problems he faced integrating JRuby with an existing java project. Interesting insights.&lt;br&gt;&lt;br&gt;Michael Johann basically presented a short tutorial on how to integrate rails with EJB3 which, albeit interesting, failed to address issues faced on real life projects, like dependency management. Issues which we have already addressed in a very cool way here and I plan to share it soon. Still deciding how though...&#xA;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>qcon london 09</title>
       <link>http://leonardoborges.com/writings/2009/03/09/qcon-london-09/</link>
       <pubDate>Mon, 09 Mar 2009 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2009/03/09/qcon-london-09/</guid>
-      <description> Tomorrow I&#39;ll be once more heading London for this year&#39;s QCon.
-As usual, the schedule looks amazing and I&#39;ll try to keep you all posted about what&#39;s going on there.
-Oh and if any of you guys is going and wanna meet up for a geek talk and a couple of beers, just send me a message.
-Cheers! :) </description>
+      <description>&lt;p&gt;&#xA;Tomorrow I&#39;ll be once more heading London for this year&#39;s &lt;a title=&#34;QCon London 2009&#34; href=&#34;http://qconlondon.com/&#34;&gt;QCon&lt;/a&gt;.&lt;br&gt;&lt;br&gt;As usual, the schedule looks amazing and I&#39;ll try to keep you all posted about what&#39;s going on there.&lt;br&gt;&lt;br&gt;Oh and if any of you guys is going and wanna meet up for a geek talk and a couple of beers, just send me a message.&lt;br&gt;&lt;br&gt;Cheers! :)&#xA;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>railsconf europe 2008 impressions and highlights</title>
       <link>http://leonardoborges.com/writings/2008/09/09/railsconf-europe-2008-impressions-and-highlights/</link>
       <pubDate>Tue, 09 Sep 2008 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2008/09/09/railsconf-europe-2008-impressions-and-highlights/</guid>
-      <description>I&#39;m back in Madrid again after the RailsConf and I think it&#39;s time to say something about it. :)
-First off, the infrastructure provided by the conference was really great. The rooms, WiFi connection, food...Â Really well organized.
-Now to the sessions, highlights:
-Tutorials (Tuesday)
-- Meta-programming Ruby for fun and profit (Neal Ford, Patrick Farley)
-The old and good techniques that made Ruby so powerful. Here Neal and Patrick walked us through the main tricks to meta programming like open classes - and conditionally open them - , dynamically define methods, sending messages to objects and how Ruby can help test your Java code in a much easier way.</description>
+      <description>&lt;p&gt;&#xA;I&#39;m back in Madrid again after the RailsConf and I think it&#39;s time to say something about it. :)&lt;br&gt;&lt;br&gt;First off, the infrastructure provided by the conference was really great. The rooms, WiFi connection, food...Â  Really well organized.&lt;br&gt;&lt;br&gt;Now to the sessions, highlights:&lt;br&gt;&lt;br&gt;&lt;strong&gt;Tutorials (Tuesday)&lt;/strong&gt;&lt;br&gt;- &lt;a href=&#34;http://nealford.com/downloads/Ford-Farley_Meta_programming_ruby-tutorial.pdf&#34;&gt;Meta-programming Ruby for fun and profit&lt;/a&gt; (Neal Ford, Patrick Farley)&lt;br&gt;The old and good techniques that made Ruby so powerful. Here Neal and Patrick walked us through the main tricks to meta programming like open classes - and conditionally open them - , dynamically define methods, sending messages to objects and how Ruby can help test your Java code in a much easier way.&lt;br&gt;&lt;br&gt;I&#39;ve put the link to the slides but honestly I don&#39;t think they&#39;re too much useful without the talking.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Sessions (Wednessday)&lt;/strong&gt;&lt;br&gt;- EC2, MapReduce and Distributed processing (&lt;a href=&#34;http://railspikes.com&#34;&gt;Jonathan Dahl&lt;/a&gt;)&lt;br&gt;Jonathan explained the theory behind &lt;a href=&#34;http://en.wikipedia.org/wiki/Mapreduce&#34;&gt;MapReduce&lt;/a&gt; using very simple ruby examples, providing the basics on how to distribute and paralelize tasks accross multiple machines.&lt;br&gt;&lt;br&gt;He also introduced &lt;a href=&#34;http://hadoop.apache.org/core/&#34;&gt;Hadoop&lt;/a&gt;, a platform built in Java that &#34;lets one easily write and run     applications that process vast amounts of data&#34;. What I liked the most was the simplicity he explained this subject. As of today, his presentation is not available online. Stay tuned as I&#39;m gonna update this post with the links, as soon as they&#39;re available.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Sessions (Thursday)&lt;/strong&gt;&lt;br&gt;- &lt;a href=&#34;http://nealford.com/downloads/conferences/canonical/Neal_Ford-Debugging_and_Testing_the_Web_Tier.zip&#34;&gt;Debugging &amp;amp; Testing the Web Tier&lt;/a&gt; (&lt;a href=&#34;http://nealford.com&#34;&gt;Neal Ford&lt;/a&gt;)&lt;br&gt;If you&#39;ve been concerned about testing your app&#39;s web tier lately, this presentation would probably not show you anything new. Neal talks about the need to debug and test javascript behaviour accross multiple browsers, using tools like &lt;a href=&#34;http://getfirebug.com/&#34;&gt;Firebug&lt;/a&gt;, &lt;a href=&#34;http://www.jsunit.net/&#34;&gt;JSUnit&lt;/a&gt; and &lt;a href=&#34;http://selenium.openqa.org/&#34;&gt;Selenium&lt;/a&gt;. If you have no idea about what these tools are, please stop now and go evaluate them!&lt;br&gt;&lt;br&gt;We are pretty concerned about testing on my actual job, but selenium tests can be a pain sometimes - a.k.a extremely slow. And what ends up happening is that they are forgotten. Developers only run the test suite if it&#39;s not painful and it&#39;s lightning fast. Here&#39;s is where the highlight for this session comes: &lt;a href=&#34;http://www.thefrontside.net/crosscheck&#34;&gt;CrossCheck&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The idea is to be able to test your javascript code accross multiple browsers without the need to launch them. In fact, you don&#39;t even need a browser installed. The negative point is that it&#39;s kinda fallen behind because now you can only test older versions of browsers. But since the project is getting a lot of traction, I&#39;m pretty sure this will be solved soon.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;br&gt;&lt;br&gt;My overall impression of the other sessions I attended is that some speakers just didn&#39;t have time to properly prepare themselves, what made me think this years&#39;s RailsConf wasn&#39;t all that I expected.&lt;br&gt;&lt;br&gt;But I also met interesting people and after all one of the key points in a conference is networking. :)&lt;br&gt;&lt;br&gt;Definitely worth it though. And that&#39;s why I took the time to provide this highlights.&lt;br&gt;&lt;br&gt;c u soon&#xA;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>railsconf europe 2008 heading to berlin</title>
       <link>http://leonardoborges.com/writings/2008/08/30/railsconf-europe-2008-heading-to-berlin/</link>
       <pubDate>Sat, 30 Aug 2008 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2008/08/30/railsconf-europe-2008-heading-to-berlin/</guid>
-      <description> The title says it already.
-On monday I&#39;ll be going to Berlin to attend this yearÂ´s RailsConf.
-This will be my first one and of course my expectations are pretty high!
-As usual, after the conference I&#39;ll try and give a summary of what happened there, providing as much content as I can.
-Anyone else&#39;s going??? :)
-C u there! </description>
+      <description>&lt;p&gt;&#xA;The title says it already.&lt;br&gt;&lt;br&gt;On monday I&#39;ll be going to Berlin to attend this yearÂ´s &lt;a href=&#34;http://en.oreilly.com/railseurope2008/public/content/home&#34;&gt;RailsConf&lt;/a&gt;.&lt;br&gt;&lt;br&gt;This will be my first one and of course my expectations are pretty high!&lt;br&gt;&lt;br&gt;As usual, after the conference I&#39;ll try and give a summary of what happened there, providing as much content as I can.&lt;br&gt;&lt;br&gt;Anyone else&#39;s going??? :)&lt;br&gt;&lt;br&gt;C u there!&#xA;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>the biggest rails event in latin america</title>
       <link>http://leonardoborges.com/writings/2008/08/04/the-biggest-rails-event-in-latin-america/</link>
       <pubDate>Mon, 04 Aug 2008 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2008/08/04/the-biggest-rails-event-in-latin-america/</guid>
-      <description>Behold latin american railers!
-This year we will have the Rails Summit Latin America on October, 15th and 16th, in SÃ£o Paulo, Brazil.
-It&#39;s by far the biggest Rails event we&#39;ve ever had, including many of the speakers that were present at RailsConf.
-FÃ¡bio Akita is also one of the speakers and provides more details on his blog.
-If you&#39;re a assumed rails geek don&#39;t miss the opportunity to hear from the big names and to know a beautiful country like Brazil.</description>
+      <description>&lt;p&gt;&#xA;Behold latin american railers!&lt;br&gt;&lt;br&gt;This year we will have the &lt;a href=&#34;http://www.locaweb.com.br/railssummit/&#34;&gt;Rails Summit Latin America&lt;/a&gt; on October, 15th and 16th, in SÃ£o Paulo, Brazil.&lt;br&gt;&lt;br&gt;It&#39;s by far the biggest Rails event we&#39;ve ever had, including many of the speakers that were present at &lt;a href=&#34;http://en.oreilly.com/rails2008/public/content/home&#34;&gt;RailsConf&lt;/a&gt;.&lt;br&gt;&lt;br&gt;&lt;a href=&#34;http://akitaonrails.com/&#34;&gt;FÃ¡bio Akita&lt;/a&gt; is also one of the speakers and provides more details on his &lt;a href=&#34;http://akitaonrails.com/2008/8/1/largada-para-o-maior-evento-de-rails-da-am-rica-latina&#34;&gt;blog&lt;/a&gt;.&lt;br&gt;&lt;br&gt;If you&#39;re a assumed rails geek don&#39;t miss the opportunity to hear from the big names and to know a beautiful country like Brazil.&lt;br&gt;&lt;br&gt;Oh, btw, if you&#39;re brazilian, like me, you have no excuse to miss this party!&lt;br&gt;&lt;br&gt;Enjoy!!!&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;br&gt;&lt;a href=&#34;http://www.locaweb.com.br/railssummit&#34;&gt;&lt;br&gt;&lt;img src=&#34;http://www.akitaonrails.com/assets/2008/8/1/468x60.gif&#34; alt=&#34;Rails Summit Latin America&#34; title=&#34;Rails Summit Latin America&#34; border=&#34;0&#34; width=&#34;468&#34; height=&#34;60&#34;/&gt;&lt;/a&gt;&#xA;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>euruko 2008 materials available</title>
       <link>http://leonardoborges.com/writings/2008/05/14/euruko-2008-materials-available/</link>
       <pubDate>Wed, 14 May 2008 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2008/05/14/euruko-2008-materials-available/</guid>
-      <description> As some of you know I went to the European Ruby Conf in Prague, this year.
-The event was awesome and it&#39;s good to know they finally made available the majority of the slides, here.
-They also published Matz&#39;s keynote, and more videos from the conference are being edited right now, so stay tuned to their home page!
-Enjoy! </description>
+      <description>&lt;p&gt;&#xA;As some of you know &lt;a href=&#34;http://leonardoborges.com/writings/2008/03/25/euruko-2008-european-rubyconf-prague/&#34;&gt;I went&lt;/a&gt; to the &lt;a href=&#34;http://www.euruko2008.org&#34;&gt;European Ruby Conf in Prague&lt;/a&gt;, this year.&lt;br&gt;&lt;br&gt;The event was awesome and it&#39;s good to know they finally made available the majority of the slides, &lt;a href=&#34;http://www.euruko2008.org/pages/2-program&#34;&gt;here&lt;/a&gt;.&lt;br&gt;&lt;br&gt;They also published &lt;a href=&#34;http://www.avc-cvut.cz/avc.php?id=6830&amp;amp;language=en_US&#34;&gt;Matz&#39;s keynote&lt;/a&gt;, and more videos from the conference are being edited right now, so stay tuned to their home page!&lt;br&gt;&lt;br&gt;Enjoy!&#xA;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>qcon 2008 slides available</title>
       <link>http://leonardoborges.com/writings/2008/04/04/qcon-2008-slides-available/</link>
       <pubDate>Fri, 04 Apr 2008 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2008/04/04/qcon-2008-slides-available/</guid>
-      <description>Most of last QCon&#39;s presentations are available for download here.
-Highlights to Ola Bini&#39;s on JRuby(pdf) and Randy Shoup&#39;s on eBay&#39;s architectural principles(pdf).
-And while we&#39;re talking about JRuby, it&#39;s impressive how it&#39;s becoming a recurrent and big subject. Fast. It had its own small space at big event like QCon and in the last Euruko in Prague, we had a presentation by the JRuby Core Developers Charles Nutter and Thomas Enebo.</description>
+      <description>&lt;p&gt;&#xA;Most of last QCon&#39;s presentations are available for download &lt;a href=&#34;http://jaoo.dk/london-2008/schedule&#34;&gt;here&lt;/a&gt;.&lt;br&gt;&lt;br&gt;Highlights to Ola Bini&#39;s on &lt;a href=&#34;http://jaoo.dk/london-2008/file?path=/qcon-london-2008/slides/OlaBini_JRuby_Power_on_the_JVM.pdf&#34;&gt;JRuby(pdf)&lt;/a&gt; and Randy Shoup&#39;s on  &lt;a href=&#34;http://jaoo.dk/london-2008/file?path=/qcon-london-2008/slides/RandyShoup_eBaysArchitecturalPrinciples.pdf&#34;&gt;eBay&#39;s architectural principles(pdf)&lt;/a&gt;.&lt;br&gt;&lt;br&gt;And while we&#39;re talking about JRuby, it&#39;s impressive how it&#39;s becoming a recurrent and big subject. Fast. It had its own small space at big event like QCon and in the last Euruko in Prague, we had a presentation by the JRuby Core Developers &lt;a href=&#34;http://headius.blogspot.com/&#34;&gt;Charles Nutter&lt;/a&gt; and &lt;a href=&#34;http://www.bloglines.com/blog/ThomasEEnebo&#34;&gt;Thomas Enebo&lt;/a&gt;.&lt;br&gt;&lt;br&gt;Big companies are sponsoring JRuby&#39;s development indirectly or directly, like &lt;a href=&#34;http://www.sun.com&#34;&gt;Sun&lt;/a&gt;. And other big companies are endorsing its production ready state, like &lt;a href=&#34;http://www.oracle.com&#34;&gt;Oracle&lt;/a&gt;, which has a publicly available website developed with JRuby On Rails.&lt;br&gt;&lt;br&gt;It&#39;s past the time to give it a serious try...&#xA;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>euruko 2008 european rubyconf prague</title>
       <link>http://leonardoborges.com/writings/2008/03/25/euruko-2008-european-rubyconf-prague/</link>
       <pubDate>Tue, 25 Mar 2008 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2008/03/25/euruko-2008-european-rubyconf-prague/</guid>
-      <description>On friday I&#39;ll be heading Prague for the European RubyConf.
-Anyone is going? :)
-Almost 300 attendees already registered for the event. And a few very interesting people will be speaking there like Matz and DHH (this one, through skype).
-Besides that, the organization staff is scheduling 2 parties, friday and saturday, for the attendees.
-Networking comes to mind, doesn&#39;t it? I think it will be a great opportunity to meet interesting and bright people.</description>
+      <description>&lt;p&gt;&#xA;On friday I&#39;ll be heading Prague for the &lt;a href=&#34;http://www.euruko2008.org/&#34;&gt;European RubyConf&lt;/a&gt;.&lt;br&gt;&lt;br&gt;Anyone is going? :)&lt;br&gt;&lt;br&gt;Almost 300 attendees already registered for the event. And a few very interesting people will be speaking there like &lt;a href=&#34;http://en.wikipedia.org/wiki/Yukihiro_Matsumoto&#34;&gt;Matz&lt;/a&gt; and &lt;a href=&#34;http://www.loudthinking.com/&#34;&gt;DHH&lt;/a&gt; (this one, through skype).&lt;br&gt;&lt;br&gt;Besides that, the organization staff is scheduling 2 parties, friday and saturday, for the attendees.&lt;br&gt;&lt;br&gt;Networking comes to mind, doesn&#39;t it? I think it will be a great opportunity to meet interesting and bright people.&lt;br&gt;&lt;br&gt;So, see u in Prague!&#xA;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>qcon 2008 domain specific languages</title>
       <link>http://leonardoborges.com/writings/2008/03/10/qcon-2008-domain-specific-languages/</link>
       <pubDate>Mon, 10 Mar 2008 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2008/03/10/qcon-2008-domain-specific-languages/</guid>
-      <description>Today was the first day of the conference and it started with a tutorial about DSL&#39;s with Martin Fowler, Neal Ford and Rebecca Parsons. We also had as attendants Ola Bini, core developer of JRuby, and others. My expectations were pretty high and the presentation didn&#39;t let me down. I&#39;ll try to put here toghether my impressions and some notes I took while I was there.
-Marting Fowler started discussing what DSL&#39;s are and giving some examples that many of us use in our day to day Job.</description>
+      <description>&lt;p&gt;&#xA;Today was the first day of the conference and it started with a tutorial about DSL&#39;s with &lt;a href=&#34;http://www.martinfowler.com&#34;&gt;Martin Fowler&lt;/a&gt;, &lt;a href=&#34;http://www.nealford.com/&#34;&gt;Neal Ford&lt;/a&gt; and Rebecca Parsons. We also had as attendants &lt;a href=&#34;http://ola-bini.blogspot.com/&#34;&gt;Ola Bini&lt;/a&gt;, core developer of JRuby, and others. My expectations were pretty high and the presentation didn&#39;t let me down. I&#39;ll try to put here toghether my impressions and some notes I took while I was there.&lt;br&gt;&lt;br&gt;Marting Fowler started discussing what DSL&#39;s are and giving some examples that many of us use in our day to day Job. Like the XML configuration files in the Java world. It is a kind of DSL, it has it&#39;s own keywords and syntax in order to express some information that will be used , for instance, to configure an underlying framework.&lt;br&gt;&lt;br&gt;The problem with XML is that it becomes hard to see the overall behavior behind it. It&#39;s not very fluent to understand the purpose of an XML file just by looking at it for the first time. There is too much &#34;noise&#34;. Things that get into the way of the readability. - &lt;a href=&#34;http://www.yaml.org/&#34;&gt;YAML&lt;/a&gt; files are an much more readable alternatives to XML.&lt;br&gt;&lt;br&gt;The same happens with a standard framework api code.  Let&#39;s take for instance a sample API configuration code written in Java to tackle the domain of hotel reservations. A framework like this could have the following implementation:&lt;br&gt;&lt;br&gt;&lt;code&gt;&lt;br&gt;HotelService hotelService = new HotelService();&lt;br&gt;PersonService personService = new HotelService();&lt;/code&gt;&lt;br&gt;&lt;br&gt;Hotel hotel = hotelService.findById(1);&lt;br&gt;Person guest = personService.findById(10) ;&lt;br&gt;&lt;br&gt;Reservation reservation = new Reservation() ;&lt;br&gt;reservation.setFrom(&#34;2008-03-10&#34;) ;&lt;br&gt;reservation.setTo(&#34;2008-03-14&#34;);&lt;br&gt;reservation.setGuests(new Person[]{guest});&lt;br&gt;&lt;br&gt;hotelService.book(hotel, reservation);&lt;br&gt;Of course implementations of this simple example may vary but we can see here some of the readability problems. One approach we could use for that is to develop a Fluent Interface to wrap this API. This was one of the techniques explored during the tutorial and the actual fluent interface could now look somewhat similar with this:&lt;br&gt;&lt;br&gt;&lt;code&gt;&lt;br&gt;new Hotel(1)&lt;br&gt;.book()&lt;br&gt;.forGuests({&lt;br&gt;person.find(10)&lt;br&gt;})&lt;br&gt;.rooms(1)&lt;br&gt;.from(&#34;2008-03-10&#34;)&lt;br&gt;.to(&#34;2008-03-10&#34;);&lt;br&gt;&lt;/code&gt;&lt;br&gt;&lt;br&gt;Much more readable, huh?  One of the main benefits of using DSL&#39;s they highlighted in the tutorial is the simplicity of code you can achieve. You can actually show this code to a business person and he can understand it.  This is a kind of &lt;a href=&#34;http://www.martinfowler.com/bliki/InternalDslStyle.html&#34;&gt;internal DSL&lt;/a&gt;.&lt;br&gt;&lt;br&gt;But there is still a bit of noise in this code. The the parenthesis which are not always desirable, and the use of double quotes for dates. But, this is Java code, and Java doesn&#39;t give too much room for you on the DSL subject. Here was when the speakers changed their focus a bit to Ruby. It&#39;s dynamic nature and metaprogramming techniques provides a powerful flexibility that allows for a looser syntax.&lt;br&gt;&lt;br&gt;So in ruby the previous interface could look like this now:&lt;br&gt;&lt;br&gt;&lt;code&gt;&lt;br&gt;Hotel.find(1) .book(1.room).forGuests {&lt;br&gt;Person.find(10)&lt;br&gt;}.from(march.10.2008).to(march.10.2008)&lt;br&gt;&lt;/code&gt;&lt;br&gt;&lt;br&gt;We got rid of the double quotes and the code looks more fluent, like a normal english sentence. I doubt a business guy woudn&#39;t understand what this code is doing. With this, we can get closer to the business guys, with a common vocabulary, and fill the gap between us.&lt;br&gt;&lt;br&gt;This is just one of the ways we could have written this code and is not the actual example used in the tutorial.  The syntax also really depends on how readable you wanna make your code. I&#39;ll provide those later when they release the digital format of the presentation.&lt;br&gt;&lt;br&gt;So one of the flows that the development of an internal DSL can get is to build a framework and define the DSL on top of it. But we should also keep in mind that DSL&#39;s shouldn&#39;t be general purpose programming languages. They should be created to tackle a specific kind of domain problem, so we would have a whole system made of small DSL&#39;s.&lt;br&gt;&lt;br&gt;Another interesting subject that was touched is testing. How do you test DSL&#39;s?&lt;br&gt;The suggested approach, and that I think is quite reasonable, is to have separate tests for the underlying framework and another to test the DSL and its parser you can assure you have the expected behaviour of both parts.&lt;br&gt;&lt;br&gt;This is really just a summary of my thoughts and of what happened there. I&#39;m not going into too much details right now but if you found something too abstract - and it is! ;) - feel free to ask details. I&#39;ll be more than happy to help.&lt;br&gt;&lt;br&gt;This is definetly an interesting subject and now I&#39;ll head to play more with all that. :)&lt;br&gt;&lt;br&gt;PS; This is not the whole presentation, just the best of it from my stand point. Other subjects include External DSL&#39;s which can actually involve you coding Lexers, Parsers and Compilers. It&#39;s usually not worth the hassle. And it&#39;s too complicated anyway, that&#39;s why I left it out from this post.&#xA;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>qcon 2008 london</title>
       <link>http://leonardoborges.com/writings/2008/03/07/qcon-2008-london/</link>
       <pubDate>Fri, 07 Mar 2008 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2008/03/07/qcon-2008-london/</guid>
-      <description>Next week I&#39;ll be at QCon, in London, so if any of you are going to the conference and would like meet up for a couple of beers and a tech talk, please don&#39;t hesitate to drop a message.
-For those of you who have never heard of QCon before, it is a really nice event to play along with some of the most popular names in the software engineering community.</description>
+      <description>&lt;p&gt;&#xA;Next week I&#39;ll be at &lt;a href=&#34;http://qcon.infoq.com/london/&#34;&gt;QCon&lt;/a&gt;, in London, so if any of you are going to the conference and would like meet up for a couple of beers and a tech talk, please don&#39;t hesitate to drop a message.&lt;br&gt;&lt;br&gt;For those of you who have never heard of QCon before, it is a really nice event to play along with some of the most popular names in the software engineering community. This year&#39;s conference features people like &lt;a href=&#34;http://www.martinfowler.com/&#34;&gt;Martin Fowler&lt;/a&gt;, &lt;a href=&#34;http://www.nealford.com/&#34;&gt;Neal Ford&lt;/a&gt;, &lt;a href=&#34;http://en.wikipedia.org/wiki/Erich_Gamma&#34;&gt;Erich Gamma&lt;/a&gt; and much more.&lt;br&gt;&lt;br&gt;So stay tuned, the conference takes place during the whole week and I&#39;ll try and keep you posted about what&#39;s happening over there.&lt;br&gt;&lt;br&gt;C u in London!&#xA;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

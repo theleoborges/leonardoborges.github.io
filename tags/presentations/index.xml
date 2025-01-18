@@ -4,35 +4,23 @@
     <title>Presentations on Leonardo Borges</title>
     <link>http://leonardoborges.com/tags/presentations/</link>
     <description>Recent content in Presentations on Leonardo Borges</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 12 Feb 2011 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://leonardoborges.com/tags/presentations/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://leonardoborges.com/tags/presentations/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>clouds against the floods presentation available</title>
       <link>http://leonardoborges.com/writings/2011/02/12/clouds-against-the-floods-presentation-available/</link>
       <pubDate>Sat, 12 Feb 2011 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2011/02/12/clouds-against-the-floods-presentation-available/</guid>
-      <description> Last Tuesday I gave a short presentation on the whole Clouds Against the Floods thing at the Ruby on Rails Oceania User Group here in Sydney.
-Those guys are awesome and they recorded the talk - thanks guys!
-If you&#39;d like to download the slides, they&#39;re available on Slideshare.
-Enjoy! ;)
- </description>
+      <description>&lt;p&gt;&#xA;Last Tuesday I gave a short presentation on the whole &lt;a title=&#34;Clouds against the Floods&#34; href=&#34;http://www.leonardoborges.com/writings/2011/01/16/clouds-against-the-floods/&#34; target=&#34;_blank&#34;&gt;Clouds Against the Floods&lt;/a&gt; thing at the &lt;a title=&#34;Ruby on Rails Oceania Meetup&#34; href=&#34;http://rubyonrails.com.au/sydney-meetups&#34; target=&#34;_blank&#34;&gt;Ruby on Rails Oceania User Group&lt;/a&gt; here in Sydney.&lt;br&gt;&lt;br&gt;Those guys are awesome and they recorded the talk - thanks guys!&lt;br&gt;&lt;br&gt;If you&#39;d like to download the slides, they&#39;re available on &lt;a title=&#34;Slideshare profile&#34; href=&#34;http://www.slideshare.net/borgesleonardo/clouds-against-the-floods&#34; target=&#34;_blank&#34;&gt;Slideshare&lt;/a&gt;.&lt;br&gt;&lt;br&gt;Enjoy! ;)&lt;br&gt;&lt;br&gt;&lt;object classid=&#34;clsid:d27cdb6e-ae6d-11cf-96b8-444553540000&#34; width=&#34;425&#34; height=&#34;344&#34; codebase=&#34;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0&#34;&gt;&lt;param name=&#34;allowFullScreen&#34; value=&#34;true&#34; /&gt;&lt;param name=&#34;allowscriptaccess&#34; value=&#34;always&#34; /&gt;&lt;param name=&#34;src&#34; value=&#34;http://www.youtube.com/v/DYDD9XiW3Gg?hl=en&amp;amp;fs=1&#34; /&gt;&lt;param name=&#34;allowfullscreen&#34; value=&#34;true&#34; /&gt;&lt;embed type=&#34;application/x-shockwave-flash&#34; width=&#34;425&#34; height=&#34;344&#34; src=&#34;http://www.youtube.com/v/DYDD9XiW3Gg?hl=en&amp;amp;fs=1&#34; allowscriptaccess=&#34;always&#34; allowfullscreen=&#34;true&#34;&gt;&lt;/embed&gt;&lt;/object&gt;&#xA;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>presentation spring framework</title>
       <link>http://leonardoborges.com/writings/2008/06/07/presentation-spring-framework/</link>
       <pubDate>Sat, 07 Jun 2008 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2008/06/07/presentation-spring-framework/</guid>
-      <description> Last friday I&#39;ve done a small presentation about Dependency Injection and how it can improve the testing environment of a project. You can find it in the presentations page.
-Hope you like it. </description>
+      <description>&lt;p&gt;&#xA;Last friday I&#39;ve done a small presentation about Dependency Injection and how it can improve the testing environment of a project. You can find it in the &lt;a href=&#34;http://leonardoborges.com/writings/presentations&#34;&gt;presentations&lt;/a&gt; page.&lt;br&gt;&lt;br&gt;Hope you like it.&#xA;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

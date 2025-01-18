@@ -4,22 +4,16 @@
     <title>Free Software on Leonardo Borges</title>
     <link>http://leonardoborges.com/tags/free-software/</link>
     <description>Recent content in Free Software on Leonardo Borges</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 21 Oct 2007 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://leonardoborges.com/tags/free-software/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://leonardoborges.com/tags/free-software/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>software livre</title>
       <link>http://leonardoborges.com/writings/2007/10/21/software-livre/</link>
       <pubDate>Sun, 21 Oct 2007 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2007/10/21/software-livre/</guid>
-      <description> Aqui no trabalho atualmente temos uma grande barreira com relaÃ§Ã£o ao software livre. Pensei em escrever aqui alguma coisa sobre as barreiras que as empresas colocam quando o assunto Ã© esse porÃ©m o Cleuton jÃ¡ fez isso, e ficou muito bom.
-Vale a visita! </description>
+      <description>&lt;p&gt;&#xA;Aqui no trabalho atualmente temos uma grande barreira com relaÃ§Ã£o ao software livre. Pensei em escrever aqui alguma coisa sobre as barreiras que as empresas colocam quando o assunto Ã© esse porÃ©m o &lt;a target=&#34;_blank&#34; href=&#34;http://bemnalata.blogspot.com/&#34; title=&#34;Blog Cleuton Sampaio&#34;&gt;Cleuton&lt;/a&gt; jÃ¡ fez &lt;a href=&#34;http://bemnalata.blogspot.com/2007/10/resistncia-das-empresas-ao-uso-de.html&#34; title=&#34;ResistÃªncia ao uso de softwares livres&#34;&gt;isso&lt;/a&gt;, e ficou muito bom.&lt;br&gt;&lt;br&gt;Vale a visita!&#xA;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

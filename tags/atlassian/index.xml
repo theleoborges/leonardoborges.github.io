@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>atlassian on Leonardo Borges</title>
+    <title>Atlassian on Leonardo Borges</title>
     <link>http://leonardoborges.com/tags/atlassian/</link>
-    <description>Recent content in atlassian on Leonardo Borges</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Atlassian on Leonardo Borges</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 27 May 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://leonardoborges.com/tags/atlassian/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://leonardoborges.com/tags/atlassian/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mission accomplished</title>
       <link>http://leonardoborges.com/writings/2016/05/27/mission-accomplished/</link>
       <pubDate>Fri, 27 May 2016 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2016/05/27/mission-accomplished/</guid>
-      <description>A year and four months ago I joined Atlassian to pursue a very exciting opportunity: to deliver realtime collaborative editing to Confluence. I have talked about it last year at EuroClojure and this year at QCon Brazil. Even Cognitect wrote a few words about it.
-In a nutshell this involved writing Clojure code all day to build an awesome service we call Synchrony. Synchrony is capable of realtime data synchronisation - not just collaborative editing - and as such its applications are many!</description>
+      <description>&lt;p&gt;A year and four months ago &lt;a href=&#34;http://www.leonardoborges.com/writings/2014/12/27/staring-a-new-chapter/&#34;&gt;I joined Atlassian&lt;/a&gt; to pursue a very exciting opportunity: to deliver realtime collaborative editing to Confluence. I have talked about it last year at &lt;a href=&#34;https://www.youtube.com/watch?v=3QR8meTrh5g&amp;amp;index=16&amp;amp;list=PLZdCLR02grLoBx0Y5ZrpdmLxc160PIwzQ&#34;&gt;EuroClojure&lt;/a&gt; and this year at &lt;a href=&#34;http://qconsp.com/presentation/colabora%C3%A7%C3%A3o-em-tempo-real-com-clojure-e-clojurescript%E2%80%8B&#34;&gt;QCon Brazil&lt;/a&gt;. Even &lt;a href=&#34;http://www.cognitect.com/&#34;&gt;Cognitect&lt;/a&gt; wrote &lt;a href=&#34;http://blog.cognitect.com/blog/2015/7/21/atlassian-builds-realtime-collaboration-services-with-clojure&#34;&gt;a few words about it&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;In a nutshell this involved writing Clojure code all day to build an awesome service we call Synchrony. Synchrony is capable of realtime data synchronisation - not just collaborative editing - and as such its applications are many! This has been proven again and again internally during the Atlassian ShipIt hackatons, and externally via &lt;a href=&#34;https://enso.me/&#34;&gt;Enso.me&lt;/a&gt;, which is powered by Synchrony.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

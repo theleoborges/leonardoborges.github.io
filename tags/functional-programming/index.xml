@@ -1,189 +1,117 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>functional-programming on Leonardo Borges</title>
+    <title>Functional-Programming on Leonardo Borges</title>
     <link>http://leonardoborges.com/tags/functional-programming/</link>
-    <description>Recent content in functional-programming on Leonardo Borges</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Functional-Programming on Leonardo Borges</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 27 Mar 2015 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://leonardoborges.com/tags/functional-programming/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://leonardoborges.com/tags/functional-programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Clojure Reactive Programming has been published</title>
       <link>http://leonardoborges.com/writings/2015/03/27/clojure-reactive-programming-has-been-published/</link>
       <pubDate>Fri, 27 Mar 2015 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2015/03/27/clojure-reactive-programming-has-been-published/</guid>
-      <description>I&amp;rsquo;m extremely happy to let everyone know my book, Clojure Reactive Programming, has finally been published!
-You can get it at the publisher&amp;rsquo;s website or on Amazon. I had a great time writing it and I truly hope you find it useful!
-I&amp;rsquo;ve met a few authors here and there and I heard more than once that a book is never really finished. I now know what they mean.
-The book doesn&amp;rsquo;t cover everything I wanted to write about due to time and space limitations.</description>
+      <description>&lt;p&gt;I&amp;rsquo;m extremely happy to let everyone know my book, &lt;a href=&#34;https://www.packtpub.com/web-development/clojure-reactive-programming&#34;&gt;Clojure Reactive Programming&lt;/a&gt;, has finally been published!&lt;/p&gt;&#xA;&lt;p&gt;You can get it at the &lt;a href=&#34;https://www.packtpub.com/web-development/clojure-reactive-programming&#34;&gt;publisher&amp;rsquo;s website&lt;/a&gt; or on &lt;a href=&#34;http://www.amazon.com/Clojure-Reactive-Programming-Leonardo-Borges/dp/1783986662/ref=sr_1_1?ie=UTF8&amp;amp;qid=1427205216&amp;amp;sr=8-1&amp;amp;keywords=Clojure+Reactive+Programming&#34;&gt;Amazon&lt;/a&gt;. I had a great time writing it and I truly hope you find it useful!&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve met a few authors here and there and I heard more than once that a book is never really finished. I now know what they mean.&lt;/p&gt;&#xA;&lt;p&gt;The book doesn&amp;rsquo;t cover everything I wanted to write about due to time and space limitations. Having said that, now that the book is out I do plan to expand on a few things using this blog.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>EuroClojure 2014 and announcing my book</title>
       <link>http://leonardoborges.com/writings/2014/07/20/euroclojure-2014-and-clojure-reactive-programming/</link>
       <pubDate>Sun, 20 Jul 2014 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2014/07/20/euroclojure-2014-and-clojure-reactive-programming/</guid>
-      <description>A bit late for a EuroClojure 2014 post but I suppose &amp;ldquo;better late than never&amp;rdquo; applies here.
-The best part of every conference is the networking. Meeting new and interesting people is priceless and I did plenty of that - mostly over Polish beer and food. Polish beer isn&amp;rsquo;t the greatest but if you must have it, better stick to Żywiec. It&amp;rsquo;s widely available and was the one which didn&amp;rsquo;t give me a headache :) - I&amp;rsquo;ve been told there are amazing microbreweries though I didn&amp;rsquo;t get a chance to try any while in Krákow.</description>
+      <description>&lt;p&gt;A bit late for a EuroClojure 2014 post but I suppose &amp;ldquo;better late than never&amp;rdquo; applies here.&lt;/p&gt;&#xA;&lt;p&gt;The best part of every conference is the networking. Meeting new and interesting people is priceless and I did plenty of that - mostly over Polish beer and food. Polish beer isn&amp;rsquo;t the greatest but if you must have it, better stick to Żywiec. It&amp;rsquo;s widely available and was the one which didn&amp;rsquo;t give me a headache :) - I&amp;rsquo;ve been told there are amazing microbreweries though I didn&amp;rsquo;t get a chance to try any while in Krákow.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Functional composition with Monads, Kleislis and Functors</title>
       <link>http://leonardoborges.com/writings/2014/06/17/functional-composition-with-monads-kleisli-functors/</link>
       <pubDate>Tue, 17 Jun 2014 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2014/06/17/functional-composition-with-monads-kleisli-functors/</guid>
-      <description>I&amp;rsquo;ve been learning Scala for my current client project and I find writing to be a great tool to test my understanding of any given topic. This means there might be a few Scala posts coming up soon as I keep learning interesting things.
-Today I&amp;rsquo;ll be exploring a few different ways in which you can compose programs. I&amp;rsquo;ll be using Scalaz in this post.
-The examples that follow all deal with Vehicles - more specifically makes and parts:</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve been learning Scala for my current client project and I find writing to be a great tool to test my understanding of any given topic. This means there might be a few Scala posts coming up soon as I keep learning interesting things.&lt;/p&gt;&#xA;&lt;p&gt;Today I&amp;rsquo;ll be exploring a few different ways in which you can compose programs. I&amp;rsquo;ll be using &lt;a href=&#34;https://github.com/scalaz/scalaz&#34;&gt;Scalaz&lt;/a&gt; in this post.&lt;/p&gt;&#xA;&lt;p&gt;The examples that follow all deal with Vehicles - more specifically makes and parts:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>CUFP/ICFP 2013</title>
       <link>http://leonardoborges.com/writings/2013/09/25/cufp-slash-icfp-2013/</link>
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2013/09/25/cufp-slash-icfp-2013/</guid>
-      <description>I&amp;rsquo;m sitting in the Lobby of the Hilton in Boston and since my flight back to Australia isn&amp;rsquo;t for a few hours I thought I&amp;rsquo;d write my experience report while everything is still fresh in my mind.
-  CUFP - Commercial Users of Functional Programming - is a Workshop-like conference targeting the practically-minded functional programming community.
-As it&amp;rsquo;s stated on their website, &amp;ldquo;The CUFP workshop is a place where people can see how others are using functional programming to solve real world problems […]&amp;quot;.</description>
+      <description>&lt;p&gt;I&amp;rsquo;m sitting in the Lobby of the Hilton in Boston and since my flight back to Australia isn&amp;rsquo;t for a few hours I thought I&amp;rsquo;d write my experience report while everything is still fresh in my mind.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://leonardoborges.com/images/cufp2013-badge.jpg&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;&lt;a href=&#34;http://cufp.org/&#34;&gt;CUFP - Commercial Users of Functional Programming -&lt;/a&gt; is a Workshop-like conference targeting the practically-minded functional programming community.&lt;/p&gt;&#xA;&lt;p&gt;As it&amp;rsquo;s stated on their website, &lt;em&gt;&amp;ldquo;The CUFP workshop is a place where people can see how others are using functional programming to solve real world problems […]&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Purely functional data structures in Clojure: Red-Black Trees</title>
       <link>http://leonardoborges.com/writings/2013/07/15/purely-functional-data-structures-in-clojure-red-black-trees/</link>
       <pubDate>Mon, 15 Jul 2013 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2013/07/15/purely-functional-data-structures-in-clojure-red-black-trees/</guid>
-      <description>This post is part of a series about Chris Okasaki&amp;rsquo;s Purely Functional Data Structures. You can see all posts in the series by visiting the functional-data-structures category in this blog.
-  Recently I had some free time to come back to Purely Functional Data Structures and implement a new data structure: Red-black trees.
-Red-black trees Red-black trees are a type of self-balancing binary search tree. Back when I first learned the balancing algorithm used in operations such as insert and delete, I remember it being a particularly tricky one.</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;This post is part of a series about Chris Okasaki&amp;rsquo;s &lt;a href=&#34;http://amzn.to/UcIidh&#34;&gt;Purely Functional Data Structures&lt;/a&gt;. You can see all posts in the series by visiting the &lt;a href=&#34;http://www.leonardoborges.com/writings/tags/functional-data-structures/&#34;&gt;functional-data-structures&lt;/a&gt; category in this blog.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Recently I had some free time to come back to &lt;a href=&#34;http://amzn.to/UcIidh&#34;&gt;Purely Functional Data Structures&lt;/a&gt; and implement a new data structure: &lt;a href=&#34;http://en.wikipedia.org/wiki/Red%E2%80%93black_tree&#34;&gt;Red-black trees&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;red-black-trees&#34;&gt;Red-black trees&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Red%E2%80%93black_tree&#34;&gt;Red-black trees&lt;/a&gt; are a type of &lt;a href=&#34;http://en.wikipedia.org/wiki/Self-balancing_binary_search_tree&#34;&gt;self-balancing binary search tree&lt;/a&gt;. Back when I first learned the balancing algorithm used in operations such as insert and delete, I remember it being a particularly tricky one.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Functional Programmers Unite! LambdaJam down under</title>
       <link>http://leonardoborges.com/writings/2013/04/11/functional-programmers-unite-lambdajam-down-under/</link>
       <pubDate>Thu, 11 Apr 2013 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2013/04/11/functional-programmers-unite-lambdajam-down-under/</guid>
-      <description>I hinted at LambdaJam Australia back in my 2012 Highlights post and the dates are fast approaching so I thought appropriate to blog about it once more.
-YOW! LambdaJam is a conference targeted at intermediate and advanced functional programmers and is organised in talks, jams and workshops.
- Talks are the traditional format and are 30 minutes long; Workshops aim to introduce a specific subjects to attendees in great detail and are up to two hours long; Jams are hands-on sessions.</description>
+      <description>&lt;p&gt;I hinted at &lt;a href=&#34;http://www.yowconference.com.au/lambdajam/&#34;&gt;LambdaJam Australia&lt;/a&gt; back in my &lt;a href=&#34;http://www.leonardoborges.com/writings/2013/01/02/so-long-2012-year-highlights/&#34;&gt;2012 Highlights post&lt;/a&gt; and the dates are fast approaching so I thought appropriate to blog about it once more.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.yowconference.com.au/lambdajam/&#34;&gt;YOW! LambdaJam&lt;/a&gt; is a conference targeted at intermediate and advanced functional programmers and is organised in talks, jams and workshops.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Talks&lt;/strong&gt; are the traditional format and are 30 minutes long;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Workshops&lt;/strong&gt; aim to introduce a specific subjects to attendees in great detail and are up to two hours long;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Jams&lt;/strong&gt; are hands-on sessions. Participants will be guided through pre-defined problems around a given subject/technology and encouraged to work through the solutions either by themselves or ideally as small groups. Jams are also 2 hours long;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Sounds pretty amazing, doesn&amp;rsquo;t it?&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>clojure and why calculating is better than scheming</title>
       <link>http://leonardoborges.com/writings/2013/03/25/clojure-and-why-calculating-is-better-than-scheming/</link>
       <pubDate>Mon, 25 Mar 2013 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2013/03/25/clojure-and-why-calculating-is-better-than-scheming/</guid>
-      <description>Last week while attending Clojure/West in Portland I came across a paper called Why calculating is better than scheming. In a nutshell, this paper is a critique to Abelson and Sussman&amp;lsquo;s classic textbook SICP - Structure and Interpretation of Computer Programs, used by MIT for many years to teach their introductory programming course.
-If you haven&amp;rsquo;t read SICP, you should. It&amp;rsquo;s an amazing book. It uses Scheme, a dialect of Lisp, as the vehicle to present fundamental programming concepts.</description>
+      <description>&lt;p&gt;Last week while attending &lt;a href=&#34;http://clojurewest.org&#34;&gt;Clojure/West&lt;/a&gt; in Portland I came across a paper called &lt;a href=&#34;http://www.cs.kent.ac.uk/people/staff/dat/miranda/wadler87.pdf&#34;&gt;Why calculating is better than scheming&lt;/a&gt;. In a nutshell, this paper is a critique to &lt;a href=&#34;http://en.wikipedia.org/wiki/Hal_Abelson&#34;&gt;Abelson&lt;/a&gt; and &lt;a href=&#34;http://en.wikipedia.org/wiki/Gerald_Jay_Sussman&#34;&gt;Sussman&lt;/a&gt;&amp;rsquo;s classic textbook &lt;a href=&#34;http://mitpress.mit.edu/sicp/&#34;&gt;SICP - Structure and Interpretation of Computer Programs&lt;/a&gt;,&#xA;used by MIT for many years to teach their introductory programming course.&lt;/p&gt;&#xA;&lt;p&gt;If you haven&amp;rsquo;t read &lt;a href=&#34;http://mitpress.mit.edu/sicp/&#34;&gt;SICP&lt;/a&gt;, you should. It&amp;rsquo;s an amazing book. It uses &lt;a href=&#34;http://en.wikipedia.org/wiki/Scheme_(programming_language)&#34;&gt;Scheme&lt;/a&gt;, a dialect of Lisp, as the vehicle to present fundamental programming concepts.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Purely functional data structures in Clojure: Leftist Heaps</title>
       <link>http://leonardoborges.com/writings/2013/02/03/purely-functional-data-structures-in-clojure-leftist-heaps/</link>
       <pubDate>Sun, 03 Feb 2013 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2013/02/03/purely-functional-data-structures-in-clojure-leftist-heaps/</guid>
-      <description>This post is part of a series about Chris Okasaki&amp;rsquo;s Purely Functional Data Structures. You can see all posts in the series by visiting the functional-data-structures category in this blog.
-  Last year I started reading a book called Purely Functional Data Structures. It&amp;rsquo;s a fascinating book and if you&amp;rsquo;ve ever wondered how Clojure&amp;rsquo;s persistent data structures work, it&amp;rsquo;s mandatory reading.
-However, all code samples in the book are written in ML - with Haskell versions in the end of the book.</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;This post is part of a series about Chris Okasaki&amp;rsquo;s &lt;a href=&#34;http://amzn.to/UcIidh&#34;&gt;Purely Functional Data Structures&lt;/a&gt;. You can see all posts in the series by visiting the &lt;a href=&#34;http://www.leonardoborges.com/writings/tags/functional-data-structures/&#34;&gt;functional-data-structures&lt;/a&gt; category in this blog.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Last year I started reading a book called &lt;a href=&#34;http://amzn.to/UcIidh&#34;&gt;Purely Functional Data Structures&lt;/a&gt;. It&amp;rsquo;s a fascinating book and if you&amp;rsquo;ve ever wondered how Clojure&amp;rsquo;s persistent data structures work, it&amp;rsquo;s mandatory reading.&lt;/p&gt;&#xA;&lt;p&gt;However, all code samples in the book are written in &lt;a href=&#34;http://bit.ly/YqYjtt&#34;&gt;ML&lt;/a&gt; - with &lt;a href=&#34;http://bit.ly/YqYmp6&#34;&gt;Haskell&lt;/a&gt; versions in the end of the book. This means I got stuck in Chapter 3, where the ML snippets start.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>bouncer validation lib for clojure</title>
       <link>http://leonardoborges.com/writings/2013/01/04/bouncer-validation-lib-for-clojure/</link>
       <pubDate>Fri, 04 Jan 2013 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2013/01/04/bouncer-validation-lib-for-clojure/</guid>
-      <description>Today I&amp;rsquo;m releasing bouncer, which was extracted from a project I&amp;rsquo;ve been working on.
-It&amp;rsquo;s a validation library for Clojure apps and it lets you write code like this:
-(def person {:name &amp;#34;Leo&amp;#34;}) (validate person :name required :age [required number]) If you&amp;rsquo;d like to see more examples and a detailed guide check out the github repository. The README should get you started.
-This post however isn&amp;rsquo;t only about announcing bouncer. It&amp;rsquo;s also about the motivation and implementation details behind it.</description>
+      <description>&lt;p&gt;Today I&amp;rsquo;m releasing bouncer, which was extracted from a project I&amp;rsquo;ve been working on.&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s a validation library for Clojure apps and it lets you write code like this:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;def &lt;/span&gt;person {&lt;span style=&#34;color:#e6db74&#34;&gt;:name&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Leo&amp;#34;&lt;/span&gt;})&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;validate&lt;/span&gt; person&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;:name&lt;/span&gt; required&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;:age&lt;/span&gt;  [required number])&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you&amp;rsquo;d like to see more examples and a detailed guide check out the &lt;a href=&#34;http://github.com/leonardoborges/bouncer&#34;&gt;github repository&lt;/a&gt;. The README should get you started.&lt;/p&gt;&#xA;&lt;p&gt;This post however isn&amp;rsquo;t only about announcing bouncer. It&amp;rsquo;s also about the motivation and implementation details behind it.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Monads in small bites - Part IV - Monads</title>
       <link>http://leonardoborges.com/writings/2012/12/08/monads-in-small-bites-part-iv-monads/</link>
       <pubDate>Sat, 08 Dec 2012 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2012/12/08/monads-in-small-bites-part-iv-monads/</guid>
-      <description>This is Part IV of my Monads tutorial. Make sure you read the previous parts:
-  Part I - Functors
-  Part II - Applicative Functors
-  Part III - Monoids
-  Part IV - Monads (this post)
-  A quick recap In Part I we learned about Functors, which are things that can be mapped over using a normal function - fmap is used for that.</description>
+      <description>&lt;p&gt;This is Part IV of my Monads tutorial. Make sure you read the previous parts:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://leonardoborges.com/2012/11/30/monads-in-small-bites-part-i-functors/&#34;&gt;Part I   - Functors&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://leonardoborges.com/2012/12/02/monads-in-small-bites-part-ii-applicative-functors/&#34;&gt;Part II  - Applicative Functors&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://leonardoborges.com/2012/12/05/monads-in-small-bites-part-iii-monoids/&#34;&gt;Part III - Monoids&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Part IV  - Monads (this post)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;a-quick-recap&#34;&gt;A quick recap&lt;/h3&gt;&#xA;&lt;p&gt;In &lt;a href=&#34;http://leonardoborges.com/2012/11/30/monads-in-small-bites-part-i-functors/&#34;&gt;Part I&lt;/a&gt; we learned about &lt;em&gt;Functors&lt;/em&gt;, which are things that can be mapped over using a normal function - &lt;code&gt;fmap&lt;/code&gt; is used for that.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://leonardoborges.com/2012/12/02/monads-in-small-bites-part-ii-applicative-functors/&#34;&gt;Part II&lt;/a&gt; tought us that when our Functors themselves contain functions and we want them applied to the values contained in other Functors, &lt;em&gt;Applicatives&lt;/em&gt; come to the rescue - and bring theirs friends &lt;code&gt;pure&lt;/code&gt; and &lt;code&gt;&amp;lt;*&amp;gt;&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Monads in small bites - Part III - Monoids</title>
       <link>http://leonardoborges.com/writings/2012/12/05/monads-in-small-bites-part-iii-monoids/</link>
       <pubDate>Wed, 05 Dec 2012 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2012/12/05/monads-in-small-bites-part-iii-monoids/</guid>
-      <description>This is Part III of my Monads tutorial. Make sure you read the previous parts:
-  Part I - Functors
-  Part II - Applicative Functors
-  Part III - Monoids (this post)
-  Part IV - Monads
-  Monoids Simply put, Monoids describe types containing a binary function and an identity value.
-When applied to the identity value and a random value x, said function leaves its argument x untouched, returning it as a result.</description>
+      <description>&lt;p&gt;This is Part III of my Monads tutorial. Make sure you read the previous parts:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://leonardoborges.com/2012/11/30/monads-in-small-bites-part-i-functors/&#34;&gt;Part I   - Functors&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://leonardoborges.com/2012/12/02/monads-in-small-bites-part-ii-applicative-functors/&#34;&gt;Part II  - Applicative Functors&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Part III - Monoids (this post)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://leonardoborges.com/2012/12/08/monads-in-small-bites-part-iv-monads/&#34;&gt;Part IV  - Monads&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;monoids&#34;&gt;Monoids&lt;/h3&gt;&#xA;&lt;p&gt;Simply put, Monoids describe types containing a &lt;a href=&#34;http://en.wikipedia.org/wiki/Binary_function&#34;&gt;binary function&lt;/a&gt; and an identity value.&lt;/p&gt;&#xA;&lt;p&gt;When applied to the identity value and a random value &lt;code&gt;x&lt;/code&gt;, said function leaves its argument &lt;code&gt;x&lt;/code&gt; &lt;em&gt;untouched&lt;/em&gt;, returning it as a result.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Monads in small bites - Part II - Applicative Functors</title>
       <link>http://leonardoborges.com/writings/2012/12/02/monads-in-small-bites-part-ii-applicative-functors/</link>
       <pubDate>Sun, 02 Dec 2012 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2012/12/02/monads-in-small-bites-part-ii-applicative-functors/</guid>
-      <description>This is Part II of my Monads tutorial. Make sure you read the previous parts:
-  Part I - Functors
-  Part II - Applicative Functors (this post)
-  Part III - Monoids
-  Part IV - Monads
-  Applicative Functors In Part I I talked a little about Haskell type signatures and introduced Functors, which provide a way to map standard functions over values which are wrapped inside a Functor - we used fmap for that.</description>
+      <description>&lt;p&gt;This is Part II of my Monads tutorial. Make sure you read the previous parts:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://leonardoborges.com/2012/11/30/monads-in-small-bites-part-i-functors/&#34;&gt;Part I   - Functors&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Part II  - Applicative Functors (this post)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://leonardoborges.com/2012/12/05/monads-in-small-bites-part-iii-monoids/&#34;&gt;Part III - Monoids&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://leonardoborges.com/2012/12/08/monads-in-small-bites-part-iv-monads/&#34;&gt;Part IV  - Monads&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;applicative-functors&#34;&gt;Applicative Functors&lt;/h3&gt;&#xA;&lt;p&gt;In &lt;a href=&#34;http://leonardoborges.com/2012/11/30/monads-in-small-bites-part-i-functors/&#34;&gt;Part I&lt;/a&gt; I talked a little about Haskell type signatures and introduced Functors, which provide a way to map standard functions over values which are &lt;em&gt;wrapped&lt;/em&gt; inside a Functor - we used &lt;code&gt;fmap&lt;/code&gt; for that. You might want to &lt;a href=&#34;http://leonardoborges.com/2012/11/30/monads-in-small-bites-part-i-functors/&#34;&gt;skim through it&lt;/a&gt; again as a refresher.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Monads in small bites - Part I - Functors</title>
       <link>http://leonardoborges.com/writings/2012/11/30/monads-in-small-bites-part-i-functors/</link>
       <pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2012/11/30/monads-in-small-bites-part-i-functors/</guid>
-      <description>Today I join the already bloated group of people who wrote monad tutorials. It&amp;rsquo;s a bit of a ritual, really.
-Different than most tutorials though I aim to take a different approach. The good news is that I won&amp;rsquo;t be comparing monads to burritos :)
-People say one needs to have his/her own epiphany in order to understand Monads and reading explanations from others is of little help. My goal is to disprove that.</description>
+      <description>&lt;p&gt;Today I join the already bloated group of people who wrote monad tutorials. It&amp;rsquo;s a bit of a ritual, really.&lt;/p&gt;&#xA;&lt;p&gt;Different than most tutorials though I aim to take a different approach. The good news is that I won&amp;rsquo;t be comparing monads to burritos :)&lt;/p&gt;&#xA;&lt;p&gt;People say one needs to have his/her own epiphany in order to understand Monads and reading explanations from others is of little help. My goal is to disprove that.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Clojure, leiningen 2 and Heroku: AOT compilation gotchas</title>
       <link>http://leonardoborges.com/writings/2012/09/10/clojure-leiningen-heroku-aot-compilation-gotchas/</link>
       <pubDate>Mon, 10 Sep 2012 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2012/09/10/clojure-leiningen-heroku-aot-compilation-gotchas/</guid>
-      <description>Recently I upgraded the clojure project I&amp;rsquo;m working on to Leiningen 2 in order to start using nrepl - since swank-clojure is now deprecated. Little did I know this would lead me to a small debugging adventure.
-Heroku I use Heroku as my deployment platform and my project had been running on it for a few weeks without any issues. I also use Heroku&amp;rsquo;s PostgreSQL solution.
-However, by upgrading to Leiningen 2, my project started throwing some weird exceptions during deployment - it couldn&amp;rsquo;t connect to my database any longer.</description>
+      <description>&lt;p&gt;Recently I upgraded the &lt;a href=&#34;http://clojure.org/&#34;&gt;clojure&lt;/a&gt; project I&amp;rsquo;m working on to &lt;a href=&#34;http://leiningen.org/&#34;&gt;Leiningen 2&lt;/a&gt; in order to start using &lt;a href=&#34;https://github.com/clojure/tools.nrepl&#34;&gt;nrepl&lt;/a&gt; - since &lt;a href=&#34;https://github.com/technomancy/swank-clojure&#34;&gt;swank-clojure&lt;/a&gt; is now &lt;a href=&#34;http://technomancy.us/163&#34;&gt;deprecated&lt;/a&gt;. Little did I know this would lead me to a small debugging adventure.&lt;/p&gt;&#xA;&lt;h3 id=&#34;heroku&#34;&gt;Heroku&lt;/h3&gt;&#xA;&lt;p&gt;I use &lt;a href=&#34;http://www.heroku.com/&#34;&gt;Heroku&lt;/a&gt; as my deployment platform and my project had been running on it for a few weeks without any&#xA;issues. I also use Heroku&amp;rsquo;s PostgreSQL solution.&lt;/p&gt;&#xA;&lt;p&gt;However, by upgrading to Leiningen 2, my project started throwing some weird exceptions during deployment -  it couldn&amp;rsquo;t connect to my database any longer. Everything was fine on my local environment though.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Sean Corfield: Clojure and CFML sitting in a tree</title>
       <link>http://leonardoborges.com/writings/2012/08/23/sean-corfield-clojure-and-cfml-sitting-in-a-tree/</link>
       <pubDate>Thu, 23 Aug 2012 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2012/08/23/sean-corfield-clojure-and-cfml-sitting-in-a-tree/</guid>
-      <description>Last night I attended the Adobe User Group here in Sydney. That might strike some of you as a big surprise given my relationship with Adobe is pretty much limited to fiddling with Photoshop/Lightroom to get my photos looking nice.
-However the reason for which I attended the meetup is that Sean Corfield - a prolific member of the Clojure community - gave a presentation on how he introduced and migrated most of his backend code at World Singles from CFML to Clojure - hence my interest.</description>
+      <description>&lt;p&gt;Last night I attended the Adobe User Group here in Sydney. That might strike some of you as a big surprise&#xA;given my relationship with Adobe is pretty much limited to fiddling with Photoshop/Lightroom to get my photos looking nice.&lt;/p&gt;&#xA;&lt;p&gt;However the reason for which I attended the meetup is that &lt;a href=&#34;https://twitter.com/seancorfield&#34;&gt;Sean Corfield&lt;/a&gt; - a prolific member of the Clojure community - gave a presentation on how he introduced and migrated most of his backend code at &lt;a href=&#34;http://worldsingles.com/ws2010/index.cfm&#34;&gt;World Singles&lt;/a&gt; from &lt;a href=&#34;http://en.wikipedia.org/wiki/ColdFusion_Markup_Language&#34;&gt;CFML&lt;/a&gt; to &lt;a href=&#34;http://clojure.org/&#34;&gt;Clojure&lt;/a&gt; - hence my interest.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>deepwork on Leonardo Borges</title>
+    <title>Deepwork on Leonardo Borges</title>
     <link>http://leonardoborges.com/tags/deepwork/</link>
-    <description>Recent content in deepwork on Leonardo Borges</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Deepwork on Leonardo Borges</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 12 May 2020 08:31:15 +1000</lastBuildDate>
-    
-	<atom:link href="http://leonardoborges.com/tags/deepwork/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://leonardoborges.com/tags/deepwork/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Be Bored</title>
       <link>http://leonardoborges.com/writings/2020/05/12/be-bored/</link>
       <pubDate>Tue, 12 May 2020 08:31:15 +1000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2020/05/12/be-bored/</guid>
-      <description>Recently I wrote an internal blog post at work titled On the traps of working from home.
-While the content isn&amp;rsquo;t new it was triggered by the recent events around COVID-19 and the fact that all of a sudden the whole company was working from home, distributed across multiple timezones.
-I was worried that we may default to having more meetings instead of better communication and writing this post was my attempt to share how I tend to deal with distractions.</description>
+      <description>&lt;p&gt;Recently I wrote an internal blog post at work titled &lt;em&gt;On the traps of working from home&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;While the content isn&amp;rsquo;t new it was triggered by the recent events around COVID-19 and the fact that all of a sudden the whole company was working from home, distributed across multiple timezones.&lt;/p&gt;&#xA;&lt;p&gt;I was worried that we may default to having more meetings instead of better communication and writing this post was my attempt to share how I tend to deal with distractions.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

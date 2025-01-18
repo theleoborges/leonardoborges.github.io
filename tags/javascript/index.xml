@@ -4,34 +4,23 @@
     <title>Javascript on Leonardo Borges</title>
     <link>http://leonardoborges.com/tags/javascript/</link>
     <description>Recent content in Javascript on Leonardo Borges</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 31 Mar 2011 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://leonardoborges.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://leonardoborges.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>simplejquery daterange picker</title>
       <link>http://leonardoborges.com/writings/2011/03/31/simplejquery-daterange-picker/</link>
       <pubDate>Thu, 31 Mar 2011 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2011/03/31/simplejquery-daterange-picker/</guid>
-      <description>As in many web apps out there, this week I needed a date range picker. I shopped around and while I did find a couple of good options they were (a) too clunky and (b) didn&#39;t prevent you from selecting invalid ranges. The latter being the one I was really interested in.
-So I coded up something simple that worked and looked nice and decided to share around. It&#39;s the jquery-daterange-picker.</description>
+      <description>&lt;p&gt;&#xA;As in many web apps out there, this week I needed a date range picker. I shopped around and while I did find a couple of good options they were (a) too clunky and (b) didn&#39;t prevent you from selecting invalid ranges. The latter being the one I was really interested in.&lt;br&gt;&lt;br&gt;So I coded up something simple that worked and looked nice and decided to share around. It&#39;s the &lt;a title=&#34;jquery-daterange-picker&#34; href=&#34;http://github.com/leonardoborges/jquery-daterange-picker&#34;&gt;jquery-daterange-picker&lt;/a&gt;. Its only dependencies are &lt;a title=&#34;jQuery&#34; href=&#34;http://jquery.com/&#34;&gt;jQuery&lt;/a&gt; and &lt;a title=&#34;jQueryUI datepicker &#34; href=&#34;http://docs.jquery.com/UI/Datepicker&#34;&gt;jQueryUI&#39;s datepicker&lt;/a&gt;.&lt;br&gt;&lt;br&gt;Got &lt;a title=&#34;jquery-daterange-picker&#34; href=&#34;http://github.com/leonardoborges/jquery-daterange-picker&#34;&gt;get it&lt;/a&gt;, &lt;a title=&#34;jquery-daterange-picker&#34; href=&#34;http://github.com/leonardoborges/jquery-daterange-picker&#34;&gt;fork it&lt;/a&gt;, &lt;a title=&#34;jquery-daterange-picker&#34; href=&#34;http://github.com/leonardoborges/jquery-daterange-picker&#34;&gt;contribute to it&lt;/a&gt; or &lt;a title=&#34;Examples&#34; href=&#34;http://leonardoborges.github.com/jquery-daterange-picker/demo/index.html&#34;&gt;check out some examples&lt;/a&gt;.&#xA;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>are_you_testing_your_javascript_yet</title>
       <link>http://leonardoborges.com/writings/2010/06/14/are_you_testing_your_javascript_yet/</link>
       <pubDate>Mon, 14 Jun 2010 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2010/06/14/are_you_testing_your_javascript_yet/</guid>
-      <description>What&#39;s the difference between your application&#39;s javascript code and its java/ruby/python/whatever code?
-Think about it for a second. Done? Well, the answer is: none!
-In today&#39;s web applications your javascript code is no different from the rest of your code base but yet we treat it with disregard - and we&#39;re all to blame.
-We often see developers investing time writing all sorts of automated tests around their code base but fail to do the same for their javascript - and yet they get surprised when their client can&#39;t click on a button on their web app that depends on that ajax call that has been manually tested once when the page was first released.</description>
+      <description>&lt;p&gt;&#xA;What&#39;s the difference between your application&#39;s javascript code and its java/ruby/python/whatever code?&lt;br&gt;&lt;br&gt;Think about it for a second. Done? Well, the answer is: none!&lt;br&gt;&lt;br&gt;In today&#39;s web applications your javascript code is no different from the rest of your code base but yet we treat it with disregard - and we&#39;re all to blame.&lt;br&gt;&lt;br&gt;We often see developers investing time writing all sorts of automated tests around their code base but fail to do the same for their javascript -  and yet they get surprised when their client can&#39;t click on a button on their web app that depends on that ajax call that has been manually tested once when the page was first released.&lt;br&gt;&lt;br&gt;Ask yourself this question if you&#39;re not sure if you should be testing your javascript: If it breaks, can my users still benefit from my app? - I think the answer for most web apps is obvious.&lt;br&gt;&lt;br&gt;As for tools, I can only speak of two, &lt;a href=&#34;http://code.google.com/p/js-test-driver/&#34; target=&#34;_blank&#34;&gt;JsTestDriver&lt;/a&gt; and &lt;a href=&#34;http://github.com/nkallen/screw-unit&#34; target=&#34;_blank&#34;&gt;screw-unit&lt;/a&gt;, the latter being the one we&#39;re using in my current project at &lt;a href=&#34;http://www.thoughtworks.com&#34; target=&#34;_blank&#34;&gt;ThoughtWorks&lt;/a&gt;.&lt;br&gt;&lt;br&gt;What I liked about screw-unit is that it&#39;s very easy to get it up and running. Being a Behavior-Driven Testing Framework it&#39;s not surprising it has a syntax similar to &lt;a href=&#34;http://rspec.info/&#34; target=&#34;_blank&#34;&gt;Rspec&lt;/a&gt; -which I prefer over JsTestDriver&#39;s similarity to &lt;a href=&#34;http://www.junit.org/&#34; target=&#34;_blank&#34;&gt;JUnit&#39;s&lt;/a&gt;.&lt;br&gt;&lt;br&gt;&lt;script src=&#34;https://gist.github.com/790871.js?file=gistfile1.js&#34;&gt;&lt;/script&gt; This is how a test written with screw-unit could look like:  &lt;script src=&#34;https://gist.github.com/790873.js?file=gistfile1.js&#34;&gt;&lt;/script&gt;&lt;br&gt;&lt;br&gt;Not too bad for a javascript test suite huh?&lt;br&gt;&lt;br&gt;So the next time you write a javascript line of code, how about writing a test for it? Consider using screw-unit as your tool but if you have been writing tests using a different framework and you&#39;re happy with it, share your experience.&lt;br&gt;I&#39;m always keen to learn better ways of doing what I do.&lt;br&gt;&lt;br&gt;Cheers!&#xA;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,37 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>functional-data-structures on Leonardo Borges</title>
+    <title>Functional-Data-Structures on Leonardo Borges</title>
     <link>http://leonardoborges.com/tags/functional-data-structures/</link>
-    <description>Recent content in functional-data-structures on Leonardo Borges</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Functional-Data-Structures on Leonardo Borges</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Jul 2013 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://leonardoborges.com/tags/functional-data-structures/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://leonardoborges.com/tags/functional-data-structures/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Purely functional data structures in Clojure: Red-Black Trees</title>
       <link>http://leonardoborges.com/writings/2013/07/15/purely-functional-data-structures-in-clojure-red-black-trees/</link>
       <pubDate>Mon, 15 Jul 2013 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2013/07/15/purely-functional-data-structures-in-clojure-red-black-trees/</guid>
-      <description>This post is part of a series about Chris Okasaki&amp;rsquo;s Purely Functional Data Structures. You can see all posts in the series by visiting the functional-data-structures category in this blog.
-  Recently I had some free time to come back to Purely Functional Data Structures and implement a new data structure: Red-black trees.
-Red-black trees Red-black trees are a type of self-balancing binary search tree. Back when I first learned the balancing algorithm used in operations such as insert and delete, I remember it being a particularly tricky one.</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;This post is part of a series about Chris Okasaki&amp;rsquo;s &lt;a href=&#34;http://amzn.to/UcIidh&#34;&gt;Purely Functional Data Structures&lt;/a&gt;. You can see all posts in the series by visiting the &lt;a href=&#34;http://www.leonardoborges.com/writings/tags/functional-data-structures/&#34;&gt;functional-data-structures&lt;/a&gt; category in this blog.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Recently I had some free time to come back to &lt;a href=&#34;http://amzn.to/UcIidh&#34;&gt;Purely Functional Data Structures&lt;/a&gt; and implement a new data structure: &lt;a href=&#34;http://en.wikipedia.org/wiki/Red%E2%80%93black_tree&#34;&gt;Red-black trees&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;red-black-trees&#34;&gt;Red-black trees&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Red%E2%80%93black_tree&#34;&gt;Red-black trees&lt;/a&gt; are a type of &lt;a href=&#34;http://en.wikipedia.org/wiki/Self-balancing_binary_search_tree&#34;&gt;self-balancing binary search tree&lt;/a&gt;. Back when I first learned the balancing algorithm used in operations such as insert and delete, I remember it being a particularly tricky one.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Purely functional data structures in Clojure: Leftist Heaps</title>
       <link>http://leonardoborges.com/writings/2013/02/03/purely-functional-data-structures-in-clojure-leftist-heaps/</link>
       <pubDate>Sun, 03 Feb 2013 00:00:00 +0000</pubDate>
-      
       <guid>http://leonardoborges.com/writings/2013/02/03/purely-functional-data-structures-in-clojure-leftist-heaps/</guid>
-      <description>This post is part of a series about Chris Okasaki&amp;rsquo;s Purely Functional Data Structures. You can see all posts in the series by visiting the functional-data-structures category in this blog.
-  Last year I started reading a book called Purely Functional Data Structures. It&amp;rsquo;s a fascinating book and if you&amp;rsquo;ve ever wondered how Clojure&amp;rsquo;s persistent data structures work, it&amp;rsquo;s mandatory reading.
-However, all code samples in the book are written in ML - with Haskell versions in the end of the book.</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;This post is part of a series about Chris Okasaki&amp;rsquo;s &lt;a href=&#34;http://amzn.to/UcIidh&#34;&gt;Purely Functional Data Structures&lt;/a&gt;. You can see all posts in the series by visiting the &lt;a href=&#34;http://www.leonardoborges.com/writings/tags/functional-data-structures/&#34;&gt;functional-data-structures&lt;/a&gt; category in this blog.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Last year I started reading a book called &lt;a href=&#34;http://amzn.to/UcIidh&#34;&gt;Purely Functional Data Structures&lt;/a&gt;. It&amp;rsquo;s a fascinating book and if you&amp;rsquo;ve ever wondered how Clojure&amp;rsquo;s persistent data structures work, it&amp;rsquo;s mandatory reading.&lt;/p&gt;&#xA;&lt;p&gt;However, all code samples in the book are written in &lt;a href=&#34;http://bit.ly/YqYjtt&#34;&gt;ML&lt;/a&gt; - with &lt;a href=&#34;http://bit.ly/YqYmp6&#34;&gt;Haskell&lt;/a&gt; versions in the end of the book. This means I got stuck in Chapter 3, where the ML snippets start.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
