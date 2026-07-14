@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<title>Nineteen Years of Reps — a writing evolution</title>
+<style>
+  :root {
+    --bg: #0B0E1A;
+    --bg-raised: #121729;
+    --bg-card: #101425;
+    --hairline: #222B47;
+    --ink: #E9ECF5;
+    --ink-2: #9AA3BC;
+    --ink-3: #6A7390;
+    --sun: #E8C36A;
+    --squiggle: #D95A6A;
+    --machine: #AEB9CE;
+    --c-java: #B8842C;
+    --c-life: #6C74C4;
+    --c-ruby: #C74359;
+    --c-community: #3E7FC9;
+    --c-hacks: #C465A8;
+    --c-clojure: #2FA368;
+    --c-leadership: #8A67D6;
+    --c-ai: #1FA89E;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { color-scheme: dark; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.55; overflow-x: hidden; }
+
+  .layout { display: flex; min-height: 100vh; }
+
+  /* ── left: the sky ─────────────────────────────────────── */
+  .sky {
+    position: sticky; top: 0; width: 54%; height: 100vh; flex: none;
+    display: flex; flex-direction: column;
+    border-right: 1px solid var(--hairline);
+    background: radial-gradient(ellipse 90% 70% at 50% 45%, #141B33 0%, var(--bg) 65%);
+    overflow: hidden;
+  }
+  .masthead { padding: 24px 32px 0; position: relative; z-index: 3; }
+  .masthead .eyebrow { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 6px; }
+  .masthead h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(22px, 2.2vw, 30px); letter-spacing: 0.01em; text-wrap: balance; line-height: 1.2; }
+  .masthead p { color: var(--ink-2); font-size: 13px; max-width: 48ch; margin-top: 6px; }
+
+  .orrery-wrap { flex: 1; position: relative; min-height: 0; }
+  svg.orrery { width: 100%; height: 100%; display: block; }
+
+  .orbit { fill: none; stroke: var(--hairline); stroke-width: 1; opacity: 0.7; }
+  .belt-ring { fill: none; stroke: var(--ink-3); stroke-width: 1; stroke-dasharray: 2 7; }
+
+  .topic-g { transition: opacity 0.35s ease, filter 0.4s ease; }
+  .topic-g.dormant { filter: saturate(0.22) brightness(0.75); }
+  .topic-g.dimmed { opacity: 0.15; }
+  .glow { opacity: 0; transition: opacity 0.35s ease; fill: none; stroke-width: 1.5; }
+  .lit .glow { opacity: 0.9; }
+  .hit { fill: transparent; cursor: pointer; }
+
+  .comet-path { fill: none; stroke: var(--ink-3); stroke-width: 1; stroke-dasharray: 1 6; }
+  .comet-hit { fill: none; stroke: transparent; stroke-width: 14; cursor: pointer; }
+  .comet-head { fill: #D8DEEA; }
+  .comet-tail { stroke: #D8DEEA; stroke-width: 1; }
+
+  .sun-group { cursor: pointer; }
+  .sun-core { filter: drop-shadow(0 0 18px rgba(232,195,106,0.55)); }
+  .binary { cursor: pointer; }
+  .binary circle { filter: drop-shadow(0 0 10px rgba(174,185,206,0.6)); }
+
+  .scrub {
+    position: relative; z-index: 3; display: flex; align-items: center; gap: 12px;
+    padding: 4px 32px 8px;
+  }
+  .scrub button {
+    width: 34px; height: 34px; border-radius: 50%; flex: none;
+    border: 1px solid var(--hairline); background: var(--bg-raised); color: var(--sun);
+    font-size: 13px; cursor: pointer; display: grid; place-items: center;
+  }
+  .scrub button:hover { border-color: var(--sun); }
+  .scrub button:focus-visible, .scrub input:focus-visible, .legend button:focus-visible, .card:focus-visible { outline: 2px solid var(--sun); outline-offset: 2px; }
+  .scrub input[type="range"] { flex: 1; accent-color: var(--sun); height: 22px; cursor: pointer; }
+  .scrub .yr { font-family: var(--mono); font-size: 15px; font-weight: 600; color: var(--sun); letter-spacing: 0.1em; width: 52px; text-align: right; font-variant-numeric: tabular-nums; }
+  .scrub .era-lbl { font-family: var(--mono); font-size: 11px; color: var(--ink-3); letter-spacing: 0.1em; width: 220px; flex: none; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
+  .chip {
+    position: absolute; z-index: 4; pointer-events: none;
+    background: var(--bg-raised); border: 1px solid var(--hairline); border-radius: 6px;
+    padding: 8px 12px; max-width: 270px; font-size: 12.5px; color: var(--ink-2);
+    opacity: 0; transition: opacity 0.15s ease; box-shadow: 0 6px 24px rgba(0,0,0,0.5);
+  }
+  .chip.show { opacity: 1; }
+  .chip .t { color: var(--ink); font-weight: 600; display: flex; align-items: center; gap: 7px; margin-bottom: 2px; font-size: 13px; }
+  .chip .dot { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+  .chip .meta { font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
+  .chip .sp { font-family: var(--mono); font-size: 11.5px; color: var(--ink); margin-top: 5px; border-top: 1px solid var(--hairline); padding-top: 5px; }
+
+  .legend { position: relative; z-index: 3; display: flex; flex-wrap: wrap; gap: 6px 8px; padding: 0 32px 18px; }
+  .legend button {
+    display: inline-flex; align-items: center; gap: 7px; background: none;
+    border: 1px solid var(--hairline); border-radius: 999px; color: var(--ink-2);
+    font: 12px var(--sans); padding: 4px 11px 4px 8px; cursor: pointer;
+    transition: border-color 0.2s, color 0.2s, opacity 0.3s;
+  }
+  .legend button .dot { width: 9px; height: 9px; border-radius: 50%; }
+  .legend button:hover { color: var(--ink); border-color: var(--ink-3); }
+  .legend button.active { color: var(--ink); border-color: currentColor; }
+  .legend button.off { opacity: 0.35; }
+
+  /* ── right: the record ─────────────────────────────────── */
+  .timeline { width: 46%; flex: none; padding: 40px 44px 90px; }
+  .timeline > .intro { color: var(--ink-2); font-size: 13.5px; max-width: 58ch; margin-bottom: 30px; }
+  .timeline > .intro em { color: var(--ink); font-style: normal; border-bottom: 2px dotted var(--squiggle); }
+
+  .card {
+    background: var(--bg-card); border: 1px solid var(--hairline); border-radius: 10px;
+    padding: 22px 24px 20px; margin-bottom: 22px; scroll-margin-top: 40px;
+    transition: opacity 0.35s ease, border-color 0.35s ease;
+  }
+  .card.dimout { opacity: 0.3; }
+  .card.spot { border-color: var(--ink-3); }
+  .card.now { border-color: rgba(232,195,106,0.55); }
+  .card.sun-card { border-color: rgba(232,195,106,0.4); }
+
+  .card .years {
+    font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--ink-3);
+    text-transform: uppercase; margin-bottom: 4px;
+    display: flex; justify-content: space-between; align-items: baseline; gap: 12px;
+  }
+  .card h2 { font-family: var(--serif); font-weight: 500; font-size: 21px; line-height: 1.25; text-wrap: balance; margin-bottom: 2px; }
+  .card .sub { color: var(--ink-2); font-size: 13px; margin-bottom: 6px; }
+  .card .tally { font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); letter-spacing: 0.08em; margin-bottom: 12px; }
+
+  .meter { display: inline-flex; gap: 3px; align-items: center; }
+  .meter i { width: 7px; height: 7px; border-radius: 50%; background: var(--hairline); }
+  .meter i.on { background: var(--squiggle); }
+  .meter .lbl { font-family: var(--mono); font-size: 10px; color: var(--ink-3); margin-left: 6px; letter-spacing: 0.08em; }
+
+  .topics-row { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 14px; }
+  .topics-row span {
+    font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase; padding: 2px 8px;
+    border-radius: 999px; border: 1px solid var(--hairline); color: var(--ink-2);
+    display: inline-flex; align-items: center; gap: 5px;
+  }
+  .topics-row .dot { width: 7px; height: 7px; border-radius: 50%; }
+
+  .label { font-size: 10.5px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-3); margin: 14px 0 7px; }
+
+  .specimens { display: flex; flex-direction: column; gap: 7px; }
+  .spec {
+    font-family: var(--mono); font-size: 12.5px; line-height: 1.6; color: var(--ink);
+    background: var(--bg-raised); border-left: 2px solid var(--hairline);
+    padding: 7px 12px; border-radius: 0 5px 5px 0;
+  }
+  .spec .note { color: var(--ink-3); font-family: var(--sans); font-size: 11.5px; display: block; margin-top: 1px; }
+  .sq { text-decoration: underline wavy var(--squiggle) 1px; text-underline-offset: 3px; text-decoration-skip-ink: none; }
+  .spec.clean { border-left-color: var(--c-ai); }
+  .spec.clean .note { color: var(--c-ai); opacity: 0.85; }
+
+  .tics { color: var(--ink-2); font-size: 13px; }
+  .tics code { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+  .ending { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--hairline); font-family: var(--serif); font-style: italic; font-size: 14.5px; color: var(--ink-2); line-height: 1.5; }
+  .ending b { color: var(--ink); font-weight: 500; }
+
+  footer { color: var(--ink-3); font-size: 12px; max-width: 58ch; padding-top: 8px; line-height: 1.6; }
+  footer .rule { border: none; border-top: 1px solid var(--hairline); margin-bottom: 14px; }
+
+  @media (max-width: 900px) {
+    .layout { flex-direction: column; }
+    .sky { position: sticky; top: 0; width: 100%; height: 56vh; border-right: none; border-bottom: 1px solid var(--hairline); z-index: 10; }
+    .masthead { padding: 14px 18px 0; }
+    .masthead p { display: none; }
+    .scrub { padding: 2px 16px 6px; }
+    .scrub .era-lbl { display: none; }
+    .legend { padding: 0 14px 10px; }
+    .legend button { font-size: 11px; padding: 3px 9px 3px 7px; }
+    .timeline { width: 100%; padding: 26px 18px 70px; }
+  }
+</style>
+
+<div class="layout">
+  <section class="sky" aria-label="Solar system of writing topics">
+    <div class="masthead">
+      <div class="eyebrow" id="eyebrow">2007 – 2026 · two languages</div>
+      <h1>Nineteen Years of Reps</h1>
+      <p>Every post is a moon; topics are the planets they orbit. Drafts that never shipped cross the system as comets. The red haze is the Portuguese accent, thinning. Press play — or scroll the record.</p>
+    </div>
+    <div class="orrery-wrap">
+      <svg class="orrery" id="orrery" viewBox="0 0 800 800" role="img" aria-label="Animated orbital map of nineteen years of writing: topic planets, one moon per post, drafts as comets, a red interference nebula that dissipates over time"></svg>
+      <div class="chip" id="chip"></div>
+    </div>
+    <div class="scrub">
+      <button id="playBtn" aria-label="Play the nineteen years">▶</button>
+      <input type="range" id="scrubber" min="2007.75" max="2026.55" step="0.01" value="2007.75" aria-label="Scrub through time, 2007 to 2026">
+      <span class="yr" id="yrOut">2007</span>
+      <span class="era-lbl" id="eraOut">Origens · in Portuguese</span>
+    </div>
+    <div class="legend" id="legend" role="toolbar" aria-label="Topic filter"></div>
+  </section>
+
+  <main class="timeline" id="timeline">
+    <p class="intro">The record, era by era. Every quote is verbatim from the published archive; every <em>red squiggle</em> is a real error, printed as shipped. Watch the squiggles thin out. The voice never needed fixing.</p>
+  </main>
+</div>
+
+<script>
+const DATA = {"posts":[{"slug":"como-o-spring-me-ajudou-a-manter-o-active-record","date":"2007-10-13","title":"como o spring me ajudou a manter o active record","words":670,"src":"blog","topic":"java","specimen":{"q":"“Ora ora ora! Espera aí!… E isso me tirou o sono!”","n":"the first post ever"}},{"slug":"scea-5-beta","date":"2007-10-15","title":"scea 5 beta","words":219,"src":"blog","topic":"java","specimen":null},{"slug":"software-livre","date":"2007-10-21","title":"software livre","words":44,"src":"blog","topic":"java","specimen":null},{"slug":"eu-odeio-xml","date":"2007-10-29","title":"eu odeio xml","words":339,"src":"blog","topic":"java","specimen":null},{"slug":"enquanto-isso-em-portugal","date":"2007-11-10","title":"enquanto isso em portugal","words":59,"src":"blog","topic":"life","specimen":null},{"slug":"language-change","date":"2007-11-20","title":"language change","words":120,"src":"blog","topic":"life","specimen":null},{"slug":"ruby-on-db2-a-linux-nightmare-with-a-happy-end","date":"2007-11-20","title":"ruby on db2 a linux nightmare with a happy end","words":234,"src":"blog","topic":"ruby","specimen":{"q":"“…with [a happy end]”","n":"first English post — the Brazilian loan"}},{"slug":"why-every-programmer-have-to-be-dumb","date":"2007-11-23","title":"why every programmer have to be dumb","words":432,"src":"blog","topic":"leadership","specimen":{"q":"“why every programmer [have] to be dumb”","n":"subject–verb agreement, in the title"}},{"slug":"rubyworks-production-stack-for-rails","date":"2007-12-01","title":"rubyworks production stack for rails","words":615,"src":"blog","topic":"ruby","specimen":null},{"slug":"spring-25-dependency-injection-that-doesnt-hurt","date":"2007-12-07","title":"spring 25 dependency injection that doesnt hurt","words":730,"src":"blog","topic":"java","specimen":{"q":"“The [hability] to tweak implementations”","n":"hypercorrected h (habilidade)"}},{"slug":"rails-20-scaffold","date":"2007-12-21","title":"rails 20 scaffold","words":302,"src":"blog","topic":"ruby","specimen":null},{"slug":"rails-20-xml-data-type-and-db2","date":"2008-01-02","title":"rails 20 xml data type and db2","words":357,"src":"blog","topic":"ruby","specimen":null},{"slug":"dbunit-and-hibernate","date":"2008-01-17","title":"dbunit and hibernate","words":549,"src":"blog","topic":"java","specimen":null},{"slug":"openid","date":"2008-02-18","title":"openid","words":429,"src":"blog","topic":"java","specimen":null},{"slug":"qcon-2008-london","date":"2008-03-07","title":"qcon 2008 london","words":113,"src":"blog","topic":"community","specimen":null},{"slug":"qcon-2008-domain-specific-languages","date":"2008-03-10","title":"qcon 2008 domain specific languages","words":794,"src":"blog","topic":"community","specimen":null},{"slug":"euruko-2008-european-rubyconf-prague","date":"2008-03-25","title":"euruko 2008 european rubyconf prague","words":80,"src":"blog","topic":"ruby","specimen":null},{"slug":"why-i-like-ruby-or-ruby-the-language-of-the-lazy-programmer","date":"2008-04-01","title":"why i like ruby or ruby the language of the lazy programmer","words":575,"src":"blog","topic":"ruby","specimen":{"q":"“accomplishes [de] same task”","n":"Portuguese inside an English sentence"}},{"slug":"qcon-2008-slides-available","date":"2008-04-04","title":"qcon 2008 slides available","words":116,"src":"blog","topic":"community","specimen":null},{"slug":"jruby-db2-xquery-bug","date":"2008-04-07","title":"jruby db2 xquery bug","words":266,"src":"blog","topic":"ruby","specimen":null},{"slug":"time-to-reveal","date":"2008-04-08","title":"time to reveal","words":226,"src":"blog","topic":"life","specimen":null},{"slug":"passengermod_rails-released","date":"2008-04-14","title":"passengermod_rails released","words":97,"src":"blog","topic":"ruby","specimen":null},{"slug":"a-couple-of-things-from-here","date":"2008-05-10","title":"a couple of things from here","words":260,"src":"blog","topic":"life","specimen":null},{"slug":"euruko-2008-materials-available","date":"2008-05-14","title":"euruko 2008 materials available","words":59,"src":"blog","topic":"community","specimen":null},{"slug":"passenger-mod_rails-and-problems-with-custom-apache-installation","date":"2008-06-07","title":"passenger mod_rails and problems with custom apache installation","words":176,"src":"blog","topic":"ruby","specimen":null},{"slug":"presentation-spring-framework","date":"2008-06-07","title":"presentation spring framework","words":33,"src":"blog","topic":"community","specimen":null},{"slug":"mock-objects","date":"2008-07-07","title":"mock objects","words":186,"src":"blog","topic":"java","specimen":null},{"slug":"new-provider","date":"2008-07-26","title":"new provider","words":38,"src":"blog","topic":"life","specimen":null},{"slug":"the-biggest-rails-event-in-latin-america","date":"2008-08-04","title":"the biggest rails event in latin america","words":98,"src":"blog","topic":"ruby","specimen":null},{"slug":"why-i-like-ruby-1-alias_method","date":"2008-08-07","title":"why i like ruby 1 alias_method","words":307,"src":"blog","topic":"ruby","specimen":null},{"slug":"yes-we-do-eat","date":"2008-08-15","title":"yes we do eat","words":75,"src":"blog","topic":"hacks","specimen":null},{"slug":"rails-vulnerability-on-rexml","date":"2008-08-24","title":"rails vulnerability on rexml","words":55,"src":"blog","topic":"ruby","specimen":null},{"slug":"mac-os-x-getting-mysql-and-rails-to-work","date":"2008-08-28","title":"mac os x getting mysql and rails to work","words":217,"src":"blog","topic":"ruby","specimen":null},{"slug":"railsconf-europe-2008-heading-to-berlin","date":"2008-08-30","title":"railsconf europe 2008 heading to berlin","words":60,"src":"blog","topic":"ruby","specimen":null},{"slug":"railsconf-europe-2008-impressions-and-highlights","date":"2008-09-09","title":"railsconf europe 2008 impressions and highlights","words":486,"src":"blog","topic":"ruby","specimen":null},{"slug":"were-hiring","date":"2008-09-26","title":"were hiring","words":96,"src":"blog","topic":"leadership","specimen":{"q":"“[Doubts?] Send them to jobs@…”","n":"Dúvidas? — the flagship false friend"}},{"slug":"dont-use-rexml-i-mean-it","date":"2008-10-08","title":"dont use rexml i mean it","words":102,"src":"blog","topic":"ruby","specimen":null},{"slug":"understanding-ruby-threads","date":"2008-10-28","title":"understanding ruby threads","words":248,"src":"blog","topic":"ruby","specimen":null},{"slug":"merb-turns-10-and-started-driving-me-crazy","date":"2008-11-18","title":"merb turns 10 and started driving me crazy","words":258,"src":"blog","topic":"ruby","specimen":null},{"slug":"rails-performance-scripts-profiler-benchmarker","date":"2008-11-20","title":"rails performance scripts profiler benchmarker","words":246,"src":"blog","topic":"ai","specimen":null},{"slug":"apologizing-in-advance-p","date":"2008-12-03","title":"apologizing in advance p","words":74,"src":"blog","topic":"life","specimen":null},{"slug":"somewhere-in-between","date":"2008-12-29","title":"somewhere in between","words":264,"src":"blog","topic":"life","specimen":null},{"slug":"eclipse-tip-debugging-non-wtp-projects","date":"2009-02-01","title":"eclipse tip debugging non wtp projects","words":211,"src":"blog","topic":"java","specimen":null},{"slug":"qcon-london-09","date":"2009-03-09","title":"qcon london 09","words":59,"src":"blog","topic":"community","specimen":null},{"slug":"final-classes-are-evil","date":"2009-03-17","title":"final classes are evil","words":413,"src":"blog","topic":"java","specimen":null},{"slug":"long-stand-up-meetings","date":"2009-04-06","title":"long stand up meetings","words":430,"src":"blog","topic":"leadership","specimen":{"q":"“they were actually, well, [sit].”","n":"estavam sentados"}},{"slug":"jruby-on-rails-and-google-app-engine","date":"2009-04-10","title":"jruby on rails and google app engine","words":407,"src":"blog","topic":"ruby","specimen":null},{"slug":"git-cheat-shee","date":"2009-04-22","title":"git cheat shee","words":120,"src":"blog","topic":"ruby","specimen":null},{"slug":"rcov-jruby-and-rcov_plugin","date":"2009-05-05","title":"rcov jruby and rcov_plugin","words":116,"src":"blog","topic":"ruby","specimen":null},{"slug":"rails-readable-test-names-run-individual-tests-from-the-console","date":"2009-05-16","title":"rails readable test names run individual tests from the console","words":138,"src":"blog","topic":"ruby","specimen":null},{"slug":"railswaycon-jruby-internals-by-ola-bini","date":"2009-05-29","title":"railswaycon jruby internals by ola bini","words":401,"src":"blog","topic":"ruby","specimen":{"q":"“JRuby is now [faced as] a true alternative”","n":"encarado como"}},{"slug":"coding-dojo-1-the-fun-begins","date":"2009-06-06","title":"coding dojo 1 the fun begins","words":266,"src":"blog","topic":"community","specimen":null},{"slug":"how-do-you-keep-yourself-focused","date":"2009-06-08","title":"how do you keep yourself focused","words":501,"src":"blog","topic":"leadership","specimen":null},{"slug":"helping-the-jruby-effort-debugging-the-source","date":"2009-06-14","title":"helping the jruby effort debugging the source","words":287,"src":"blog","topic":"ruby","specimen":null},{"slug":"google-io-thoughtworks-on-gae","date":"2009-06-22","title":"google io thoughtworks on gae","words":468,"src":"blog","topic":"community","specimen":null},{"slug":"jruby-on-rails-and-legacy-java-apps-managing-dependencies","date":"2009-07-01","title":"jruby on rails and legacy java apps managing dependencies","words":741,"src":"blog","topic":"ruby","specimen":null},{"slug":"procs-lambdas-blocks-whats-the-difference","date":"2009-07-22","title":"procs lambdas blocks whats the difference","words":497,"src":"blog","topic":"ruby","specimen":null},{"slug":"jvm-language-preferences-poll-results","date":"2009-07-31","title":"jvm language preferences poll results","words":131,"src":"blog","topic":"java","specimen":null},{"slug":"rails-rumble-09","date":"2009-08-25","title":"rails rumble 09","words":180,"src":"blog","topic":"ruby","specimen":null},{"slug":"rails-summit-2009-im-speaking","date":"2009-09-03","title":"rails summit 2009 im speaking","words":188,"src":"blog","topic":"ruby","specimen":null},{"slug":"refactoring-for-readability","date":"2009-09-18","title":"refactoring for readability","words":861,"src":"blog","topic":"java","specimen":null},{"slug":"a-few-more-thoughts-on-final-classes","date":"2009-10-07","title":"a few more thoughts on final classes","words":637,"src":"blog","topic":"java","specimen":null},{"slug":"soon-off-to-conquer-lands-afar","date":"2009-10-08","title":"soon off to conquer lands afar","words":253,"src":"blog","topic":"life","specimen":null},{"slug":"my-slides-from-rails-summit-09","date":"2009-10-18","title":"my slides from rails summit 09","words":77,"src":"blog","topic":"ruby","specimen":null},{"slug":"rupy-2009-poznan","date":"2009-11-04","title":"rupy 2009 poznan","words":203,"src":"blog","topic":"community","specimen":null},{"slug":"managing-multiple-ruby-versions","date":"2010-01-02","title":"managing multiple ruby versions","words":310,"src":"blog","topic":"ruby","specimen":{"q":"“whatever [rocks your boat]”","n":"idiom blend"}},{"slug":"monit-thinking-sphinx-and-rvm","date":"2010-01-13","title":"monit thinking sphinx and rvm","words":420,"src":"blog","topic":"ruby","specimen":null},{"slug":"my-take-on-rails-environment-specific-constants","date":"2010-01-23","title":"my take on rails environment specific constants","words":117,"src":"blog","topic":"ruby","specimen":null},{"slug":"hacking-rubys-syntax","date":"2010-02-03","title":"hacking rubys syntax","words":272,"src":"blog","topic":"ruby","specimen":null},{"slug":"learning-objective-c-a-ruby-analogy","date":"2010-02-25","title":"learning objective c a ruby analogy","words":286,"src":"blog","topic":"ruby","specimen":null},{"slug":"upgrading-appconstants-to-rails-3","date":"2010-02-28","title":"upgrading appconstants to rails 3","words":324,"src":"blog","topic":"ruby","specimen":null},{"slug":"fallingdreams-my-very-own-tetris-clone","date":"2010-04-09","title":"fallingdreams my very own tetris clone","words":368,"src":"blog","topic":"hacks","specimen":null},{"slug":"goodbye-europe-a-two-year-retrospective","date":"2010-04-10","title":"goodbye europe a two year retrospective","words":379,"src":"blog","topic":"life","specimen":{"q":"“[in a way or another], contributed [to improve] my skills”","n":"double calque"}},{"slug":"small-update-to-appconstants","date":"2010-04-24","title":"small update to appconstants","words":83,"src":"blog","topic":"hacks","specimen":null},{"slug":"are_you_testing_your_javascript_yet","date":"2010-06-14","title":"are_you_testing_your_javascript_yet","words":292,"src":"blog","topic":"ruby","specimen":null},{"slug":"help-stop-the-ie-money-drain","date":"2010-09-28","title":"help stop the ie money drain","words":231,"src":"blog","topic":"hacks","specimen":null},{"slug":"clouds-against-the-floods","date":"2011-01-16","title":"clouds against the floods","words":910,"src":"blog","topic":"hacks","specimen":{"q":"“over [25 millions of dollars]”","n":"25 milhões de dólares"}},{"slug":"update-to-appconstants-it-can-now-be-used-as-a-gem","date":"2011-02-02","title":"update to appconstants it can now be used as a gem","words":67,"src":"blog","topic":"ruby","specimen":null},{"slug":"clouds-against-the-floods-presentation-available","date":"2011-02-12","title":"clouds against the floods presentation available","words":51,"src":"blog","topic":"community","specimen":null},{"slug":"ide-review-rubymine","date":"2011-02-16","title":"ide review rubymine","words":565,"src":"blog","topic":"ruby","specimen":{"q":"“Moves [de] line or selected block”","n":"“de” for “the”, again"}},{"slug":"rottingnames-for-iphone-available-for-free","date":"2011-03-19","title":"rottingnames for iphone available for free","words":113,"src":"blog","topic":"hacks","specimen":null},{"slug":"simplejquery-daterange-picker","date":"2011-03-31","title":"simplejquery daterange picker","words":92,"src":"blog","topic":"hacks","specimen":null},{"slug":"look-ma-no-hands-tweeting-with-your-voice","date":"2011-04-09","title":"look ma no hands tweeting with your voice","words":106,"src":"blog","topic":"hacks","specimen":null},{"slug":"one-year-of-thoughtworks-a-retrospective","date":"2011-04-25","title":"one year of thoughtworks a retrospective","words":471,"src":"blog","topic":"life","specimen":null},{"slug":"good-bye-wordpress-hello-nanoc","date":"2011-05-08","title":"Goodbye Wordpress, Hello nanoc!","words":143,"src":"blog","topic":"ruby","specimen":null},{"slug":"a-few-useful-git-commands","date":"2011-05-29","title":"A Few Useful Git Commands","words":151,"src":"blog","topic":"ruby","specimen":null},{"slug":"a-tale-of-concurrency-partitioning-data-between-processes","date":"2011-06-19","title":"A Tale Of Concurrency: Partitioning Data Between Processes","words":1131,"src":"blog","topic":"ruby","specimen":null},{"slug":"hiring-good-people-is-really-simple","date":"2011-07-30","title":"Hiring good people is really simple","words":905,"src":"blog","topic":"leadership","specimen":null},{"slug":"report-clojure-meetup-1","date":"2011-10-12","title":"Report: Clojure Meetup - 1","words":320,"src":"blog","topic":"clojure","specimen":null},{"slug":"rubyconf-brazil-2011","date":"2011-11-10","title":"RubyConf Brazil 2011","words":182,"src":"blog","topic":"ruby","specimen":null},{"slug":"help-keep-rottingnames-on-the-appstore","date":"2011-12-07","title":"help-keep-rottingnames-on-the-appstore","words":203,"src":"blog","topic":"hacks","specimen":null},{"slug":"so-long-2011-year-highlights","date":"2012-01-01","title":"So long 2011: Year highlights","words":314,"src":"blog","topic":"leadership","specimen":null},{"slug":"announcing-the-sydney-clojure-user-group","date":"2012-01-20","title":"announcing the sydney clojure user group","words":404,"src":"blog","topic":"clojure","specimen":null},{"slug":"backlog-ola-bini-on-clojure-conj","date":"2012-01-22","title":"backlog ola bini on clojure conj","words":322,"src":"blog","topic":"clojure","specimen":null},{"slug":"project-euler-problem-4-in-clojure","date":"2012-02-05","title":"project euler problem 4 in clojure","words":376,"src":"blog","topic":"clojure","specimen":null},{"slug":"clj-syd-report-number-0","date":"2012-02-22","title":"clj syd report number 0","words":379,"src":"blog","topic":"clojure","specimen":null},{"slug":"build-automation-with-xcode-4-dot-3-kif-and-jenkins","date":"2012-05-03","title":"build automation with xcode 4 dot 3 kif and jenkins","words":1012,"src":"blog","topic":"hacks","specimen":null},{"slug":"sean-corfield-clojure-and-cfml-sitting-in-a-tree","date":"2012-08-23","title":"Sean Corfield: Clojure and CFML sitting in a tree","words":630,"src":"blog","topic":"clojure","specimen":null},{"slug":"clojure-leiningen-heroku-aot-compilation-gotchas","date":"2012-09-10","title":"Clojure, leiningen 2 and Heroku: AOT compilation gotchas","words":813,"src":"blog","topic":"clojure","specimen":null},{"slug":"this-is-was-we-built-in-24-hours","date":"2012-11-05","title":"This is what we built in 24 hours","words":331,"src":"blog","topic":"hacks","specimen":{"q":"permalink: this-is-[was]-we-built…","n":"typo fossilised in the URL"}},{"slug":"monads-in-small-bites-part-i-functors","date":"2012-11-30","title":"Monads in small bites - Part I - Functors","words":1540,"src":"blog","topic":"clojure","specimen":null},{"slug":"monads-in-small-bites-part-ii-applicative-functors","date":"2012-12-02","title":"Monads in small bites - Part II - Applicative Functors","words":1440,"src":"blog","topic":"clojure","specimen":null},{"slug":"monads-in-small-bites-part-iii-monoids","date":"2012-12-05","title":"Monads in small bites - Part III - Monoids","words":1149,"src":"blog","topic":"clojure","specimen":{"q":"“the final post in [these series]”","n":"série/series number trap"}},{"slug":"monads-in-small-bites-part-iv-monads","date":"2012-12-08","title":"Monads in small bites - Part IV - Monads","words":2485,"src":"blog","topic":"clojure","specimen":null},{"slug":"so-long-2012-year-highlights","date":"2013-01-02","title":"So long 2012: Year highlights","words":851,"src":"blog","topic":"leadership","specimen":null},{"slug":"bouncer-validation-lib-for-clojure","date":"2013-01-04","title":"bouncer validation lib for clojure","words":1082,"src":"blog","topic":"clojure","specimen":null},{"slug":"purely-functional-data-structures-in-clojure-leftist-heaps","date":"2013-02-03","title":"Purely functional data structures in Clojure: Leftist Heaps","words":968,"src":"blog","topic":"clojure","specimen":null},{"slug":"clojure-and-why-calculating-is-better-than-scheming","date":"2013-03-25","title":"clojure and why calculating is better than scheming","words":1663,"src":"blog","topic":"clojure","specimen":{"q":"“a critique [to] Abelson and Sussman's classic”","n":"crítica a"}},{"slug":"functional-programmers-unite-lambdajam-down-under","date":"2013-04-11","title":"Functional Programmers Unite! LambdaJam down under","words":259,"src":"blog","topic":"clojure","specimen":null},{"slug":"clojure-core-dot-async-lisp-advantage","date":"2013-07-06","title":"Clojure, core.async and the Lisp advantage","words":1379,"src":"blog","topic":"clojure","specimen":null},{"slug":"purely-functional-data-structures-in-clojure-red-black-trees","date":"2013-07-15","title":"Purely functional data structures in Clojure: Red-Black Trees","words":917,"src":"blog","topic":"clojure","specimen":{"q":"“which, [besides simpler], is also persistent”","n":"além de mais simples"}},{"slug":"cufp-slash-icfp-2013","date":"2013-09-25","title":"CUFP/ICFP 2013","words":792,"src":"blog","topic":"clojure","specimen":null},{"slug":"so-long-2013-year-highlights","date":"2014-01-01","title":"So long 2013: Year highlights","words":619,"src":"blog","topic":"leadership","specimen":null},{"slug":"validation-and-internationalization-in-clojure-with-bouncer-and-tower","date":"2014-01-04","title":"Validation and Internationalization in Clojure with bouncer &amp; tower","words":824,"src":"blog","topic":"clojure","specimen":null},{"slug":"functional-composition-with-monads-kleisli-functors","date":"2014-06-17","title":"Functional composition with Monads, Kleislis and Functors","words":1377,"src":"blog","topic":"clojure","specimen":{"q":"“[plubming] · [comprehenstion] · [reduntant]”","n":"book-crunch typo cluster"}},{"slug":"euroclojure-2014-and-clojure-reactive-programming","date":"2014-07-20","title":"EuroClojure 2014 and announcing my book","words":330,"src":"blog","topic":"clojure","specimen":null},{"slug":"clojurebridge-sydney","date":"2014-12-22","title":"ClojureBridge Sydney, vol. I","words":254,"src":"blog","topic":"clojure","specimen":null},{"slug":"staring-a-new-chapter","date":"2014-12-27","title":"A new chapter begins","words":391,"src":"blog","topic":"life","specimen":{"q":"permalink: [staring]-a-new-chapter","n":"the new-beginnings post, typo forever"}},{"slug":"so-long-2014-year-highlights","date":"2014-12-31","title":"So long 2014: Year highlights","words":660,"src":"blog","topic":"leadership","specimen":null},{"slug":"clojure-reactive-programming-has-been-published","date":"2015-03-27","title":"Clojure Reactive Programming has been published","words":122,"src":"blog","topic":"clojure","specimen":null},{"slug":"so-long-2015-year-highlights","date":"2016-01-04","title":"So long 2015: Year highlights","words":860,"src":"blog","topic":"life","specimen":{"q":"“it's taught by Erik Meijer and [I'm fan]”","n":"sou fã"}},{"slug":"the-clojure-sydney-meetup-four-years-in","date":"2016-02-08","title":"The Clojure Sydney Meetup, four years in","words":337,"src":"blog","topic":"clojure","specimen":null},{"slug":"mission-accomplished","date":"2016-05-27","title":"Mission accomplished","words":283,"src":"blog","topic":"life","specimen":{"q":"“[I have talked] about it [last year]”","n":"present perfect + definite past"}},{"slug":"highlights-of-the-symposium-on-blockchain-and-distributed-ledger-technology-day-1","date":"2018-02-19","title":"Highlights of the Symposium on Blockchain and Distributed Ledger Technology - Day 1","words":1693,"src":"blog","topic":"ai","specimen":null},{"slug":"highlights-of-the-symposium-on-blockchain-and-distributed-ledger-technology-day-2","date":"2018-02-19","title":"Highlights of the Symposium on Blockchain and Distributed Ledger Technology - Day 2","words":1474,"src":"blog","topic":"ai","specimen":null},{"slug":"classifier-evaluation","date":"2020-04-09","title":"Classifier Evaluation","words":948,"src":"blog","topic":"ai","specimen":null},{"slug":"be-bored","date":"2020-05-12","title":"Be Bored","words":950,"src":"blog","topic":"leadership","specimen":{"q":"“as if [you take technology away we are at a loss]… at the mercy of the moon”","n":"the most lyrical line carries the accent"}},{"slug":"issue-1","date":"2021-01-18","title":"Issue #1","words":759,"src":"newsletter","topic":"leadership","specimen":null},{"slug":"a-newsletter","date":"2021-01-21","title":"A Newsletter","words":170,"src":"blog","topic":"life","specimen":{"q":"“will [primarity] focus [of] leadership”","n":"the farewell thesis, two errors"}},{"slug":"issue-2","date":"2021-01-25","title":"Issue #2","words":1235,"src":"newsletter","topic":"leadership","specimen":null},{"slug":"issue-3-parler","date":"2021-02-01","title":"The Parler hack (notes)","words":12,"src":"drawer","draft":true,"topic":"leadership","specimen":null},{"slug":"issue-3","date":"2021-02-03","title":"Issue #3","words":1423,"src":"newsletter","topic":"leadership","specimen":{"q":"“Robinhood robbed the little guy [from] the opportunity”","n":"roubar de"}},{"slug":"issue-4","date":"2021-02-20","title":"Issue #4","words":1488,"src":"newsletter","topic":"leadership","specimen":null},{"slug":"the-leadtech-diet-issue-5","date":"2021-03-04","title":"The LeadTech Diet - Issue #5","words":1086,"src":"newsletter","topic":"leadership","specimen":null},{"slug":"the-leadtech-diet-issue-6","date":"2021-03-19","title":"The LeadTech Diet - Issue #6","words":1497,"src":"newsletter","topic":"leadership","specimen":null},{"slug":"the-leadtech-diet-issue-7","date":"2021-04-14","title":"The LeadTech Diet - Issue #7","words":1623,"src":"newsletter","topic":"leadership","specimen":null},{"slug":"the-leadtech-diet-issue-7-650","date":"2021-05-26","title":"The LeadTech Diet - Issue #8","words":1041,"src":"newsletter","topic":"leadership","specimen":null},{"slug":"the-leadtech-diet-9","date":"2021-09-07","title":"The LeadTech Diet #9","words":1218,"src":"newsletter","topic":"leadership","specimen":null},{"slug":"the-leadtech-diet-issue-10","date":"2022-01-05","title":"The LeadTech Diet - Issue #10","words":896,"src":"newsletter","topic":"leadership","specimen":{"q":"“[congratulations for] making it through”","n":"parabéns por"}},{"slug":"the-leadtech-diet-issue-11","date":"2022-01-17","title":"The LeadTech Diet - Issue #11","words":1323,"src":"newsletter","topic":"leadership","specimen":null},{"slug":"the-leadtech-diet-issue-12","date":"2022-05-26","title":"The LeadTech Diet - Issue #12","words":1099,"src":"newsletter","topic":"leadership","specimen":null},{"slug":"the-leadtech-diet-issue-13","date":"2023-01-18","title":"The LeadTech Diet - Issue #13","words":727,"src":"newsletter","topic":"leadership","specimen":null},{"slug":"tltd-13-reasons-to-become-an-engineering","date":"2023-09-06","title":"TLTD #14 - Reasons to become an engineering manager","words":1191,"src":"newsletter","topic":"leadership","specimen":{"q":"“[it's not always that] you get to actually make decisions”","n":"não é sempre que"}},{"slug":"tltd-14-the-big-four-oh","date":"2023-09-18","title":"TLTD #15 - The big four oh","words":1034,"src":"newsletter","topic":"life","specimen":{"q":"“tend to become less social and [more recluse]”","n":"recluso as adjective"}},{"slug":"principle-of-least-astonishment","date":"2023-09-20","title":"Principle of least astonishment","words":0,"src":"drawer","draft":true,"topic":"leadership","specimen":null},{"slug":"the-non-negotiables-of-giving-feedback","date":"2023-09-25","title":"The non-negotiables of giving feedback","words":38,"src":"drawer","draft":true,"topic":"leadership","specimen":null},{"slug":"why-asking-for-help-is-a-sign-of","date":"2023-09-28","title":"Why asking for help is a sign of…","words":0,"src":"drawer","draft":true,"topic":"leadership","specimen":null},{"slug":"how-and-why-i-landed-in-leadership","date":"2023-10-01","title":"How and why I landed in leadership","special":"breaks off mid-sentence: “while being able to drive ”","words":322,"src":"drawer","draft":true,"topic":"leadership","specimen":null},{"slug":"tltd-16-the-first-90-days","date":"2024-11-25","title":"TLTD #16 - The first 90 days","words":1101,"src":"newsletter","topic":"leadership","specimen":{"q":"“[I've learned] long ago that technology for technology's sake…”","n":"the tense tell's last appearance"}},{"slug":"the-hidden-tax-of-meta-work","date":"2024-11-28","title":"The hidden tax of meta-work","words":746,"src":"drawer","draft":true,"topic":"leadership","specimen":null},{"slug":"your-capacity-planning-is-broken","date":"2024-12-02","title":"Your capacity planning is broken","words":736,"src":"drawer","draft":true,"topic":"leadership","specimen":null},{"slug":"tech-things","date":"2024-12-05","title":"Tech things (link stub)","words":11,"src":"drawer","draft":true,"topic":"ai","specimen":null},{"slug":"ep-00-introduction","date":"2024-12-06","title":"Ep. 00 - Introduction","words":179,"src":"newsletter","topic":"life","specimen":null},{"slug":"reasons-to-become-an-engineering","date":"2024-12-08","title":"Right reasons to become an EM (sequel)","words":824,"src":"drawer","draft":true,"topic":"leadership","specimen":null},{"slug":"tltd-17-best-reads-of-2024","date":"2024-12-09","title":"TLTD #17 - Best reads of 2024","words":1184,"src":"newsletter","topic":"leadership","specimen":null},{"slug":"how-are-you-burning-out-your-team","date":"2024-12-12","title":"How are you burning out your team","words":1437,"src":"drawer","draft":true,"topic":"leadership","specimen":null},{"slug":"firing-people-isnt-an-ai-strategy","date":"2024-12-16","title":"Firing people isn't an AI strategy","words":1116,"src":"newsletter","topic":"ai","specimen":null},{"slug":"looking-back-at-2024","date":"2024-12-20","title":"TLTD #18 - Looking back at 2024","words":1058,"src":"newsletter","topic":"leadership","specimen":null},{"slug":"ep-01-gemini-and-i-talk-software","date":"2024-12-28","title":"Ep-01: Gemini and I talk software (empty)","words":0,"src":"drawer","draft":true,"topic":"ai","specimen":null},{"slug":"tltd-33-maybe-your-chatbot-shouldnt","date":"2025-01-08","title":"Maybe your chatbot shouldn't","words":1356,"src":"drawer","draft":true,"topic":"ai","specimen":null},{"slug":"why-your-strategy-team-doesnt-do","date":"2025-01-12","title":"Why your strategy team doesn't do strategy","words":872,"src":"drawer","draft":true,"topic":"leadership","specimen":null},{"slug":"tltd-19-the-death-of-software-design","date":"2025-01-13","title":"TLTD #19 - The Death of Software Design","words":1652,"src":"newsletter","topic":"ai","specimen":null},{"slug":"leadership-coaching","date":"2025-01-17","title":"Leadership Coaching","words":549,"src":"newsletter","topic":"leadership","specimen":null},{"slug":"tltd-24-dangling-off-a-bridge","date":"2025-01-18","title":"Dangling off a bridge","words":1004,"src":"drawer","draft":true,"topic":"leadership","specimen":null},{"slug":"tltd-claude-constitution","date":"2025-01-26","title":"Claude Got an 84-Page Constitution. Your Team Probably Needs One Too.","words":2125,"src":"newsletter","topic":"ai","specimen":null},{"slug":"tltd-20-how-ai-changed-the-way-i","date":"2025-01-27","title":"TLTD #20 - How AI Changed the Way I Work","words":1563,"src":"newsletter","topic":"ai","specimen":null},{"slug":"tltd-21-the-personality-of-ai-systems","date":"2025-02-03","title":"TLTD #21 - The personality of AI Systems","words":1420,"src":"newsletter","topic":"ai","specimen":null},{"slug":"your-metrics-are-lying-to-you","date":"2025-02-10","title":"TLTD #22 - Your Metrics Are Lying To You","words":1079,"src":"newsletter","topic":"ai","specimen":null},{"slug":"ai-tools-the-new-table-stakes-for","date":"2025-02-12","title":"AI tools: the new table stakes","words":1141,"src":"drawer","draft":true,"topic":"ai","specimen":null},{"slug":"the-art-of-action","date":"2025-02-25","title":"The Art of Action","special":"cuts off mid-sentence","words":766,"src":"drawer","draft":true,"topic":"leadership","specimen":null},{"slug":"tltd-23-of-ai-agents-and-snake-oil","date":"2025-03-31","title":"TLTD #23 - Of AI Agents and Snake Oil","words":1643,"src":"newsletter","topic":"ai","specimen":null},{"slug":"tltd-21-ai-writes-better-code-than","date":"2025-04-28","title":"TLTD #24 - AI Writes Better Code Than You","words":2689,"src":"newsletter","topic":"ai","specimen":null},{"slug":"join-me-on-notes","date":"2025-05-05","title":"Join me on Notes (stub)","words":305,"src":"drawer","draft":true,"topic":"life","specimen":null},{"slug":"invite-your-friends-to-read-the-leadtech","date":"2025-05-12","title":"Invite your friends to read The LeadTech Diet","words":235,"src":"newsletter","topic":"leadership","specimen":null},{"slug":"tltd-25-this-weeks-special","date":"2025-05-15","title":"TLTD #25 - This Week","words":783,"src":"newsletter","topic":"ai","specimen":null},{"slug":"tltd-26-observability-for-ai-agents","date":"2025-05-20","title":"TLTD #26 - Observability for AI Agents","words":1416,"src":"newsletter","topic":"ai","specimen":null},{"slug":"tltd-27-this-weeks-special","date":"2025-05-22","title":"TLTD #27 - This Week","words":886,"src":"newsletter","topic":"ai","specimen":null},{"slug":"ai-adoption-has-a-leadership-problem","date":"2025-05-26","title":"AI adoption has a leadership problem","words":1522,"src":"drawer","draft":true,"topic":"ai","specimen":null},{"slug":"tltd-28-this-weeks-special","date":"2025-05-29","title":"TLTD #28 - This Week","words":873,"src":"newsletter","topic":"ai","specimen":null},{"slug":"tltd-29-vibe-coding-your-way-to-your","date":"2025-06-04","title":"TLTD #29 - Vibe Coding Your Way to a Seed Round","words":1793,"src":"newsletter","topic":"ai","specimen":{"q":"“it cost [few hundred bucks]”","n":"article omission"}},{"slug":"tltd-30-this-weeks-special","date":"2025-06-05","title":"TLTD #30 - This Week","words":816,"src":"newsletter","topic":"ai","specimen":null},{"slug":"the-leadtech-diet-reader-survey","date":"2025-06-13","title":"The LeadTech Diet Reader Survey","words":103,"src":"newsletter","topic":"leadership","specimen":null},{"slug":"tltd-31-this-weeks-special","date":"2025-06-19","title":"TLTD #31 - This Week","words":860,"src":"newsletter","topic":"ai","specimen":null},{"slug":"tltd-32-this-weeks-special","date":"2025-07-28","title":"TLTD #32 - This Week","words":602,"src":"newsletter","topic":"ai","specimen":null},{"slug":"tltd-33-ai-assisted-coding-kirodev","date":"2025-07-28","title":"TLTD #33 - AI Assisted Coding: Kiro.dev","words":1473,"src":"newsletter","topic":"ai","specimen":{"q":"“[without I ever explicitly telling it] to do so”","n":"sem eu nunca ter dito — the strongest survivor"}},{"slug":"tltd-34-paper-trail-small-language","date":"2025-08-18","title":"TLTD #34 | Paper Trail: Small Language Models are the Future of Agentic AI","words":1133,"src":"newsletter","topic":"ai","specimen":null},{"slug":"tltd-35-this-weeks-special","date":"2025-08-22","title":"This Week's Special #35","words":706,"src":"drawer","draft":true,"topic":"ai","specimen":null},{"slug":"tltd-35-paper-trail-chain-of-thought","date":"2025-08-25","title":"Paper Trail: chain-of-thought monitoring","words":1078,"src":"drawer","draft":true,"topic":"ai","specimen":null},{"slug":"tltd-34-best-reads-of-2025","date":"2026-01-14","title":"TLTD 34 - Best reads of 2025","words":1429,"src":"newsletter","topic":"leadership","specimen":{"q":"“I'm still [optimist]” · “shed light [into]”","n":"the survivor colony, Jan 2026"}},{"slug":"2025-review-and-2026-predictions","date":"2026-01-20","title":"A review of 2025 and a look at 2026","words":964,"src":"newsletter","topic":"leadership","specimen":null},{"slug":"ai-at-davos-the-three-conversations-that-matter","date":"2026-01-29","title":"AI at Davos - The Three Conversations That Matter","words":1585,"src":"newsletter","topic":"ai","specimen":null},{"slug":"voice-ai-the-next-platform-shift","date":"2026-02-24","title":"Voice AI: The Next Platform Shift","words":3496,"src":"newsletter","topic":"ai","specimen":null},{"slug":"tltd-37-ai-security-guardrails-dont-work","date":"2026-03-26","title":"TLTD #37 - Your AI Guardrails Don","words":2838,"src":"newsletter","topic":"ai","specimen":null},{"slug":"meet-liv4all-100-real-users","date":"2026-04-23","title":"Meet Liv4All: 100 Real Users, No Demo, No Waitlist","words":982,"src":"newsletter","topic":"hacks","specimen":null},{"slug":"tltd-42-there-is-no-best-move","date":"2026-04-28","title":"#42 - There is no best move","words":2635,"src":"newsletter","topic":"ai","specimen":null},{"slug":"ai-agents-web-friction","date":"2026-05-12","title":"TLTD #44 - The Web Hates AI Agents","words":2501,"src":"newsletter","topic":"ai","specimen":null},{"slug":"tltd-43-youre-not-building-tools","date":"2026-05-19","title":"TLTD #43 - Capable interns with little lived experience","words":2104,"src":"newsletter","topic":"ai","specimen":null},{"slug":"tokenmaxxing-is-a-flow-problem","date":"2026-06-06","title":"Tokenmaxxing, Meet Systems Thinking","words":2342,"src":"newsletter","topic":"ai","specimen":{"q":"“Jensen's selling the tokens. Nobody's selling you the gauge.”","n":"clean — nothing to mark","clean":true}},{"slug":"ai-vendor-kill-switch","date":"2026-06-30","title":"A Hell of a Kill Switch","words":1620,"src":"newsletter","topic":"ai","specimen":null},{"slug":"a-tenancy-not-a-sovereignty","date":"2026-07-08","title":"Sovereignty Is an Inference Problem","words":1462,"src":"newsletter","topic":"ai","specimen":{"q":"“That's a tenancy, not [a sovereignty].”","n":"deliberate — he corrects the language back","clean":true}}],"counts":{"published":180,"blog":128,"newsletter":52,"drafts":20}};
+
+const TOPICS = {
+  java:       { name: "Java & Enterprise",       hex: "#B8842C", orbit: 0, finalSize: 7 },
+  life:       { name: "Life & Moves",            hex: "#6C74C4", orbit: 1, finalSize: 7 },
+  ruby:       { name: "Ruby & Rails",            hex: "#C74359", orbit: 2, finalSize: 11 },
+  community:  { name: "Community & Conferences", hex: "#3E7FC9", orbit: 3, finalSize: 10 },
+  hacks:      { name: "Hacks & Side Projects",   hex: "#C465A8", orbit: 4, finalSize: 7.5 },
+  clojure:    { name: "Clojure & FP",            hex: "#2FA368", orbit: 5, finalSize: 10 },
+  leadership: { name: "Leadership & Management", hex: "#8A67D6", orbit: 6, finalSize: 11 },
+  ai:         { name: "AI & Agents",             hex: "#1FA89E", orbit: 7, finalSize: 12.5 },
+};
+const ORBITS = [104, 140, 176, 212, 248, 284, 320, 356];
+const CX = 400, CY = 400, T0 = 2007.75, T1 = 2026.55;
+
+const ERAS = [
+  { id: 0, sun: true, years: "2007 → 2026", title: "The Sun: what never changed", sub: "The constants survive both languages, five countries, and every topic below. This is the part no era could touch.", topics: [], meter: null,
+    specimens: [
+      { t: "“Lindo não?” (2007, PT) → “The solution? Well…” (2008) → “ah! I'm glad you asked” (2013) → “What would you do?” (2025)", n: "the self-Q&A tic, unbroken across the language switch" },
+      { t: "post #1 (Oct 2007): new job → problem → three iterations → aha → warm close", n: "anecdote-into-framework, present from the literal first post" },
+      { t: "“Software development IS a creative process.” (2007) — CAPS for emphasis, still in the style guide (2026)", n: "" },
+    ],
+    tics: "Ship-fast typos in every era, both languages — a personality signal, not an L1 signal. Community reciprocity throughout: boosting friends (2007), beer invitations in three cities (2009), naming every volunteer (2014), thanking draft reviewers (2013–).",
+    ending: "The voice matured; the fingerprint stayed. <b>The sun never moved.</b>" },
+
+  { id: 1, start: 2007.75, end: 2007.885, years: "Oct – Nov 2007", yearLbl: "Origens · in Portuguese", title: "Origens", sub: "Five posts in Portuguese. Enthusiastic, oral, unedited — and the whole shape of everything after is already here.", topics: ["java","life"], meter: -1,
+    specimens: [
+      { t: "“Ora ora ora! Espera aí! Um método estático acessando uma variável de instância?!? Não pode! E isso me tirou o sono!”", n: "first post ever — exclamation marks as default punctuation" },
+      { t: "“…e as suas classes ficarão uma zona! Eca!”", n: "the rant register, native edition" },
+      { t: "“Os portugueses são muito atenciosos <span class='sq'>btw</span>!”", n: "English leaking in before the switch was announced" },
+    ],
+    tics: "Tag-question <code>né?</code>, emoticons, letter-style sign-offs, apologising for post length while clearly enjoying it.",
+    ending: "“Um grande abraço e até a próxima!”" },
+
+  { id: 2, start: 2007.885, end: 2009, years: "Nov 2007 – Dec 2008", yearLbl: "The Switch · ambitious-intermediate", title: "The Switch", sub: "English announced Nov 20, 2007 — for the friends who couldn't read the blog. Fluency runs far ahead of accuracy: roughly one clause in four carries a transfer artefact.", topics: ["java","ruby","community","hacks","life"], meter: 5,
+    specimens: [
+      { t: "“why every programmer <span class='sq'>have</span> to be dumb”", n: "subject–verb agreement, in a title" },
+      { t: "“a linux nightmare with <span class='sq'>a happy end</span>”", n: "first English post title — “happy end” is the Brazilian loan" },
+      { t: "“accomplishes <span class='sq'>de</span> same task”", n: "Portuguese physically inside an English sentence" },
+      { t: "“<span class='sq'>stablish</span> a trustworthy relationship” · “The <span class='sq'>hability</span> to tweak”", n: "the es-/h- boundary failing in both directions, two months apart" },
+      { t: "“<span class='sq'>Doubts?</span> Send them to jobs@…”", n: "Dúvidas? — the flagship false friend" },
+    ],
+    tics: "Self-Q&A everywhere (<code>The output? Here it is.</code>), <code>C u there!</code>, <code>stay tuned</code>, emoticons mid-sentence.",
+    ending: "“Hope this helps!” — every ending is a wave or a CTA." },
+
+  { id: 3, start: 2009, end: 2011, years: "2009 – 2010", yearLbl: "Europe · genre experiments", title: "Europe", sub: "Madrid. Every genre a dev blog can hold, tried in 20 months: rant, rebuttal, listicle, poll, comic launch. Errors retreat to prepositions and calques.", topics: ["java","ruby","community","hacks","life"], meter: 4,
+    specimens: [
+      { t: "“whatever <span class='sq'>rocks your boat</span>”", n: "idiom blend — same post correctly lands “cut to the chase”" },
+      { t: "“in their stand up meeting they were actually, well, <span class='sq'>sit</span>.”", n: "estavam sentados" },
+      { t: "“<span class='sq'>in a way or another</span>, contributed <span class='sq'>to improve</span> my skills”", n: "double calque in one clause" },
+      { t: "“keen <span class='sq'>about</span> the language” (Mar 2009) → “keen to learn” (Jun 2010)", n: "the repair curve, measurable — this is what the reps buy" },
+    ],
+    tics: "The spelled-out-number dash (<code>40 -yes, forty - minutes!</code>), fragments as punchlines (<code>How smart.</code>), <code>and etc…</code>",
+    ending: "First clean deadpan payoff, Feb 2010: <b>“It turns out I can.”</b>" },
+
+  { id: 4, start: 2011, end: 2013, years: "2011 – 2012", yearLbl: "Australia · long-form arrives", title: "Australia", sub: "Sydney, ThoughtWorks, clj-syd. First war stories with stakes, first opinion piece, the Monads series. Syntax basically fixed; what remains is idiom-level.", topics: ["clojure","leadership","community","hacks","life"], meter: 3,
+    specimens: [
+      { t: "“over <span class='sq'>25 millions of dollars</span>”", n: "25 milhões de dólares — in the flood-relief war story" },
+      { t: "“the new error that was <span class='sq'>stealing my sleep</span>”", n: "roubando meu sono — calques get prettier as they get rarer" },
+      { t: "“Cmd + Shift + Up — Moves <span class='sq'>de</span> line”", n: "“de” for “the”, four years after the first one" },
+      { t: "permalink: <span class='sq'>this-is-was</span>-we-built-in-24-hours", n: "ship-fast typo, fossilised in the URL forever" },
+    ],
+    tics: "Aussie slang arrives within a year (<code>a fair go</code>, sometimes misapplied); British spelling begins displacing American, incompletely.",
+    ending: "Deadpan in force: “Not bad.” · <b>“It's time to head to the pub.”</b> · “stay metal! \\m/”" },
+
+  { id: 5, start: 2013, end: 2015, years: "2013 – 2014", yearLbl: "The Author · near-native", title: "The Author", sub: "Wadler rebuttals, draft reviewers thanked by name, the book in progress. Near-native at paragraph level — the tells go statistical, and typo rate now tracks workload, not language.", topics: ["clojure","community","life"], meter: 2,
+    specimens: [
+      { t: "“a critique <span class='sq'>to</span> Abelson and Sussman's classic textbook”", n: "crítica a — only a Portuguese speaker makes this one" },
+      { t: "“which, <span class='sq'>besides simpler</span>, is also persistent”", n: "além de mais simples" },
+      { t: "“<span class='sq'>plubming</span> · <span class='sq'>comprehenstion</span> · <span class='sq'>reduntant</span> · <span class='sq'>succintly</span>”", n: "one post, written mid-book-crunch — workload, not language" },
+      { t: "permalink: <span class='sq'>staring</span>-a-new-chapter", n: "the career-change post; title quietly fixed, typo fossilised" },
+    ],
+    tics: "The teaching architecture at full power: ventriloquised reader (<code>ah! I'm glad you asked</code>), voiced dissatisfaction, progressive refinement.",
+    ending: "Regression to engagement-bait in promo posts: “Got tickets yet? No? What are you waiting for?”" },
+
+  { id: 6, start: 2015, end: 2021.05, years: "2015 – 2021", yearLbl: "Leader-Writer · tutorials end", title: "The Leader-Writer", sub: "Book ships, tutorials end, essays begin. Be Bored is the Steel Thread prototype. The blog ends announcing a newsletter — with the era's densest error in its thesis sentence.", topics: ["leadership","ai","community","life"], meter: 2,
+    specimens: [
+      { t: "“<span class='sq'>I have talked</span> about it <span class='sq'>last year</span> at EuroClojure”", n: "the present-perfect tell, nine years on" },
+      { t: "“It's as if <span class='sq'>you take technology away we are at a loss</span>… at the mercy of the moon.”", n: "the most lyrical line in 128 posts carries the most audible accent" },
+      { t: "“This newsletter will <span class='sq'>primarity</span> focus <span class='sq'>of</span> leadership”", n: "the farewell post, announcing the writing career, two errors in one clause" },
+    ],
+    tics: "Emoticons vanish from personal posts (Be Bored, 2020); “by what measure?” — the vanity-metrics knife, first sharpened here.",
+    ending: "The blog's last line is a subscribe CTA with a smiley. The newsletter that follows will eventually ban exactly that." },
+
+  { id: 7, start: 2021.05, end: 2023.8, years: "2021 – 2023", yearLbl: "LeadTech Diet v1 · cadence collapse", title: "The LeadTech Diet, v1", sub: "Fortnightly digest for four months, then the format silently dies and gaps stretch to eight months. Dies mid-sentence in a Sep 2023 draft. The drawer keeps the receipts the feed doesn't.", topics: ["leadership","life"], meter: 2,
+    specimens: [
+      { t: "“Robinhood robbed the little guy <span class='sq'>from</span> the opportunity”", n: "roubar de" },
+      { t: "“<span class='sq'>congratulations for</span> making it through”", n: "parabéns por" },
+      { t: "“<span class='sq'>it's not always that</span> you get to actually make decisions”", n: "não é sempre que — the cleanest late fingerprint" },
+      { t: "final draft, Sep 2023: “while being able to drive&nbsp;”", n: "the newsletter's actual last words — mid-sentence, never finished" },
+    ],
+    tics: "Every post ends on a CTA footer plus an engagement question. Also, 2021, his own hand: <code>It's not about preventing Black Swans… It's about being ready.</code> — the cadence the 2026 style guide bans was native first.",
+    ending: "The era's one buried mic-drop: <b>“Let us be antifragile.”</b> — CTA footer still attached." },
+
+  { id: 8, start: 2024.85, end: 2026.0, years: "2024 – 2025", yearLbl: "Relaunch · the format split", title: "Relaunch & Split", sub: "Back after 14 months of silence, pivoted to AI by triage: six management drafts die in the drawer while the AI essays ship. Mid-2025, the digest gets machine-drafted — and the seams ship with it.", topics: ["ai","leadership","hacks"], meter: 1,
+    specimens: [
+      { t: "“<span class='sq'>I've learned</span> long ago that technology for technology's sake…”", n: "the present-perfect tell's last verified appearance (Nov 2024)" },
+      { t: "“<span class='sq'>without I ever explicitly telling it</span> to do so”", n: "sem eu nunca ter dito — Portuguese syntax verbatim, in a review of an AI agent, about autonomy without instruction. The strongest survivor in nineteen years." },
+      { t: "“it cost <span class='sq'>few hundred bucks</span>”", n: "article omission under speed" },
+      { t: "-ize is the machine, -ise is the man", n: "by Aug 2025, spelling is the authorship detector: hand-written prose is British; machine-drafted prose is wholesale American" },
+    ],
+    tics: "Manage-the-AI-like-a-junior debuts (<code>appealing to team spirit… did the trick</code>). Endings still 100% CTA — the mic-drop instinct surfaces and gets stepped on. A second star burns beside the sun for a while; watch the sky.",
+    ending: "One clean close in the whole era (tltd-26): “All you need is the right instrumentation approach.”" },
+
+  { id: 9, start: 2026.0, end: 2027, years: "2026 →", yearLbl: "The Steel Thread · fingerprint extinct", title: "The Steel Thread", sub: "January carries the survivor colony — the L1 fingerprint's last stand. From February: anecdote cold-opens, connected arc, receipts, and not a squiggle in sight.", topics: ["ai","hacks","leadership"], meter: 0,
+    specimens: [
+      { t: "Jan 2026: “I'm still <span class='sq'>optimist</span>” · “shed light <span class='sq'>into</span>” · “what a start to 2026 <span class='sq'>have we had</span>!”", n: "the survivor colony, in a post about the year the machines learned to write" },
+      { t: "“Demos are the AI equivalent of a holiday romance — everything works when there are no real stakes.”", n: "no squiggles — nothing to mark", clean: true },
+      { t: "“That's a tenancy, not a sovereignty.”", n: "Jul 2026 — a deliberate grammar violation as a title conceit. After nineteen years of the language correcting him, he corrects it back.", clean: true },
+    ],
+    tics: "Mic-drops institutionalised; the one-word ironic closing paragraph emerges (<code>Probably.</code> · <code>Probably both.</code>). Extinct as of February 2026.",
+    ending: "<b>“Jensen's selling the tokens. Nobody's selling you the gauge.”</b>" },
+];
+
+/* ── time helpers ── */
+const dec = (iso) => { const [y, m, d] = iso.split("-").map(Number); return y + (m - 1) / 12 + (d - 1) / 365; };
+const clamp01 = (v) => Math.max(0, Math.min(1, v));
+const hash = (s) => { let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return Math.abs(h); };
+
+/* interference intensity — the nebula */
+function interference(t) {
+  if (t < 2007.885) return 0;
+  const steps = [[2009, 1], [2011, 0.8], [2013, 0.6], [2015, 0.42], [2021.05, 0.34], [2023.8, 0.28], [2024.85, 0.2], [2026.0, 0.15], [2026.1, 0.08], [Infinity, 0]];
+  for (const [end, v] of steps) if (t < end) return v;
+  return 0;
+}
+const eraOf = (t) => ERAS.find((e) => !e.sun && t >= e.start && t < e.end) || null;
+
+/* ── derive per-topic + per-post render models ── */
+const posts = DATA.posts.map((p) => ({ ...p, t: dec(p.date), h: hash(p.slug) }));
+const published = posts.filter((p) => !p.draft);
+const drafts = posts.filter((p) => p.draft);
+
+const topicModel = {};
+Object.entries(TOPICS).forEach(([key, cfg]) => {
+  const mine = published.filter((p) => p.topic === key).sort((a, b) => a.t - b.t);
+  topicModel[key] = {
+    ...cfg, key, posts: mine,
+    arrival: mine.length ? mine[0].t : Infinity,
+    k: mine.length ? (cfg.finalSize - 4) / Math.sqrt(mine.length) : 0,
+    R: ORBITS[cfg.orbit],
+    baseAngle: (hash(key) % 360),
+    speed: 8 - cfg.orbit * 0.8, // deg/sec ambient, inner faster
+  };
+  mine.forEach((p, i) => {
+    p.moonR = cfg.finalSize + 6 + (p.h % 6) * 3.2;
+    p.moonBase = (p.h % 360);
+    p.moonSpeed = 22 + (p.h % 20); // deg/sec around planet
+    p.dotR = 1.2 + Math.min(2.1, Math.sqrt((p.words || 200) / 900));
+  });
+});
+function planetState(key, t) {
+  const m = topicModel[key];
+  const upTo = m.posts.filter((p) => p.t <= t);
+  const size = upTo.length ? 4 + m.k * Math.sqrt(upTo.length) : 0;
+  const last = upTo.length ? upTo[upTo.length - 1].t : -1;
+  const dormant = upTo.length > 0 && (t - last) > 1.6;
+  return { exists: upTo.length > 0, size, dormant, count: upTo.length };
+}
+
+/* ── build svg ── */
+const NS = "http://www.w3.org/2000/svg";
+const svg = document.getElementById("orrery");
+const el = (n, attrs) => { const e = document.createElementNS(NS, n); for (const k in attrs) e.setAttribute(k, attrs[k]); return e; };
+const defs = el("defs", {});
+defs.innerHTML = `<radialGradient id="sunGrad"><stop offset="0%" stop-color="#F6DFA3"/><stop offset="55%" stop-color="#E8C36A"/><stop offset="100%" stop-color="#B98F3D"/></radialGradient>
+<filter id="soft" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="26"/></filter>`;
+svg.appendChild(defs);
+const root = el("g", { id: "orreryRoot" });
+svg.appendChild(root);
+
+// starfield
+let seed = 42; const rnd = () => (seed = Math.imul(seed, 48271) % 2147483647) / 2147483647;
+for (let i = 0; i < 90; i++) root.appendChild(el("circle", { cx: rnd() * 800, cy: rnd() * 800, r: rnd() * 1.1 + 0.2, fill: "#7E88A8", opacity: (rnd() * 0.35 + 0.08).toFixed(2) }));
+// orbits
+ORBITS.forEach((r) => root.appendChild(el("circle", { class: "orbit", cx: CX, cy: CY, r })));
+
+// interference nebula (three soft blobs, inner system)
+const nebula = el("g", { id: "nebula" });
+[[330, 330, 90], [470, 360, 70], [400, 470, 80]].forEach(([x, y, r]) =>
+  nebula.appendChild(el("circle", { cx: x, cy: y, r, fill: "#D95A6A", filter: "url(#soft)" })));
+root.appendChild(nebula);
+
+// language-switch belt
+const beltR = (ORBITS[1] + ORBITS[2]) / 2;
+const beltG = el("g", { id: "belt" });
+beltG.appendChild(el("circle", { class: "belt-ring", cx: CX, cy: CY, r: beltR }));
+beltG.appendChild(el("path", { id: "beltPath", fill: "none", d: `M ${CX} ${CY - beltR - 6} a ${beltR + 6} ${beltR + 6} 0 0 1 ${beltR + 6} ${beltR + 6}` }));
+const beltText = el("text", { "font-size": "10.5", fill: "#6A7390", "letter-spacing": "2" });
+const tp = el("textPath", { href: "#beltPath", startOffset: "12%" });
+tp.textContent = "THE LANGUAGE SWITCH · NOV 2007";
+beltText.appendChild(tp);
+beltG.appendChild(beltText);
+root.appendChild(beltG);
+
+// comets (the drawer)
+const cometEls = drafts.map((p) => {
+  const aIn = (p.h % 360), sweep = 120 + (p.h % 80);
+  const dir = (deg) => [Math.cos(deg * Math.PI / 180), Math.sin(deg * Math.PI / 180)];
+  const peri = 70 + (p.h % 70);
+  const [ax, ay] = dir(aIn), [bx, by] = dir(aIn + sweep), [cx2, cy2] = dir(aIn + sweep / 2);
+  const A = [CX + 540 * ax, CY + 540 * ay], B = [CX + 540 * bx, CY + 540 * by], C = [CX + peri * cx2, CY + peri * cy2];
+  const d = `M ${A[0]} ${A[1]} Q ${C[0]} ${C[1]} ${B[0]} ${B[1]}`;
+  const g = el("g", { class: "comet" });
+  const path = el("path", { class: "comet-path", d, opacity: 0 });
+  const hit = el("path", { class: "comet-hit", d, "data-kind": "comet", "data-slug": p.slug });
+  const tail = el("line", { class: "comet-tail", opacity: 0 });
+  const head = el("circle", { class: "comet-head", r: 2.2, opacity: 0 });
+  g.append(path, tail, head, hit);
+  root.appendChild(g);
+  const bez = (u) => { const w = 1 - u; return [w * w * A[0] + 2 * w * u * C[0] + u * u * B[0], w * w * A[1] + 2 * w * u * C[1] + u * u * B[1]]; };
+  return { p, path, head, tail, bez };
+});
+
+// sun
+const sunG = el("g", { class: "sun-group", tabindex: "0", role: "button", "aria-label": "The sun: what never changed. Opens the constants card." });
+sunG.appendChild(el("circle", { cx: CX, cy: CY, r: 34, fill: "rgba(232,195,106,0.07)" }));
+sunG.appendChild(el("circle", { class: "sun-core", cx: CX, cy: CY, r: 21, fill: "url(#sunGrad)", "data-kind": "sun" }));
+const sunLabel = el("text", { x: CX, y: CY + 52, "text-anchor": "middle", "font-size": "11", fill: "#9AA3BC", "letter-spacing": "2.5" });
+sunLabel.textContent = "THE VOICE";
+sunG.appendChild(sunLabel);
+root.appendChild(sunG);
+
+// binary star (the machine, mid-2025)
+const binG = el("g", { class: "binary", opacity: 0 });
+binG.appendChild(el("circle", { r: 7, fill: "#CBD5E6", "data-kind": "binary" }));
+const binLabel = el("text", { "text-anchor": "middle", "font-size": "10", fill: "var(--machine)", "letter-spacing": "1.5", dy: "-13" });
+binLabel.textContent = "-IZE";
+binG.appendChild(binLabel);
+root.appendChild(binG);
+
+// planets + moons
+const planetEls = {};
+Object.values(topicModel).forEach((m) => {
+  const g = el("g", { class: "topic-g", "data-topic": m.key });
+  const glow = el("circle", { class: "glow", stroke: m.hex, r: m.finalSize + 7 });
+  const body = el("circle", { class: "body", fill: m.hex, r: 0 });
+  const hit = el("circle", { class: "hit", r: Math.max(m.finalSize + 12, 18), "data-kind": "planet", "data-topic": m.key });
+  const moons = m.posts.map((p) => {
+    const mc = el("circle", { r: p.dotR, fill: m.hex, opacity: 0 });
+    const mh = el("circle", { r: Math.max(p.dotR + 4.5, 6.5), fill: "transparent", "data-kind": "moon", "data-slug": p.slug, style: "cursor:pointer" });
+    g.append(mc, mh);
+    return { p, mc, mh };
+  });
+  g.append(glow, body, hit);
+  root.appendChild(g);
+  planetEls[m.key] = { g, glow, body, hit, moons, m };
+});
+
+/* ── legend + cards ── */
+const legend = document.getElementById("legend");
+const legendBtns = {};
+Object.values(topicModel).forEach((m) => {
+  const b = document.createElement("button");
+  b.innerHTML = `<span class="dot" style="background:${m.hex}"></span>${m.name}`;
+  b.addEventListener("click", () => toggleFocus(m.key));
+  legend.appendChild(b);
+  legendBtns[m.key] = b;
+});
+
+const timeline = document.getElementById("timeline");
+ERAS.forEach((era) => {
+  const card = document.createElement("article");
+  card.className = "card" + (era.sun ? " sun-card" : "");
+  card.id = "era-" + era.id;
+  card.dataset.era = era.id;
+  card.tabIndex = 0;
+  let meterHtml = "";
+  if (era.meter !== null && era.meter >= 0) {
+    const dots = Array.from({ length: 5 }, (_, i) => `<i class="${i < era.meter ? "on" : ""}"></i>`).join("");
+    meterHtml = `<span class="meter" title="Portuguese-interference intensity">${dots}<span class="lbl">${era.meter === 0 ? "L1 EXTINCT" : "L1 INTERFERENCE"}</span></span>`;
+  } else if (era.meter === -1) meterHtml = `<span class="meter"><span class="lbl">NATIVE TONGUE</span></span>`;
+  const topicChips = era.topics.map((k) => `<span><span class="dot" style="background:${TOPICS[k].hex}"></span>${TOPICS[k].name}</span>`).join("");
+  let tally = "";
+  if (!era.sun) {
+    const pubN = published.filter((p) => p.t >= era.start && p.t < era.end).length;
+    const drN = drafts.filter((p) => p.t >= era.start && p.t < era.end).length;
+    tally = `${pubN} posts shipped${drN ? ` · ${drN} draft${drN > 1 ? "s" : ""} left in the drawer` : ""}`;
+  }
+  const specs = era.specimens.map((s) => `<div class="spec${s.clean ? " clean" : ""}">${s.t}${s.n ? `<span class="note">${s.n}</span>` : ""}</div>`).join("");
+  card.innerHTML = `
+    <div class="years"><span>${era.years}</span>${meterHtml}</div>
+    <h2>${era.title}</h2>
+    <p class="sub">${era.sub}</p>
+    ${tally ? `<p class="tally">${tally}</p>` : ""}
+    ${era.topics.length ? `<div class="topics-row">${topicChips}</div>` : ""}
+    <div class="label">${era.sun ? "The constants, verbatim" : "Specimens, verbatim"}</div>
+    <div class="specimens">${specs}</div>
+    <div class="label">${era.sun ? "And always" : "Tics of the era"}</div>
+    <p class="tics">${era.tics}</p>
+    <p class="ending">${era.sun ? "" : "How it ends: "}${era.ending}</p>`;
+  timeline.appendChild(card);
+});
+const foot = document.createElement("footer");
+foot.innerHTML = `<hr class="rule">Built from the archive itself: ${DATA.counts.blog} blog posts (2007–2021) + ${DATA.counts.newsletter} newsletter posts + ${DATA.counts.drafts} unpublished drafts, dated and word-counted by <code>resources/orrery/build-data.mjs</code>. One moon per post, sized by word count. Comets are the drawer — drafts that entered the system and never completed an orbit. The red haze is Portuguese-interference density; the second star (mid-2025) is the machine that briefly co-drafted the digest. Every quote appears exactly as shipped.`;
+timeline.appendChild(foot);
+document.getElementById("eyebrow").textContent = `2007 – 2026 · ${DATA.counts.published} posts · ${DATA.counts.drafts} drafts in the drawer · two languages`;
+
+/* ── state + render loop (everything a function of T + ambient clock) ── */
+const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+let T = T0, targetT = null, playing = false, clock = 0, focusTopic = null, lastEraId = null;
+const scrubber = document.getElementById("scrubber");
+const yrOut = document.getElementById("yrOut");
+const eraOut = document.getElementById("eraOut");
+const playBtn = document.getElementById("playBtn");
+const PLAY_RATE = 0.5; // years per second (~38s full run)
+
+function render() {
+  const t = T;
+  // planets + moons
+  Object.values(planetEls).forEach(({ g, glow, body, hit, moons, m }) => {
+    const st = planetState(m.key, t);
+    const ang = (m.baseAngle + clock * m.speed + (t - 2007) * 22) * Math.PI / 180;
+    const px = CX + m.R * Math.cos(ang), py = CY + m.R * Math.sin(ang);
+    g.style.display = st.exists ? "" : "none";
+    if (!st.exists) return;
+    body.setAttribute("cx", px); body.setAttribute("cy", py); body.setAttribute("r", st.size.toFixed(2));
+    glow.setAttribute("cx", px); glow.setAttribute("cy", py); glow.setAttribute("r", (st.size + 7).toFixed(2));
+    hit.setAttribute("cx", px); hit.setAttribute("cy", py);
+    g.classList.toggle("dormant", st.dormant);
+    moons.forEach(({ p, mc, mh }) => {
+      const vis = p.t <= t;
+      const op = vis ? clamp01((t - p.t) / 0.12) * 0.85 : 0;
+      mc.setAttribute("opacity", op.toFixed(2));
+      mh.style.display = vis ? "" : "none";
+      if (!vis) return;
+      const ma = (p.moonBase + clock * p.moonSpeed + (t - 2007) * 60) * Math.PI / 180;
+      const mx = px + p.moonR * Math.cos(ma), my = py + p.moonR * Math.sin(ma);
+      mc.setAttribute("cx", mx); mc.setAttribute("cy", my);
+      mh.setAttribute("cx", mx); mh.setAttribute("cy", my);
+    });
+  });
+  // nebula
+  const iv = interference(t);
+  nebula.setAttribute("opacity", (iv * 0.16).toFixed(3));
+  // belt
+  const beltOn = clamp01((t - 2007.83) / 0.1);
+  const pulse = Math.max(0, 1 - Math.abs(t - 2007.92) / 0.35);
+  beltG.setAttribute("opacity", (beltOn * (0.45 + pulse * 0.5)).toFixed(2));
+  // binary star
+  let bOp = 0, bx = CX + 60, by = CY - 44;
+  if (t >= 2025.35 && t < 2026.3) {
+    if (t < 2026.0) bOp = Math.min(1, (t - 2025.35) / 0.1);
+    else { const u = (t - 2026.0) / 0.3; bOp = 1 - u; bx = CX + 60 + u * 520; by = CY - 44 - u * 380; }
+  }
+  binG.setAttribute("opacity", (bOp * 0.9).toFixed(2));
+  binG.setAttribute("transform", `translate(${bx - CX} ${by - CY})`);
+  binG.querySelector("circle").setAttribute("cx", CX); binG.querySelector("circle").setAttribute("cy", CY);
+  binLabel.setAttribute("x", CX); binLabel.setAttribute("y", CY);
+  // comets
+  cometEls.forEach(({ p, path, head, tail, bez }) => {
+    const u = (t - p.t) / 0.5;
+    path.setAttribute("opacity", t >= p.t ? (u < 1 ? 0.3 : 0.12) : 0);
+    if (u > 0 && u < 1) {
+      const [hx, hy] = bez(u), [qx, qy] = bez(Math.max(0, u - 0.06));
+      head.setAttribute("cx", hx); head.setAttribute("cy", hy);
+      head.setAttribute("opacity", (Math.sin(Math.min(u, 1) * Math.PI) * 0.95).toFixed(2));
+      tail.setAttribute("x1", qx); tail.setAttribute("y1", qy); tail.setAttribute("x2", hx); tail.setAttribute("y2", hy);
+      tail.setAttribute("opacity", (Math.sin(u * Math.PI) * 0.5).toFixed(2));
+    } else { head.setAttribute("opacity", 0); tail.setAttribute("opacity", 0); }
+  });
+  // readout + era sync
+  yrOut.textContent = String(Math.floor(t));
+  scrubber.value = t;
+  const era = eraOf(t);
+  eraOut.textContent = era ? (era.yearLbl || era.title) : "the silence · 14 months of nothing";
+  const eid = era ? era.id : null;
+  if (eid !== lastEraId) {
+    lastEraId = eid;
+    document.querySelectorAll(".card").forEach((c) => c.classList.toggle("now", +c.dataset.era === eid));
+    if (!focusTopic) {
+      Object.entries(planetEls).forEach(([k, { g }]) => {
+        const active = era ? era.topics.includes(k) : false;
+        g.classList.toggle("lit", active);
+        g.classList.toggle("dimmed", era ? !active : false);
+      });
+      Object.entries(legendBtns).forEach(([k, b]) => b.classList.toggle("off", era ? !era.topics.includes(k) : false));
+    }
+    if (playing && era) document.getElementById("era-" + era.id).scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
+let lastTs = null;
+function tick(ts) {
+  if (lastTs !== null) {
+    const dt = Math.min(0.1, (ts - lastTs) / 1000);
+    if (!reduced) clock += dt;
+    if (playing) {
+      T = Math.min(T1, T + dt * PLAY_RATE);
+      if (T >= T1) setPlaying(false);
+    } else if (targetT !== null) {
+      const diff = targetT - T;
+      if (Math.abs(diff) < 0.01) { T = targetT; targetT = null; }
+      else T += diff * Math.min(1, dt * 4);
+    }
+  }
+  lastTs = ts;
+  render();
+  requestAnimationFrame(tick);
+}
+requestAnimationFrame(tick);
+
+function setPlaying(on) {
+  playing = on;
+  playBtn.textContent = on ? "❚❚" : "▶";
+  playBtn.setAttribute("aria-label", on ? "Pause" : "Play the nineteen years");
+  if (on) { targetT = null; if (T >= T1 - 0.05) T = T0; }
+}
+playBtn.addEventListener("click", () => setPlaying(!playing));
+scrubber.addEventListener("input", () => { setPlaying(false); targetT = null; T = +scrubber.value; });
+
+/* scroll the record → time follows (when not playing) */
+let lastScrollDrive = 0;
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    const era = ERAS.find((e) => e.id === +entry.target.dataset.era);
+    if (!era) return;
+    if (era.sun) {
+      if (!playing && !focusTopic) { Object.values(planetEls).forEach(({ g }) => { g.classList.remove("lit"); g.classList.remove("dimmed"); }); Object.values(legendBtns).forEach((b) => b.classList.remove("off")); }
+      return;
+    }
+    if (playing) return;
+    lastScrollDrive = performance.now();
+    targetT = (era.start + Math.min(era.end, era.start + 2)) / 2 + (era.end - era.start > 3 ? (era.end - era.start) / 3 : 0);
+    if (targetT > T1) targetT = T1;
+  });
+}, { rootMargin: "-38% 0px -52% 0px", threshold: 0 });
+document.querySelectorAll(".card").forEach((c) => observer.observe(c));
+
+/* focus mode */
+function toggleFocus(key) {
+  focusTopic = focusTopic === key ? null : key;
+  Object.entries(planetEls).forEach(([k, { g }]) => {
+    g.classList.toggle("lit", focusTopic === k);
+    g.classList.toggle("dimmed", focusTopic !== null && focusTopic !== k);
+  });
+  Object.entries(legendBtns).forEach(([k, b]) => { b.classList.toggle("active", focusTopic === k); b.classList.toggle("off", focusTopic !== null && focusTopic !== k); });
+  document.querySelectorAll(".card").forEach((card) => {
+    const era = ERAS.find((e) => e.id === +card.dataset.era);
+    const relevant = !focusTopic || era.sun || era.topics.includes(focusTopic);
+    card.classList.toggle("dimout", !relevant);
+    card.classList.toggle("spot", !!focusTopic && relevant && !era.sun);
+  });
+  lastEraId = undefined; // force era re-render
+  if (focusTopic) {
+    const first = ERAS.find((e) => !e.sun && e.topics.includes(focusTopic));
+    if (first) document.getElementById("era-" + first.id).scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+sunG.addEventListener("click", () => { if (focusTopic) toggleFocus(focusTopic); document.getElementById("era-0").scrollIntoView({ behavior: "smooth", block: "start" }); });
+sunG.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); sunG.dispatchEvent(new Event("click")); } });
+
+/* hover chips (delegated) */
+const chip = document.getElementById("chip");
+const fmtDate = (iso) => { const [y, m, d] = iso.split("-"); return `${d}/${m}/${y}`; };
+svg.addEventListener("pointermove", (e) => {
+  const k = e.target.dataset && e.target.dataset.kind;
+  if (!k) { chip.classList.remove("show"); return; }
+  let html = "";
+  if (k === "planet") {
+    const m = topicModel[e.target.dataset.topic];
+    const st = planetState(m.key, T);
+    html = `<div class="t"><span class="dot" style="background:${m.hex}"></span>${m.name}</div><div class="meta">${st.count} of ${m.posts.length} posts by ${Math.floor(T)}${st.dormant ? " · dormant" : ""}</div>`;
+  } else if (k === "moon") {
+    const p = posts.find((x) => x.slug === e.target.dataset.slug);
+    if (!p) return;
+    const m = topicModel[p.topic];
+    html = `<div class="t"><span class="dot" style="background:${m.hex}"></span>${p.title}</div><div class="meta">${fmtDate(p.date)} · ~${p.words} words · ${m.name}</div>`;
+    if (p.specimen) html += `<div class="sp">${p.specimen.q.replace(/\[([^\]]+)\]/g, '<span class="sq">$1</span>')}<span class="note" style="display:block;color:var(--ink-3);font-family:var(--sans);font-size:11px">${p.specimen.n}</span></div>`;
+  } else if (k === "comet") {
+    const p = posts.find((x) => x.slug === e.target.dataset.slug);
+    if (!p) return;
+    html = `<div class="t"><span class="dot" style="background:var(--ink-3)"></span>${p.title}</div><div class="meta">~${fmtDate(p.date)} · unpublished draft · never completed an orbit</div>`;
+    if (p.special) html += `<div class="sp">${p.special}</div>`;
+  } else if (k === "binary") {
+    html = `<div class="t"><span class="dot" style="background:var(--machine)"></span>The machine</div><div class="meta">May 2025 – Jan 2026 · co-drafted “This Week's Special”</div><div class="sp">watermarked <span class="sq">utm_source=chatgpt.com</span> · -ize to his -ise · ejected when the Steel Thread era began</div>`;
+  } else if (k === "sun") {
+    html = `<div class="t"><span class="dot" style="background:var(--sun)"></span>The voice</div><div class="meta">2007 → 2026 · the constants · click for the record</div>`;
+  }
+  chip.innerHTML = html;
+  const wrap = document.querySelector(".orrery-wrap").getBoundingClientRect();
+  let x = e.clientX - wrap.left + 14, y = e.clientY - wrap.top + 14;
+  x = Math.min(x, wrap.width - 285); y = Math.min(y, wrap.height - 110);
+  chip.style.left = x + "px"; chip.style.top = y + "px";
+  chip.classList.add("show");
+});
+svg.addEventListener("pointerleave", () => chip.classList.remove("show"));
+svg.addEventListener("click", (e) => {
+  const k = e.target.dataset && e.target.dataset.kind;
+  if (k === "planet") toggleFocus(e.target.dataset.topic);
+});
+
+/* start: everything already formed so first paint isn't empty; then invite play */
+T = T1; targetT = null;
+render();
+</script>
+
+</body>
+</html>
